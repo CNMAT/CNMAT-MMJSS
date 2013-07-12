@@ -37,7 +37,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 17.0, 599.0, 43.0 ],
-					"presentation_rect" : [ 694.117615, 42.0, 0.0, 0.0 ],
 					"text" : "Assignment 1: data in, process, data out"
 				}
 
@@ -68,7 +67,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 153.955872, 405.0, 145.0, 33.0 ],
-					"presentation_rect" : [ 606.171082, 147.473709, 0.0, 0.0 ],
 					"text" : "message can help you test out lists"
 				}
 
@@ -96,9 +94,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.0, 180.0, 141.911743, 47.0 ],
-					"presentation_rect" : [ 65.648514, 204.092102, 0.0, 0.0 ],
-					"text" : "pak allows you to format a list without worrying about a hot inlet"
+					"patching_rect" : [ 560.0, 180.0, 162.0, 47.0 ],
+					"text" : "pak allows you to format a list similarly to pack, without worrying about a hot inlet"
 				}
 
 			}
@@ -113,7 +110,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 450.0, 320.0, 159.0, 60.0 ],
-					"presentation_rect" : [ 480.793396, 257.460541, 0.0, 0.0 ],
 					"text" : "print prints anything to the max window, and the @popup attr allows you to see the result in your patch"
 				}
 
@@ -129,7 +125,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 88.999992, 460.0, 124.0, 47.0 ],
-					"presentation_rect" : [ 507.477631, 219.486847, 0.0, 0.0 ],
 					"text" : "f can turn any int into a float, or store a float"
 				}
 
@@ -140,12 +135,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-7",
-					"linecount" : 3,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 430.0, 180.0, 110.0, 47.0 ],
-					"text" : "pack allows you to format a list with 3 floats"
+					"patching_rect" : [ 430.0, 180.0, 110.0, 74.0 ],
+					"text" : "pack allows you to format a list with any number of items, in this case 3 floats"
 				}
 
 			}
@@ -159,7 +154,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 150.911743, 300.0, 249.0, 20.0 ],
-					"presentation_rect" : [ 100.0, 165.509537, 0.0, 0.0 ],
 					"text" : "inlet of esplora_io_1 accepts a list of 3 floats "
 				}
 

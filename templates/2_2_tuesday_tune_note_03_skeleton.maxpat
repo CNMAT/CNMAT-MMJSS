@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 9.0, 46.0, 794.0, 753.0 ],
+		"rect" : [ 0.0, 44.0, 1024.0, 674.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -67,8 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 373.75, 650.0, 207.25, 78.0 ],
-					"presentation_rect" : [ 832.0, 664.0, 0.0, 0.0 ],
+					"patching_rect" : [ 373.75, 650.0, 208.0, 78.0 ],
 					"text" : "this object is called res-display - it can be helpful in displaying frequency and amplitude content from a list that contains frequency/amplitude pairs."
 				}
 
@@ -86,8 +85,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 490.0, 46.5, 181.0, 119.0 ],
-					"presentation_rect" : [ 630.0, 359.0, 0.0, 0.0 ],
+					"patching_rect" : [ 490.0, 46.5, 183.0, 119.0 ],
 					"text" : "sinusoids~ takes a list containing frequency amplitude pairs - it doesn't care how many pairs are in the list.  it then generates the combined sinusoidal output that you can hear as summed tones."
 				}
 
@@ -455,11 +453,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-23",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 180.0, 177.0, 123.0, 20.0 ],
-					"text" : "if ($f1 < 0.9) then $f1"
+					"numinlets" : 3,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "float" ],
+					"patching_rect" : [ 180.0, 177.0, 65.0, 20.0 ],
+					"text" : "split 0. 0.9"
 				}
 
 			}
@@ -579,7 +577,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 20.0, 120.0, 160.0, 369.0 ],
-									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit ",
+									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit \n",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -695,8 +693,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 56.5, 73.0, 20.0 ],
-					"text" : "o.io.esplora"
+					"patching_rect" : [ 130.0, 56.5, 50.0, 20.0 ],
+					"text" : "esplora"
 				}
 
 			}
@@ -919,44 +917,51 @@
 			}
  ],
 		"dependency_cache" : [ 			{
+				"name" : "esplora.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"patcherrelativepath" : "../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/testing/abstractions",
-				"patcherrelativepath" : "../../../../../../CNMAT-odot/testing/abstractions",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
+				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../../../../../CNMAT-odot/abstractions",
+				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.broadcast.api.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-Internal/max/patches/MMJSS_archive/MMJSS_2013/esplora_examples",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "make_harmonics.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-Internal/max/patches/MMJSS_archive/MMJSS_2013/esplora_examples",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "harmonics.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJ-Depot/modules/data_generation",
-				"patcherrelativepath" : "../../../../../../CNMAT-MMJ-Depot/modules/data_generation",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/modules/data_generation",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "list-norm-expdecay.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJ-Depot/modules/lists",
-				"patcherrelativepath" : "../../../../../../CNMAT-MMJ-Depot/modules/lists",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/modules/lists",
 				"type" : "JSON",
 				"implicit" : 1
 			}
