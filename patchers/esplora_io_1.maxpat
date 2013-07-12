@@ -43,7 +43,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "OSC outlet",
+					"comment" : "(float) horizontal slider value",
 					"id" : "obj-21",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -178,7 +178,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(list of 3 ints) R G B",
+					"comment" : "(list of 3 floats) R G B",
 					"id" : "obj-3",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -190,7 +190,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "OSC outlet",
+					"comment" : "(float) mic loudness",
 					"id" : "obj-5",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
