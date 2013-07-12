@@ -38,7 +38,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 193.5, 750.0, 162.0, 24.0 ],
-					"presentation_rect" : [ 175.0, 753.0, 0.0, 0.0 ],
 					"text" : "toggle can display values"
 				}
 
@@ -53,7 +52,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 600.0, 720.0, 108.0, 20.0 ],
-					"presentation_rect" : [ 600.0, 723.0, 0.0, 0.0 ],
 					"text" : "toggle hides state."
 				}
 
@@ -83,7 +81,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 193.5, 820.0, 309.0, 24.0 ],
-					"presentation_rect" : [ 191.5, 824.0, 0.0, 0.0 ],
 					"text" : "select can output bangs when a button is pressed (1)"
 				}
 
@@ -99,7 +96,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 193.5, 720.0, 256.0, 24.0 ],
-					"presentation_rect" : [ 197.0, 717.0, 0.0, 0.0 ],
 					"text" : "change only outputs upon a changed value"
 				}
 
@@ -115,7 +111,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 336.5, 460.0, 360.0, 33.0 ],
-					"presentation_rect" : [ 337.5, 439.0, 0.0, 0.0 ],
 					"text" : "saw accepts a frequency to set it's number of cycles per second (hz) value.  it also outputs a cool tone."
 				}
 
@@ -131,7 +126,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 379.5, 360.0, 189.0, 74.0 ],
-					"presentation_rect" : [ 380.0, 240.0, 0.0, 0.0 ],
 					"text" : "ezdac~ is a way to get two channels out to your speakers or headphones.  simply wire signals to the left and right inlets (channels)"
 				}
 
@@ -145,9 +139,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 76.5, 570.0, 492.0, 20.0 ],
-					"presentation_rect" : [ 339.0, 244.5, 0.0, 0.0 ],
-					"text" : "esplora contains all of the functionality of the esplora controller.  we'll use this from now on."
+					"patching_rect" : [ 120.0, 570.0, 530.0, 20.0 ],
+					"text" : "mmjss.esplora contains all of the functionality of the esplora controller.  we'll use this from now on."
 				}
 
 			}
@@ -161,7 +154,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 62.0, 460.0, 213.0, 20.0 ],
-					"presentation_rect" : [ 65.0, 340.0, 0.0, 0.0 ],
 					"text" : "multislider can send a float for storage"
 				}
 
@@ -176,7 +168,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 62.0, 360.0, 189.0, 20.0 ],
-					"presentation_rect" : [ 63.5, 237.0, 0.0, 0.0 ],
 					"text" : "gain~ allows you to scale a signal"
 				}
 
@@ -191,7 +182,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 356.5, 630.0, 219.0, 20.0 ],
-					"presentation_rect" : [ 480.0, 279.0, 0.0, 0.0 ],
 					"text" : "view all the esplora  (output) messages"
 				}
 
@@ -206,7 +196,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 80.0, 270.0, 590.0, 20.0 ],
-					"presentation_rect" : [ 75.0, 172.0, 0.0, 0.0 ],
 					"text" : "mtof can accept floats for "
 				}
 
@@ -221,7 +210,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 62.0, 240.0, 590.0, 20.0 ],
-					"presentation_rect" : [ 152.0, 184.0, 0.0, 0.0 ],
 					"text" : "[*~] is the MSP equivalent of [*].  it multiplies signals, and can be used to scale the amplitude of audio in MSP"
 				}
 
@@ -419,7 +407,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 20.0, 120.0, 490.0, 369.0 ],
-									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit \n",
+									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit ",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -622,8 +610,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 16.5, 570.0, 50.0, 20.0 ],
-					"text" : "esplora"
+					"patching_rect" : [ 16.5, 570.0, 88.0, 20.0 ],
+					"text" : "mmjss.esplora"
 				}
 
 			}
@@ -746,8 +734,8 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"name" : "mmjss.esplora.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -768,14 +756,14 @@
 			}
 , 			{
 				"name" : "press2int.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.broadcast.api.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
