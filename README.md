@@ -7,6 +7,6 @@ Mac:
 ~/Documents/Max/Packages/
 
 Win:
-??
+same??
 
 The root folder in that location can be called anything you like, but the subfolders need to be named precisely as they are to retain functionality for Max when loaded.
