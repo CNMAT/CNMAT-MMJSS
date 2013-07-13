@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1680.0, 956.0 ],
+		"rect" : [ 0.0, 44.0, 762.0, 828.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -108,7 +108,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 363.75, 723.5, 226.0, 64.0 ],
+					"patching_rect" : [ 434.25, 723.5, 229.0, 64.0 ],
 					"text" : "this object is called res-display - it can be helpful in displaying frequency and amplitude content from a list that contains frequency/amplitude pairs."
 				}
 
@@ -526,7 +526,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 723.5, 240.0, 80.0 ]
+					"patching_rect" : [ 120.0, 723.5, 305.75, 86.5 ]
 				}
 
 			}
