@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1024.0, 674.0 ],
+		"rect" : [ 0.0, 44.0, 1680.0, 956.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,13 +29,42 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 33.0,
+					"frgb" : 0.0,
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 10.0, 603.0, 43.0 ],
+					"text" : "Assignment 5: photoresistor as air-guitar"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-8",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 53.0, 724.0, 74.0 ],
+					"text" : "Objectives:\n1. use esplora photoresistor output to mimic a plucked string instrument.\n2. instead of many oscillator~ instances, use sinusoids~ to manage many sine waves at once\n3. generate harmonics for sinusoids~, but based on movements from the pluck motion\n4. utilize splitting, clipping, changes, and scaling to massage input data from the photoresistor for sinusoids."
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 164.0, 26.5, 20.0, 20.0 ]
+					"patching_rect" : [ 154.0, 210.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -49,7 +78,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 533.75, 394.0, 50.0, 20.0 ]
+					"patching_rect" : [ 523.75, 577.5, 50.0, 20.0 ]
 				}
 
 			}
@@ -62,7 +91,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 130.0, 590.0, 109.0, 20.0 ],
+					"patching_rect" : [ 120.0, 663.5, 109.0, 20.0 ],
 					"text" : "t l l"
 				}
 
@@ -75,11 +104,11 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-31",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 373.75, 650.0, 208.0, 78.0 ],
+					"patching_rect" : [ 363.75, 723.5, 226.0, 64.0 ],
 					"text" : "this object is called res-display - it can be helpful in displaying frequency and amplitude content from a list that contains frequency/amplitude pairs."
 				}
 
@@ -97,7 +126,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 490.0, 46.5, 183.0, 119.0 ],
+					"patching_rect" : [ 480.0, 230.0, 183.0, 119.0 ],
 					"text" : "sinusoids~ takes a list containing frequency amplitude pairs - it doesn't care how many pairs are in the list.  it then generates the combined sinusoidal output that you can hear as summed tones."
 				}
 
@@ -110,7 +139,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 633.75, 286.5, 93.0, 20.0 ],
+					"patching_rect" : [ 623.75, 470.0, 93.0, 20.0 ],
 					"text" : "print @popup 1"
 				}
 
@@ -127,7 +156,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 243.75, 504.0, 375.0, 51.0 ],
+					"patching_rect" : [ 233.75, 627.5, 375.0, 51.0 ],
 					"text" : "make_harmonics accepts a float as a MIDI value that it converts internally to frequency, and then generates a list of 5 partials.\nyou can offset the fundamental with the offset message."
 				}
 
@@ -141,7 +170,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 233.0, 470.0, 59.0, 18.0 ],
+					"patching_rect" : [ 223.0, 593.5, 59.0, 18.0 ],
 					"text" : "offset $1"
 				}
 
@@ -155,7 +184,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 463.75, 361.5, 32.5, 18.0 ],
+					"patching_rect" : [ 453.75, 545.0, 32.5, 18.0 ],
 					"text" : "0."
 				}
 
@@ -168,7 +197,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 360.0, 256.5, 32.0, 100.0 ]
+					"patching_rect" : [ 350.0, 440.0, 32.0, 100.0 ]
 				}
 
 			}
@@ -181,7 +210,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 198.0, 309.0, 32.5, 20.0 ],
+					"patching_rect" : [ 188.0, 492.5, 32.5, 20.0 ],
 					"text" : "*~ 0"
 				}
 
@@ -195,7 +224,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 490.0, 26.5, 68.0, 20.0 ],
+					"patching_rect" : [ 480.0, 210.0, 68.0, 20.0 ],
 					"text" : "sinusoids~"
 				}
 
@@ -207,7 +236,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 533.75, 256.5, 20.0, 20.0 ]
+					"patching_rect" : [ 523.75, 440.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -220,7 +249,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 533.75, 366.5, 32.5, 20.0 ],
+					"patching_rect" : [ 523.75, 550.0, 32.5, 20.0 ],
 					"text" : "f"
 				}
 
@@ -234,7 +263,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 586.75, 256.5, 32.0, 100.0 ],
+					"patching_rect" : [ 576.75, 440.0, 32.0, 100.0 ],
 					"setminmax" : [ 0.0, 127.0 ]
 				}
 
@@ -249,7 +278,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 130.0, 470.0, 69.5, 20.0 ]
+					"patching_rect" : [ 120.0, 593.5, 69.5, 20.0 ]
 				}
 
 			}
@@ -261,7 +290,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 360.0, 26.5, 20.0, 20.0 ]
+					"patching_rect" : [ 350.0, 210.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -272,7 +301,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 116.5, 100.0, 100.0 ],
+					"patching_rect" : [ 350.0, 300.0, 100.0, 100.0 ],
 					"range" : [ 0.0, 1.0 ]
 				}
 
@@ -286,7 +315,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 54.0, 55.0, 18.0 ],
+					"patching_rect" : [ 350.0, 237.5, 55.0, 18.0 ],
 					"text" : "$1 1000"
 				}
 
@@ -300,7 +329,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 360.0, 80.5, 50.0, 20.0 ],
+					"patching_rect" : [ 350.0, 264.0, 50.0, 20.0 ],
 					"text" : "line~ 0."
 				}
 
@@ -314,7 +343,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 130.0, 273.0, 50.0, 20.0 ],
+					"patching_rect" : [ 120.0, 456.5, 50.0, 20.0 ],
 					"text" : "change"
 				}
 
@@ -328,7 +357,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 130.0, 219.0, 32.5, 20.0 ],
+					"patching_rect" : [ 120.0, 402.5, 32.5, 20.0 ],
 					"text" : "t i i"
 				}
 
@@ -342,7 +371,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 143.5, 249.0, 36.0, 20.0 ],
+					"patching_rect" : [ 133.5, 432.5, 36.0, 20.0 ],
 					"text" : "sel 1"
 				}
 
@@ -356,7 +385,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 403.75, 361.5, 47.0, 20.0 ],
+					"patching_rect" : [ 393.75, 545.0, 47.0, 20.0 ],
 					"text" : "mtof 0."
 				}
 
@@ -370,7 +399,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 403.75, 256.5, 32.0, 100.0 ],
+					"patching_rect" : [ 393.75, 440.0, 32.0, 100.0 ],
 					"setminmax" : [ 0.0, 127.0 ]
 				}
 
@@ -385,7 +414,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 403.75, 406.5, 50.0, 20.0 ]
+					"patching_rect" : [ 393.75, 590.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -398,7 +427,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 219.0, 105.0, 20.0 ],
+					"patching_rect" : [ 188.0, 402.5, 105.0, 20.0 ],
 					"text" : "scale 0.7 0.9 0 64"
 				}
 
@@ -412,7 +441,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 198.0, 248.0, 69.0, 20.0 ],
+					"patching_rect" : [ 188.0, 431.5, 69.0, 20.0 ],
 					"text" : "clip 0.7 0.9"
 				}
 
@@ -426,7 +455,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 198.0, 279.0, 63.0, 20.0 ],
+					"patching_rect" : [ 188.0, 462.5, 63.0, 20.0 ],
 					"text" : "change 0."
 				}
 
@@ -440,7 +469,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 130.0, 177.0, 38.0, 20.0 ],
+					"patching_rect" : [ 120.0, 360.5, 38.0, 20.0 ],
 					"text" : "< 0.9"
 				}
 
@@ -454,7 +483,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 130.0, 140.0, 69.0, 20.0 ],
+					"patching_rect" : [ 120.0, 323.5, 69.0, 20.0 ],
 					"text" : "t f f"
 				}
 
@@ -468,7 +497,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "float" ],
-					"patching_rect" : [ 180.0, 177.0, 65.0, 20.0 ],
+					"patching_rect" : [ 170.0, 360.5, 65.0, 20.0 ],
 					"text" : "split 0. 0.9"
 				}
 
@@ -483,7 +512,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 130.0, 110.0, 90.0, 20.0 ]
+					"patching_rect" : [ 120.0, 293.5, 90.0, 20.0 ]
 				}
 
 			}
@@ -497,7 +526,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.0, 650.0, 240.0, 80.0 ]
+					"patching_rect" : [ 120.0, 723.5, 240.0, 80.0 ]
 				}
 
 			}
@@ -510,7 +539,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.0, 620.0, 100.0, 19.0 ],
+					"patching_rect" : [ 120.0, 693.5, 100.0, 19.0 ],
 					"text" : "prepend sinusoids"
 				}
 
@@ -524,7 +553,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 490.0, 198.5, 209.0, 18.0 ]
+					"patching_rect" : [ 480.0, 382.0, 209.0, 18.0 ]
 				}
 
 			}
@@ -537,7 +566,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.0, 504.0, 102.0, 20.0 ],
+					"patching_rect" : [ 120.0, 627.5, 102.0, 20.0 ],
 					"text" : "make_harmonics"
 				}
 
@@ -642,7 +671,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 20.0, 110.0, 94.0, 20.0 ],
+					"patching_rect" : [ 10.0, 293.5, 94.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -669,7 +698,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 86.5, 124.0, 20.0 ],
+					"patching_rect" : [ 120.0, 270.0, 124.0, 20.0 ],
 					"text" : "o.route /photoresistor"
 				}
 
@@ -681,7 +710,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 130.0, 381.5, 45.0, 45.0 ]
+					"patching_rect" : [ 120.0, 505.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -692,7 +721,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 130.0, 26.5, 20.0, 20.0 ]
+					"patching_rect" : [ 120.0, 210.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -705,7 +734,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 56.5, 88.0, 20.0 ],
+					"patching_rect" : [ 120.0, 240.0, 88.0, 20.0 ],
 					"text" : "mmjss.esplora"
 				}
 

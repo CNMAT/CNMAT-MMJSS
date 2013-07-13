@@ -266,7 +266,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 20.0, 120.0, 160.0, 369.0 ],
-									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit ",
+									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit \n",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -414,7 +414,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.0, 229.5, 59.0, 20.0 ],
+					"patching_rect" : [ 130.0, 160.0, 59.0, 20.0 ],
 					"text" : "press2int"
 				}
 
@@ -428,22 +428,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 206.5, 71.0, 20.0 ],
+					"patching_rect" : [ 130.0, 130.0, 71.0, 20.0 ],
 					"text" : "o.route /left"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 120.0, 75.0, 20.0 ],
-					"text" : "o.select /left"
 				}
 
 			}
@@ -559,19 +545,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-24", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-24", 1 ]
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -662,15 +648,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-59", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-6", 0 ]
 				}
 
 			}
@@ -814,10 +791,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
@@ -827,6 +800,10 @@
 			}
 , 			{
 				"name" : "o.expr.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{
