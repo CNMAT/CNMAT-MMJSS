@@ -472,7 +472,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 887.875, 80.0, 201.0, 91.0 ],
-					"text" : "make_harmonics accepts a float as a MIDI value that it converts internally to frequency, and then generates a list of 5 partials.\nyou can offset the fundamental with the offset message."
+					"text" : "mmjss.harmonics accepts a float as a MIDI value that it converts internally to frequency, and then generates a list of 5 partials.\nyou can offset the fundamental with the offset message."
 				}
 
 			}
@@ -882,7 +882,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 782.125, 115.5, 102.0, 20.0 ],
-					"text" : "make_harmonics"
+					"text" : "mmjss.harmonics"
 				}
 
 			}
@@ -1364,7 +1364,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "make_harmonics.maxpat",
+				"name" : "mmjss.harmonics.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",

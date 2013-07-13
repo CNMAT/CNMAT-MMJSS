@@ -380,7 +380,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 133.5, 554.0, 102.0, 20.0 ],
-					"text" : "make_harmonics"
+					"text" : "mmjss.harmonics"
 				}
 
 			}
@@ -1008,7 +1008,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "make_harmonics.maxpat",
+				"name" : "mmjss.harmonics.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
