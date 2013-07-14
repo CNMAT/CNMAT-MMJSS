@@ -296,7 +296,6 @@
 			}
 , 			{
 				"box" : 				{
-					"compatibility" : 1,
 					"id" : "obj-3",
 					"maxclass" : "swatch",
 					"numinlets" : 3,
