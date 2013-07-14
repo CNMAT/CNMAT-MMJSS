@@ -50,8 +50,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 234.0, 130.0, 149.0, 20.0 ],
-					"text" : "o.pack /port /baud 115200"
+					"patching_rect" : [ 234.0, 130.0, 159.0, 20.0 ],
+					"text" : "o.pack /port a /baud 115200"
 				}
 
 			}
