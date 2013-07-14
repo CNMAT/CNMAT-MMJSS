@@ -47,11 +47,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-10",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 234.0, 130.0, 73.0, 20.0 ],
-					"text" : "o.pack /port"
+					"patching_rect" : [ 234.0, 130.0, 149.0, 20.0 ],
+					"text" : "o.pack /port /baud 115200"
 				}
 
 			}
