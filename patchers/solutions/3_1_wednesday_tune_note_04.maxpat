@@ -438,8 +438,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 56.5, 88.0, 20.0 ],
-					"text" : "mmjss.esplora"
+					"patching_rect" : [ 130.0, 56.5, 98.0, 20.0 ],
+					"text" : "mmjss.esplora a"
 				}
 
 			}

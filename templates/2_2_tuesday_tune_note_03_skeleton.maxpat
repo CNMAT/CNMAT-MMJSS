@@ -338,7 +338,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 460.0, 373.0, 193.0, 87.0 ],
+					"patching_rect" : [ 460.0, 373.0, 197.0, 87.0 ],
 					"text" : "line~ generates a ramp from a list of values that you give it.  you can issue <destination time> pairs instead of multiple messages.  this is similar to the way you send a list to sinusoids~."
 				}
 
@@ -1049,8 +1049,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 194.0, 88.0, 20.0 ],
-					"text" : "mmjss.esplora"
+					"patching_rect" : [ 130.0, 194.0, 98.0, 20.0 ],
+					"text" : "mmjss.esplora a"
 				}
 
 			}

@@ -144,8 +144,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 750.0, 286.5, 177.0, 155.0 ],
-					"text" : "oscillator~:\n\nTakes a frequency and outputs audio.\nThis abstraction allows for various types of oscillations in a single abstraction.  simply give the abstraction a type with the @type attribute.  available types are triangle, rectangle, sine, and sawtooth.  "
+					"patching_rect" : [ 758.5, 280.0, 186.0, 155.0 ],
+					"text" : "mmjss.osc~:\n\nTakes a frequency and outputs audio.\nThis abstraction allows for various types of oscillations in a single abstraction.  simply give the abstraction a type with the @type attribute.  available types are triangle, rectangle, sine, and sawtooth.  "
 				}
 
 			}
@@ -200,8 +200,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 588.0, 376.5, 154.0, 20.0 ],
-					"text" : "oscillator~ @type sawtooth"
+					"patching_rect" : [ 578.0, 376.5, 164.0, 20.0 ],
+					"text" : "mmjss.osc~ @type sawtooth"
 				}
 
 			}
@@ -214,8 +214,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 588.0, 346.5, 128.0, 20.0 ],
-					"text" : "oscillator~ @type sine"
+					"patching_rect" : [ 578.0, 346.5, 138.0, 20.0 ],
+					"text" : "mmjss.osc~ @type sine"
 				}
 
 			}
@@ -228,8 +228,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 588.0, 316.5, 156.0, 20.0 ],
-					"text" : "oscillator~ @type rectangle"
+					"patching_rect" : [ 578.0, 316.5, 165.0, 20.0 ],
+					"text" : "mmjss.osc~ @type rectangle"
 				}
 
 			}
@@ -602,8 +602,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 140.0, 230.0, 88.0, 20.0 ],
-					"text" : "mmjss.esplora"
+					"patching_rect" : [ 140.0, 230.0, 98.0, 20.0 ],
+					"text" : "mmjss.esplora a"
 				}
 
 			}
@@ -628,8 +628,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 588.0, 286.5, 146.0, 20.0 ],
-					"text" : "oscillator~ @type triangle"
+					"patching_rect" : [ 578.0, 286.5, 155.0, 20.0 ],
+					"text" : "mmjss.osc~ @type triangle"
 				}
 
 			}
@@ -753,7 +753,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "oscillator~.maxpat",
+				"name" : "mmjss.osc~.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",

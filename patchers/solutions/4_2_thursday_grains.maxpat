@@ -195,8 +195,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 472.0, 100.0, 73.0, 20.0 ],
-									"text" : "o.io.esplora"
+									"patching_rect" : [ 472.0, 100.0, 98.0, 20.0 ],
+									"text" : "mmjss.esplora a"
 								}
 
 							}
@@ -2787,13 +2787,20 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-22" : [ "grains", "grains", 0 ],
 			"obj-7" : [ "yo", "live.drop", 0 ],
-			"obj-46" : [ "revert sample", "revert sample", 0 ],
-			"obj-22" : [ "grains", "grains", 0 ]
+			"obj-46" : [ "revert sample", "revert sample", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "o.grainplayer.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mmjss.esplora.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
