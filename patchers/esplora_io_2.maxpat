@@ -103,8 +103,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 60.0, 140.0, 98.0, 20.0 ],
-					"text" : "mmjss.esplora a"
+					"patching_rect" : [ 60.0, 140.0, 105.0, 20.0 ],
+					"text" : "mmjss.esplora #1"
 				}
 
 			}
@@ -144,7 +144,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 60.0, 30.0, 25.0, 25.0 ]
 				}
 
