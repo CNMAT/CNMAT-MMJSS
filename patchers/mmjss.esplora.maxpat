@@ -71,7 +71,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
 					"patching_rect" : [ 40.0, 130.0, 100.0, 20.0 ],
-					"text" : "o.io.esplora"
+					"text" : "o.io.esplora #1"
 				}
 
 			}
