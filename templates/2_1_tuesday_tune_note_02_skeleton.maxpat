@@ -70,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 730.0, 460.0, 127.0, 24.0 ],
-					"text" : "an adsr~ envelope"
+					"text" : "a ramp generator"
 				}
 
 			}
@@ -100,7 +100,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 10.0, 863.0, 43.0 ],
-					"text" : "Assignment 4: ADSR, multiple waveforms, and abstraction"
+					"text" : "Assignment 4: ramps, multiple waveforms, and abstraction"
 				}
 
 			}
@@ -144,7 +144,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 750.0, 286.5, 175.0, 155.0 ],
+					"patching_rect" : [ 750.0, 286.5, 177.0, 155.0 ],
 					"text" : "oscillator~:\n\nTakes a frequency and outputs audio.\nThis abstraction allows for various types of oscillations in a single abstraction.  simply give the abstraction a type with the @type attribute.  available types are triangle, rectangle, sine, and sawtooth.  "
 				}
 
@@ -375,11 +375,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-20",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 4,
-					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 588.0, 460.0, 131.0, 20.0 ],
-					"text" : "adsr~ 10 300 0.7 3000"
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "bang" ],
+					"patching_rect" : [ 680.0, 460.0, 36.0, 20.0 ],
+					"text" : "line~"
 				}
 
 			}

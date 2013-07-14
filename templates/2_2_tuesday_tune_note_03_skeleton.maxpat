@@ -338,7 +338,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 460.0, 373.0, 190.0, 87.0 ],
+					"patching_rect" : [ 460.0, 373.0, 193.0, 87.0 ],
 					"text" : "line~ generates a ramp from a list of values that you give it.  you can issue <destination time> pairs instead of multiple messages.  this is similar to the way you send a list to sinusoids~."
 				}
 
@@ -352,8 +352,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 10.0, 603.0, 43.0 ],
-					"text" : "Assignment 5: photoresistor as air-guitar"
+					"patching_rect" : [ 10.0, 10.0, 676.0, 43.0 ],
+					"text" : "Assignment 5: photoresistor as plucked string"
 				}
 
 			}
@@ -471,7 +471,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 887.875, 80.0, 201.0, 91.0 ],
+					"patching_rect" : [ 887.875, 80.0, 203.0, 91.0 ],
 					"text" : "mmjss.harmonics accepts a float as a MIDI value that it converts internally to frequency, and then generates a list of 5 partials.\nyou can offset the fundamental with the offset message."
 				}
 

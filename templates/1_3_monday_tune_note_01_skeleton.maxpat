@@ -149,7 +149,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 379.5, 360.0, 189.0, 74.0 ],
-					"text" : "ezdac~ is a way to get two channels out to your speakers or headphones.  simply wire signals to the left and right inlets (channels)"
+					"text" : "ezdac~ is a way to get two channels of audio out to your speakers or headphones.  simply wire signals to the left and right inlets (channels)"
 				}
 
 			}
