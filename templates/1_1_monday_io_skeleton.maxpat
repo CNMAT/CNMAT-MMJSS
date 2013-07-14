@@ -330,8 +330,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 40.0, 310.0, 96.0, 23.0 ],
-					"text" : "esplora_io_1"
+					"patching_rect" : [ 40.0, 310.0, 109.0, 23.0 ],
+					"text" : "esplora_io_1 a"
 				}
 
 			}

@@ -115,8 +115,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 80.936272, 509.661774, 179.0, 39.0 ],
-					"text" : "esplora_io_1"
+					"patching_rect" : [ 80.936272, 509.661774, 204.0, 39.0 ],
+					"text" : "esplora_io_1 a"
 				}
 
 			}
@@ -222,7 +222,7 @@
 					"destination" : [ "obj-19", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 250.436279, 566.0, 743.0, 566.0, 743.0, 99.0, 410.178101, 99.0 ],
+					"midpoints" : [ 275.436279, 566.0, 743.0, 566.0, 743.0, 99.0, 410.178101, 99.0 ],
 					"source" : [ "obj-8", 1 ]
 				}
 

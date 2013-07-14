@@ -62,8 +62,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 50.0, 40.0, 79.0, 20.0 ],
-					"text" : "esplora_io_2"
+					"patching_rect" : [ 50.0, 40.0, 89.0, 20.0 ],
+					"text" : "esplora_io_2 a"
 				}
 
 			}
