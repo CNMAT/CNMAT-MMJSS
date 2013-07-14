@@ -46,12 +46,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-10",
-					"maxclass" : "newobj",
+					"maxclass" : "o.message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 234.0, 130.0, 159.0, 20.0 ],
-					"text" : "o.pack /port a /baud 115200"
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 234.0, 130.0, 150.0, 20.0 ],
+					"text" : "/port \"$1\" ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
