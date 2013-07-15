@@ -36,8 +36,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 150.0, 125.0, 20.0 ],
-					"text" : "expr (($f1/999.)*2.)-1."
+					"patching_rect" : [ 50.0, 150.0, 139.0, 20.0 ],
+					"text" : "expr (($f1/65535.)*2.)-1."
 				}
 
 			}
@@ -62,8 +62,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 50.0, 110.0, 81.0, 20.0 ],
-					"text" : "random 1000"
+					"patching_rect" : [ 50.0, 110.0, 88.0, 20.0 ],
+					"text" : "random 65536"
 				}
 
 			}
@@ -106,7 +106,8 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ]
 	}
 
 }
