@@ -37,7 +37,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 610.0, 67.0, 603.0, 43.0 ],
-					"text" : "Assignment 5: migration of the sines"
+					"text" : "Assignment 6: migration of the sines"
 				}
 
 			}
