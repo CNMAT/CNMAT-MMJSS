@@ -29,12 +29,30 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.02,
+					"bubbleside" : 2,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 60.0, 315.0, 238.955872, 52.0 ],
+					"text" : "The esplora's RGB LED illuminates with a list of 3 float values into esplora_io_1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 250.0, 280.0, 20.0, 20.0 ]
+					"patching_rect" : [ 350.0, 340.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -104,7 +122,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.955872, 415.0, 145.0, 33.0 ],
+					"patching_rect" : [ 153.955872, 480.0, 145.0, 33.0 ],
 					"text" : "message can help you test out lists"
 				}
 
@@ -118,7 +136,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.499992, 422.5, 100.0, 18.0 ]
+					"patching_rect" : [ 40.499992, 487.5, 100.0, 18.0 ]
 				}
 
 			}
@@ -162,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 88.999992, 470.0, 124.0, 47.0 ],
+					"patching_rect" : [ 370.0, 480.0, 124.0, 47.0 ],
 					"text" : "f can turn any int into a float, or store a float"
 				}
 
@@ -179,20 +197,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 430.0, 180.0, 110.0, 74.0 ],
 					"text" : "pack allows you to format a list with any number of items, in this case 3 floats"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-1",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 150.911743, 310.0, 249.0, 20.0 ],
-					"text" : "inlet of esplora_io_1 accepts a list of 3 floats "
 				}
 
 			}
@@ -233,7 +237,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.911736, 360.0, 81.0, 20.0 ],
+					"patching_rect" : [ 100.911736, 417.0, 81.0, 20.0 ],
 					"text" : "mic loudness"
 				}
 
@@ -247,7 +251,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 320.323486, 360.0, 39.0, 20.0 ],
+					"patching_rect" : [ 320.323486, 417.0, 39.0, 20.0 ],
 					"text" : "slider"
 				}
 
@@ -262,7 +266,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 210.911743, 360.0, 99.411743, 23.0 ]
+					"patching_rect" : [ 210.911743, 417.0, 99.411743, 23.0 ]
 				}
 
 			}
@@ -276,7 +280,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 40.0, 360.0, 54.0, 23.0 ]
+					"patching_rect" : [ 40.0, 417.0, 54.0, 23.0 ]
 				}
 
 			}
@@ -289,7 +293,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 40.499992, 470.0, 32.5, 23.0 ],
+					"patching_rect" : [ 321.5, 480.0, 32.5, 23.0 ],
 					"text" : "f"
 				}
 
@@ -329,7 +333,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 40.0, 310.0, 109.0, 23.0 ],
+					"patching_rect" : [ 40.0, 367.0, 109.0, 23.0 ],
 					"text" : "esplora_io_1 a"
 				}
 
@@ -401,15 +405,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "esplora_io_1.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/CNMAT-MMJSS-master/patchers",
+				"patcherrelativepath" : "../../../../../../../../../../Max/Packages/CNMAT-MMJSS-master/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mmjss.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/CNMAT-MMJSS-master/patchers",
+				"patcherrelativepath" : "../../../../../../../../../../Max/Packages/CNMAT-MMJSS-master/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
