@@ -89,8 +89,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 60.0, 547.0, 47.0 ],
-					"text" : "Objectives:\n1. use the loudness from the esplora mic to change the color of the RGB LED\n2. use the horizontal slider to change the hue for swatch, which in turn can affect the color fo the LED"
+					"patching_rect" : [ 15.0, 60.0, 551.0, 47.0 ],
+					"text" : "Objectives:\n1. use the loudness from the esplora mic to change the color of the RGB LED\n2. use the horizontal slider to change the hue for swatch, which in turn can affect the color for the LED"
 				}
 
 			}
