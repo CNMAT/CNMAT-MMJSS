@@ -29,6 +29,36 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-29",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 411.0, 340.0, 107.0, 20.0 ],
+					"presentation_rect" : [ 408.0, 335.166687, 0.0, 0.0 ],
+					"text" : "turn esplora on/off"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-18",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 587.0, 330.166687, 148.0, 33.0 ],
+					"text" : "bang to reset esplora communication"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
@@ -2627,7 +2657,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 493.0, 349.833313, 20.0, 20.0 ]
+					"patching_rect" : [ 560.0, 330.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -2639,7 +2669,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 460.0, 350.833313, 20.0, 20.0 ]
+					"patching_rect" : [ 380.0, 340.0, 20.0, 20.0 ]
 				}
 
 			}
