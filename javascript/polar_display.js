@@ -7,7 +7,7 @@ mgraphics.init();
 mgraphics.autofill = 0;
 mgraphics.relative_coords = 1;
 
-var input_loc = [0, 0];
+var input_loc = [0., 0.];
 
 //dot
 var dot_size = 0.1;
@@ -24,8 +24,8 @@ var width, height, aspect = new Number();
 var distance = new Number();
 
 function loadbang(){
-    anything()
-    mgraphics.redraw();
+    //mgraphics.redraw();
+    draw();
 }
 
 function anything(){
@@ -48,6 +48,10 @@ function output(){
     outlet(0, "coords", input_loc);
     outlet(0, "bang");
     calc_points();
+    mgraphics.redraw();
+}
+
+function draw(){
     mgraphics.redraw();
 }
 

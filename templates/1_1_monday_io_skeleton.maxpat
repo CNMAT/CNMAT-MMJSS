@@ -29,6 +29,44 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 250.0, 280.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 80.0, 277.549011, 124.0, 24.0 ],
+					"text" : "turn on esplora i/o"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 40.0, 277.549011, 22.936272, 22.936272 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 33.0,
 					"frgb" : 0.0,
@@ -66,7 +104,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 153.955872, 405.0, 145.0, 33.0 ],
+					"patching_rect" : [ 153.955872, 415.0, 145.0, 33.0 ],
 					"text" : "message can help you test out lists"
 				}
 
@@ -80,7 +118,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.499992, 412.5, 100.0, 18.0 ]
+					"patching_rect" : [ 40.499992, 422.5, 100.0, 18.0 ]
 				}
 
 			}
@@ -109,7 +147,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.0, 320.0, 159.0, 60.0 ],
+					"patching_rect" : [ 450.0, 330.0, 159.0, 60.0 ],
 					"text" : "print prints anything to the max window, and the @popup attr allows you to see the result in your patch"
 				}
 
@@ -124,7 +162,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 88.999992, 460.0, 124.0, 47.0 ],
+					"patching_rect" : [ 88.999992, 470.0, 124.0, 47.0 ],
 					"text" : "f can turn any int into a float, or store a float"
 				}
 
@@ -153,7 +191,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.911743, 300.0, 249.0, 20.0 ],
+					"patching_rect" : [ 150.911743, 310.0, 249.0, 20.0 ],
 					"text" : "inlet of esplora_io_1 accepts a list of 3 floats "
 				}
 
@@ -195,7 +233,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 100.911736, 350.0, 81.0, 20.0 ],
+					"patching_rect" : [ 100.911736, 360.0, 81.0, 20.0 ],
 					"text" : "mic loudness"
 				}
 
@@ -209,7 +247,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 320.323486, 350.0, 39.0, 20.0 ],
+					"patching_rect" : [ 320.323486, 360.0, 39.0, 20.0 ],
 					"text" : "slider"
 				}
 
@@ -224,7 +262,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 210.911743, 350.0, 99.411743, 23.0 ]
+					"patching_rect" : [ 210.911743, 360.0, 99.411743, 23.0 ]
 				}
 
 			}
@@ -238,7 +276,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 40.0, 350.0, 54.0, 23.0 ]
+					"patching_rect" : [ 40.0, 360.0, 54.0, 23.0 ]
 				}
 
 			}
@@ -251,14 +289,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 40.499992, 460.0, 32.5, 23.0 ],
+					"patching_rect" : [ 40.499992, 470.0, 32.5, 23.0 ],
 					"text" : "f"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"compatibility" : 1,
 					"id" : "obj-3",
 					"maxclass" : "swatch",
 					"numinlets" : 3,
@@ -292,8 +329,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 40.0, 300.0, 96.0, 23.0 ],
-					"text" : "esplora_io_1"
+					"patching_rect" : [ 40.0, 310.0, 109.0, 23.0 ],
+					"text" : "esplora_io_1 a"
 				}
 
 			}
@@ -305,7 +342,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 450.0, 297.0, 112.0, 23.0 ],
+					"patching_rect" : [ 450.0, 307.0, 112.0, 23.0 ],
 					"text" : "print @popup 1"
 				}
 
@@ -327,6 +364,15 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -343,17 +389,26 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "esplora_io_1.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"name" : "mmjss.esplora.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

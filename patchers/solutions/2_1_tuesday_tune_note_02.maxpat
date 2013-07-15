@@ -29,6 +29,18 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 180.0, 26.5, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-62",
@@ -134,8 +146,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1056.5, 476.5, 146.0, 20.0 ],
-					"text" : "oscillator~ @type triangle"
+					"patching_rect" : [ 1056.5, 476.5, 155.0, 20.0 ],
+					"text" : "mmjss.osc~ @type triangle"
 				}
 
 			}
@@ -246,8 +258,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 760.5, 476.5, 156.0, 20.0 ],
-					"text" : "oscillator~ @type rectangle"
+					"patching_rect" : [ 760.5, 476.5, 165.0, 20.0 ],
+					"text" : "mmjss.osc~ @type rectangle"
 				}
 
 			}
@@ -358,8 +370,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 438.5, 476.5, 128.0, 20.0 ],
-					"text" : "oscillator~ @type sine"
+					"patching_rect" : [ 438.5, 476.5, 138.0, 20.0 ],
+					"text" : "mmjss.osc~ @type sine"
 				}
 
 			}
@@ -777,8 +789,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 56.5, 88.0, 20.0 ],
-					"text" : "mmjss.esplora"
+					"patching_rect" : [ 130.0, 56.5, 98.0, 20.0 ],
+					"text" : "mmjss.esplora a"
 				}
 
 			}
@@ -803,8 +815,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 130.0, 476.5, 146.0, 20.0 ],
-					"text" : "oscillator~ @type triangle"
+					"patching_rect" : [ 130.0, 476.5, 155.0, 20.0 ],
+					"text" : "mmjss.osc~ @type triangle"
 				}
 
 			}
@@ -1358,9 +1370,18 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "oscillator~.maxpat",
+				"name" : "mmjss.osc~.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",

@@ -30,6 +30,32 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 260.0, 470.0, 150.0, 20.0 ],
+					"text" : "turn on esplora i/o"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 220.0, 460.0, 31.936272, 31.936272 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
 					"fontsize" : 29.46044,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
@@ -89,8 +115,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 80.936272, 509.661774, 179.0, 39.0 ],
-					"text" : "esplora_io_1"
+					"patching_rect" : [ 80.936272, 509.661774, 204.0, 39.0 ],
+					"text" : "esplora_io_1 a"
 				}
 
 			}
@@ -174,6 +200,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -187,7 +222,7 @@
 					"destination" : [ "obj-19", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 250.436279, 566.0, 743.0, 566.0, 743.0, 99.0, 410.178101, 99.0 ],
+					"midpoints" : [ 275.436279, 566.0, 743.0, 566.0, 743.0, 99.0, 410.178101, 99.0 ],
 					"source" : [ "obj-8", 1 ]
 				}
 
@@ -195,14 +230,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "esplora_io_1.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS-2013/patchers",
+				"name" : "mmjss.esplora.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1

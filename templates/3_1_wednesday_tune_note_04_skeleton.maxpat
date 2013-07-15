@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 17.0, 55.0, 864.0, 783.0 ],
+		"rect" : [ 0.0, 44.0, 1680.0, 956.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,90 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 33.0,
+					"frgb" : 0.0,
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 610.0, 67.0, 603.0, 43.0 ],
+					"text" : "Assignment 5: migration of the sines"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-6",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 610.0, 110.0, 471.0, 61.0 ],
+					"text" : "Objectives:\n1. slowly migrate from one cloud of frequency content to another\n2. use migrator in combination with sinusoids~ to manage birhts and deaths of partials\n3. "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 270.0, 280.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-25",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 530.0, 300.0, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-26",
+					"maxclass" : "flonum",
+					"maximum" : 1.0,
+					"minimum" : 0.0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 310.0, 160.0, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-8",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 100.0, 180.0, 70.0, 18.0 ],
+					"text" : "released"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-15",
 					"maxclass" : "toggle",
@@ -54,26 +138,12 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 254.0, 220.0, 50.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 310.0, 170.0, 42.0, 20.0 ],
+					"patching_rect" : [ 310.0, 190.0, 42.0, 20.0 ],
 					"text" : "* 127."
 				}
 
@@ -87,7 +157,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 130.0, 350.0, 32.5, 20.0 ],
+					"patching_rect" : [ 296.5, 350.0, 32.5, 20.0 ],
 					"text" : "f"
 				}
 
@@ -101,7 +171,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 170.0, 350.0, 41.0, 18.0 ],
+					"patching_rect" : [ 460.0, 320.0, 41.0, 18.0 ],
 					"text" : "zeros"
 				}
 
@@ -124,13 +194,13 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Arial",
-					"fontsize" : 9.0,
+					"fontsize" : 11.0,
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 470.0, 515.0, 88.0, 17.0 ],
+					"patching_rect" : [ 470.0, 515.0, 100.0, 19.0 ],
 					"text" : "prepend sinusoids"
 				}
 
@@ -144,7 +214,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 460.0, 72.0, 20.0 ],
+					"patching_rect" : [ 560.0, 370.0, 72.0, 20.0 ],
 					"text" : "loadmess 1"
 				}
 
@@ -158,7 +228,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "list", "float", "int", "bang" ],
-					"patching_rect" : [ 170.0, 489.0, 229.0, 20.0 ],
+					"patching_rect" : [ 530.0, 400.0, 229.0, 20.0 ],
 					"text" : "migrator @nOsc 50 @fade 5 @var 0.01"
 				}
 
@@ -173,7 +243,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 230.0, 370.0, 50.0, 20.0 ]
+					"patching_rect" : [ 650.0, 270.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -186,7 +256,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 410.0, 98.0, 18.0 ],
+					"patching_rect" : [ 650.0, 300.0, 56.0, 18.0 ],
 					"text" : "offset $1"
 				}
 
@@ -200,7 +270,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 170.0, 444.0, 102.0, 20.0 ],
+					"patching_rect" : [ 530.0, 340.0, 102.0, 20.0 ],
 					"text" : "mmjss.harmonics"
 				}
 
@@ -260,13 +330,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-7",
-									"linecount" : 27,
+									"linecount" : 28,
 									"maxclass" : "o.message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 20.0, 120.0, 160.0, 369.0 ],
-									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit ",
+									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/but \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit ",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -341,12 +411,27 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-83",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 414.5, 67.0, 150.0, 34.0 ],
+					"text" : "Assignment 6:\nmigration of sinusoids"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-68",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 130.0, 270.0, 99.0, 20.0 ],
+					"patching_rect" : [ 460.0, 250.0, 46.0, 20.0 ],
 					"text" : "sel 1 0"
 				}
 
@@ -399,7 +484,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.0, 160.0, 59.0, 20.0 ],
+					"patching_rect" : [ 460.0, 220.0, 59.0, 20.0 ],
 					"text" : "press2int"
 				}
 
@@ -413,7 +498,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 130.0, 71.0, 20.0 ],
+					"patching_rect" : [ 130.0, 140.0, 71.0, 20.0 ],
 					"text" : "o.route /left"
 				}
 
@@ -503,19 +588,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
+					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
@@ -524,7 +600,7 @@
 					"destination" : [ "obj-55", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-23", 0 ]
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -533,16 +609,16 @@
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-24", 1 ]
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-23", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-24", 0 ]
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -593,24 +669,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-53", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-55", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-65", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -638,33 +696,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-65", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-68", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-68", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -674,16 +705,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-8", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
@@ -694,56 +716,56 @@
 		"dependency_cache" : [ 			{
 				"name" : "mmjss.esplora.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../../CNMAT-odot/abstractions",
+				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../../CNMAT-odot/abstractions",
+				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "press2int.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.broadcast.api.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mmjss.harmonics.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "harmonics.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJ-Depot/modules/data_generation",
-				"patcherrelativepath" : "../../../CNMAT-MMJ-Depot/modules/data_generation",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/modules/data_generation",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "list-norm-expdecay.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJ-Depot/modules/lists",
-				"patcherrelativepath" : "../../../CNMAT-MMJ-Depot/modules/lists",
+				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/modules/lists",
 				"type" : "JSON",
 				"implicit" : 1
 			}

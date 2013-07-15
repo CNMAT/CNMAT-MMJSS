@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 866.0 ],
+		"rect" : [ 11.0, 47.0, 1280.0, 866.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,50 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 523.0, 112.0, 235.0, 20.0 ],
+					"presentation_rect" : [ 523.0, 116.0, 0.0, 0.0 ],
+					"text" : "use esplora/scaling for control of drone"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 523.0, 84.0, 235.0, 20.0 ],
+					"text" : "use coll for storage/recall of drone params"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 523.0, 64.0, 175.0, 20.0 ],
+					"presentation_rect" : [ 569.0, 65.0, 0.0, 0.0 ],
+					"text" : "turn brightness into abstraction"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"contdata" : 1,
 					"ghostbar" : 38,
@@ -294,8 +338,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.0, 802.5, 200.0, 21.0 ],
-					"text" : "/drone/*/migrate 1 \n",
+					"patching_rect" : [ 496.0, 802.5, 200.0, 20.0 ],
+					"text" : "/drone/*/migrate 1 ",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -548,12 +592,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-41",
-					"linecount" : 7,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 825.0, 64.0, 443.0, 101.0 ],
-					"text" : "photoresistor triggers a new set of partials\ncertain placement of trigger beneath a thresh triggers partials + captures gesture\n\njoystick is pitch bend + -\n\njoystick up/down is gesture input\njoystick button is record"
+					"patching_rect" : [ 825.0, 64.0, 443.0, 61.0 ],
+					"text" : "joystick is pitch bend + -\nslider - brightness\nbuttons mig on/off, calc dist\npreset waffle for multislider?"
 				}
 
 			}
@@ -909,29 +953,29 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "drone3.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-Internal/max/patches/MMJSS_archive/MMJSS_2013/esplora_examples",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "drone.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-Internal/max/patches/MMJSS_archive/MMJSS_2013/esplora_examples",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "transratio.maxpat",
 				"bootpath" : "/Applications/Max 6.1/examples/max-tricks/notes-and-pitch/pitch-to-freq-ratio",
-				"patcherrelativepath" : "../../../../../../../../../../../../../../../../../Applications/Max 6.1/examples/max-tricks/notes-and-pitch/pitch-to-freq-ratio",
+				"patcherrelativepath" : "../../../../../../../../../../../../../../Applications/Max 6.1/examples/max-tricks/notes-and-pitch/pitch-to-freq-ratio",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "thru.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/1_max_visible/to_document/maxlib_modules/abstractions_reg/data_streams",
-				"patcherrelativepath" : "../../../../../../../../../../../1_max_visible/to_document/maxlib_modules/abstractions_reg/data_streams",
+				"bootpath" : "/Applications/Max 6.1/patches/m4l-patches/Pluggo for Live resources/patches",
+				"patcherrelativepath" : "../../../../../../../../../../../../../../Applications/Max 6.1/patches/m4l-patches/Pluggo for Live resources/patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}

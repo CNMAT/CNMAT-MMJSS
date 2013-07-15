@@ -190,8 +190,8 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 35.0, 80.0, 174.0, 20.0 ],
-					"text" : "route float offset off scale_amp"
+					"patching_rect" : [ 35.0, 80.0, 190.0, 20.0 ],
+					"text" : "route float offset zeros scale_amp"
 				}
 
 			}
@@ -255,7 +255,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 35.0, 10.0, 25.0, 25.0 ]
 				}
 

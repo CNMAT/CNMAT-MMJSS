@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 4.0, 50.0, 610.0, 575.0 ],
+		"rect" : [ 7.0, 51.0, 962.0, 704.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,6 +29,170 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 117.5, 460.0, 409.0, 24.0 ],
+					"text" : "use [*~] to multiply the output of an oscillator by some sort of adsr ramp."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.2,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-33",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 780.0, 540.0, 143.0, 64.0 ],
+					"text" : "good ol' mtof.  input a float MIDI value for finer granularity of frequency output."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-31",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 730.0, 460.0, 127.0, 24.0 ],
+					"text" : "a ramp generator"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-30",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 520.0, 521.5, 161.0, 91.0 ],
+					"text" : "spectroscope~ draws a representation of the frequency spectrum that is sent into it via MSP cords.  connect audio to this to see your sounds."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 33.0,
+					"frgb" : 0.0,
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 10.0, 863.0, 43.0 ],
+					"text" : "Assignment 4: ramps, multiple waveforms, and abstraction"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-28",
+					"linecount" : 8,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 53.0, 724.0, 114.0 ],
+					"text" : "Objectives:\n1. use esplora buttons to trigger a float value (frequency) for various instances of oscillator~\n2. mimic the functionality of the last assignment, but add the adsr~ object into the mix by allowing adsr~ to scale the amplitude of your oscillator~ instances\n3. use the esplora joystick values (hint: use scale) to modify various parameters of the adsr~ object\n\nextra credit:  make an abstraction that has an oscillator, an adsr, and the controls necessary to be duplicated.  add an argument to change the type of oscillator from the outside."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-26",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 703.0, 196.5, 234.0, 47.0 ],
+					"text" : "Scale a range from -1 to 1 to an output range of 50 to 3000.  Use this for milliseconds of ADSR's release time."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-25",
+					"linecount" : 11,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 758.5, 280.0, 186.0, 155.0 ],
+					"text" : "mmjss.osc~:\n\nTakes a frequency and outputs audio.\nThis abstraction allows for various types of oscillations in a single abstraction.  simply give the abstraction a type with the @type attribute.  available types are triangle, rectangle, sine, and sawtooth.  "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 77.5, 390.0, 201.0, 24.0 ],
+					"text" : "output constant bangs if pressed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-9",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 225.5, 350.0, 145.0, 24.0 ],
+					"text" : "only output if changed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 180.0, 196.5, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-19",
@@ -36,8 +200,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 201.0, 340.0, 154.0, 20.0 ],
-					"text" : "oscillator~ @type sawtooth"
+					"patching_rect" : [ 578.0, 376.5, 164.0, 20.0 ],
+					"text" : "mmjss.osc~ @type sawtooth"
 				}
 
 			}
@@ -50,8 +214,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 201.0, 310.0, 128.0, 20.0 ],
-					"text" : "oscillator~ @type sine"
+					"patching_rect" : [ 578.0, 346.5, 138.0, 20.0 ],
+					"text" : "mmjss.osc~ @type sine"
 				}
 
 			}
@@ -64,8 +228,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 201.0, 280.0, 156.0, 20.0 ],
-					"text" : "oscillator~ @type rectangle"
+					"patching_rect" : [ 578.0, 316.5, 165.0, 20.0 ],
+					"text" : "mmjss.osc~ @type rectangle"
 				}
 
 			}
@@ -78,7 +242,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 121.0, 380.0, 40.0, 90.0 ],
+					"patching_rect" : [ 131.0, 520.0, 40.0, 90.0 ],
 					"setminmax" : [ 0.0, 127.0 ]
 				}
 
@@ -92,7 +256,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 170.0, 180.0, 50.0, 20.0 ],
+					"patching_rect" : [ 180.0, 350.0, 50.0, 20.0 ],
 					"text" : "change"
 				}
 
@@ -105,7 +269,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 130.0, 180.0, 20.0, 20.0 ]
+					"patching_rect" : [ 140.0, 350.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -119,7 +283,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 430.0, 176.0, 70.0, 20.0 ]
+					"patching_rect" : [ 440.0, 346.0, 70.0, 20.0 ]
 				}
 
 			}
@@ -132,7 +296,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 280.0, 123.0, 20.0 ],
+					"patching_rect" : [ 570.0, 196.5, 123.0, 20.0 ],
 					"text" : "scale -1. 1. 50 3000"
 				}
 
@@ -146,7 +310,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 78.0, 180.0, 36.0, 20.0 ],
+					"patching_rect" : [ 41.5, 390.0, 36.0, 20.0 ],
 					"text" : "sel 1"
 				}
 
@@ -158,7 +322,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 201.0, 380.0, 300.0, 90.0 ]
+					"patching_rect" : [ 211.0, 520.0, 300.0, 90.0 ]
 				}
 
 			}
@@ -171,7 +335,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 430.0, 150.0, 107.0, 20.0 ],
+					"patching_rect" : [ 440.0, 320.0, 107.0, 20.0 ],
 					"text" : "o.route /horizontal"
 				}
 
@@ -186,7 +350,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 201.0, 150.0, 174.0, 24.0 ],
+					"patching_rect" : [ 211.0, 320.0, 174.0, 24.0 ],
 					"text" : "numbers streaming through"
 				}
 
@@ -200,7 +364,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 380.0, 306.0, 32.0, 20.0 ],
+					"patching_rect" : [ 131.0, 630.0, 32.0, 20.0 ],
 					"text" : "f"
 				}
 
@@ -211,11 +375,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-20",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 4,
-					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 201.0, 490.0, 131.0, 20.0 ],
-					"text" : "adsr~ 10 300 0.7 3000"
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "bang" ],
+					"patching_rect" : [ 680.0, 460.0, 36.0, 20.0 ],
+					"text" : "line~"
 				}
 
 			}
@@ -228,7 +392,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 440.0, 332.0, 36.0, 20.0 ],
+					"patching_rect" : [ 71.0, 460.0, 36.0, 20.0 ],
 					"text" : "*~ 0."
 				}
 
@@ -333,7 +497,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 20.0, 110.0, 94.0, 20.0 ],
+					"patching_rect" : [ 30.0, 280.0, 94.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -360,7 +524,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 86.5, 147.0, 20.0 ],
+					"patching_rect" : [ 140.0, 256.5, 147.0, 20.0 ],
 					"text" : "o.route /diamond /joystick"
 				}
 
@@ -374,7 +538,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 332.0, 47.0, 20.0 ],
+					"patching_rect" : [ 730.0, 550.0, 47.0, 20.0 ],
 					"text" : "mtof 0."
 				}
 
@@ -386,7 +550,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 61.0, 490.0, 39.0, 39.0 ]
+					"patching_rect" : [ 71.0, 630.0, 39.0, 39.0 ]
 				}
 
 			}
@@ -399,7 +563,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 130.0, 150.0, 59.0, 20.0 ],
+					"patching_rect" : [ 140.0, 320.0, 59.0, 20.0 ],
 					"text" : "press2int"
 				}
 
@@ -413,7 +577,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 110.0, 371.0, 20.0 ],
+					"patching_rect" : [ 140.0, 280.0, 371.0, 20.0 ],
 					"text" : "o.route /left /forward /right /backward"
 				}
 
@@ -425,7 +589,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 130.0, 26.5, 20.0, 20.0 ]
+					"patching_rect" : [ 140.0, 196.5, 20.0, 20.0 ]
 				}
 
 			}
@@ -438,8 +602,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 130.0, 60.0, 88.0, 20.0 ],
-					"text" : "mmjss.esplora"
+					"patching_rect" : [ 140.0, 230.0, 98.0, 20.0 ],
+					"text" : "mmjss.esplora a"
 				}
 
 			}
@@ -451,7 +615,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 61.0, 380.0, 39.0, 90.0 ]
+					"patching_rect" : [ 71.0, 520.0, 39.0, 90.0 ]
 				}
 
 			}
@@ -464,8 +628,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 201.0, 250.0, 146.0, 20.0 ],
-					"text" : "oscillator~ @type triangle"
+					"patching_rect" : [ 578.0, 286.5, 155.0, 20.0 ],
+					"text" : "mmjss.osc~ @type triangle"
 				}
 
 			}
@@ -494,6 +658,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -535,6 +717,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -562,7 +753,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "oscillator~.maxpat",
+				"name" : "mmjss.osc~.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
