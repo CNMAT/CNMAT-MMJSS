@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 23.0, 59.0, 708.0, 715.0 ],
+		"rect" : [ 23.0, 59.0, 957.0, 716.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,84 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 660.0, 130.0, 150.0, 20.0 ],
+					"text" : "groggle file"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-20",
+					"linecount" : 7,
+					"maxclass" : "o.message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 750.0, 160.0, 150.0, 101.0 ],
+					"presentation_rect" : [ 706.0, 155.0, 0.0, 0.0 ],
+					"text" : "/sample \"grainstuff\" \n/size 0.694574 \n/size_range_ms 164.894 \n/loc 0.111702 \n/loc_range_ms 276.596 \n/delaytiming_range_scale 0.101064 ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 590.0, 490.0, 150.0, 20.0 ],
+					"text" : "dad12"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"linecount" : 7,
+					"maxclass" : "o.message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 550.0, 506.75, 150.0, 101.0 ],
+					"presentation_rect" : [ 553.0, 510.0, 0.0, 0.0 ],
+					"text" : "/sample \"grainstuff\" \n/size 0.610319 \n/size_range_ms 164.894 \n/loc 0.12766 \n/loc_range_ms 276.596 \n/delaytiming_range_scale 0.101064 ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"linecount" : 7,
+					"maxclass" : "o.message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 571.0, 160.0, 150.0, 101.0 ],
+					"text" : "/sample \"grainstuff\" \n/size 0.47867 \n/size_range_ms 79.7872 \n/loc 0. \n/loc_range_ms 202.128 \n/delaytiming_range_scale 0.037234 ",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "button",
@@ -163,9 +241,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 550.0, 310.0, 74.0, 18.0 ],
-					"presentation_rect" : [ 626.0, 107.0, 0.0, 0.0 ],
-					"text" : "0.8, 0. 3000"
+					"patching_rect" : [ 550.0, 310.0, 88.0, 18.0 ],
+					"text" : "0.388, 0. 3000"
 				}
 
 			}
@@ -178,8 +255,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 590.0, 340.0, 75.0, 18.0 ],
-					"text" : "0., 0.8 3000"
+					"patching_rect" : [ 590.0, 340.0, 92.0, 18.0 ],
+					"text" : "0., 0.388 3000"
 				}
 
 			}
@@ -207,7 +284,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 590.0, 420.0, 56.0, 20.0 ],
-					"presentation_rect" : [ 507.0, 323.75, 0.0, 0.0 ],
 					"text" : "/loc \"$1\" ",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -1208,7 +1284,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 290.0, 470.0, 150.0, 101.0 ],
-					"text" : "/sample \"grainstuff\" \n/size 0.626117 \n/size_range_ms 69.1489 \n/loc 0.0106383 \n/loc_range_ms 287.234 \n/delaytiming_range_scale 0.12766 \n",
+					"text" : "/sample \"grainstuff\" \n/size 0.47867 \n/size_range_ms 79.7872 \n/loc 0. \n/loc_range_ms 202.128 \n/delaytiming_range_scale 0.037234 \n",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1259,11 +1335,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-5",
+					"linecount" : 2,
 					"maxclass" : "o.message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 350.0, 276.75, 154.0, 20.0 ],
+					"patching_rect" : [ 350.0, 276.75, 154.0, 34.0 ],
+					"text" : "/buf_length 5700.61 \n/buf_name \"groggle.wav\" \n",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1892,8 +1970,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 30.0, 441.75, 164.0, 19.0 ],
-					"text" : "poly~ o.grainplayer @voices 50"
+					"patching_rect" : [ 30.0, 441.75, 171.0, 19.0 ],
+					"text" : "poly~ o.grainplayer @voices 100"
 				}
 
 			}
@@ -1976,6 +2054,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -2089,6 +2176,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-75", 0 ],
 					"disabled" : 0,
 					"hidden" : 1,
@@ -2144,22 +2240,22 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-46" : [ "revert sample", "revert sample", 0 ],
 			"obj-7" : [ "yo", "live.drop", 0 ],
+			"obj-46" : [ "revert sample", "revert sample", 0 ],
 			"obj-22" : [ "grains", "grains", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "o.grainplayer.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mmjss.grain_note_ui.maxpat",
 				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
