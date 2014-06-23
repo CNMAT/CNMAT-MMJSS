@@ -1,7 +1,14 @@
 CNMAT-MMJSS-2013
 ================
 
-This set of files and folders operates as a Max package.  Place the root folder in the following location, depending on your OS:
+This set of files and folders operates as a Max package.  
+
+Installation:
+
+Download the zipped archive of the current materials:
+https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip
+
+Unzip, and place the root folder (CNMAT-MMJSS-master) in the following location, depending on your OS:
 
 Mac:
 ~/Documents/Max/Packages/
