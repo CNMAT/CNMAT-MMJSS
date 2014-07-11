@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 19.0, 56.0, 817.0, 548.0 ],
+		"rect" : [ 19.0, 56.0, 829.0, 382.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,7 +36,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 40.0, 100.0, 105.0, 20.0 ],
+					"patching_rect" : [ 30.0, 80.0, 105.0, 20.0 ],
 					"text" : "o.select /diamond"
 				}
 
@@ -48,7 +48,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 40.0, 480.0, 25.0, 25.0 ]
+					"patching_rect" : [ 30.0, 300.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -61,7 +61,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 40.0, 130.0, 60.0, 20.0 ],
+					"patching_rect" : [ 30.0, 110.0, 60.0, 20.0 ],
 					"text" : "o.change"
 				}
 
@@ -75,7 +75,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 590.0, 126.5, 60.0, 20.0 ],
+					"patching_rect" : [ 510.0, 80.0, 60.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -90,8 +90,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 40.0, 240.0, 604.0, 33.0 ],
-					"text" : "o.expr /diamond/state = (/diamond/forward * /id/forward)+(/diamond/backward * /id/backward)+(/diamond/right * /id/right)+(/diamond/left * /id/left)"
+					"patching_rect" : [ 30.0, 220.0, 780.0, 33.0 ],
+					"text" : "o.expr /diamond/state = (/diamond/forward/button/down * /id/forward)+(/diamond/backward/button/down * /id/backward)+(/diamond/right/button/down * /id/right)+(/diamond/left/button/down * /id/left)"
 				}
 
 			}
@@ -105,8 +105,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 590.0, 156.5, 150.0, 61.0 ],
-					"text" : "/id/forward 1 \n/id/backward 2 \n/id/right 4 \n/id/left 8 ",
+					"patching_rect" : [ 510.0, 110.0, 150.0, 60.0 ],
+					"text" : "/id/forward 1\n/id/backward 2\n/id/right 4\n/id/left 8",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -120,22 +120,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 40.0, 213.5, 50.0, 20.0 ],
+					"patching_rect" : [ 30.0, 193.5, 50.0, 20.0 ],
 					"text" : "o.union"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 40.0, 170.0, 491.0, 20.0 ],
-					"text" : "o.expr map(lambda(address){assign(address\\,value(address)==pressed)\\;}\\, getaddresses())"
 				}
 
 			}
@@ -146,8 +132,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 70.0, 25.0, 25.0 ]
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 30.0, 20.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -190,15 +176,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-11", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -217,33 +194,12 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-70", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.expr.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}

@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
+		"rect" : [ 39.0, 73.0, 756.0, 344.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,12 +29,15 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "button",
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-19",
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 90.0, 200.0, 20.0, 20.0 ]
+					"numoutlets" : 0,
+					"patching_rect" : [ 50.0, 300.0, 297.0, 20.0 ],
+					"text" : "we can now use /diamond/state as a single parameter"
 				}
 
 			}
@@ -42,13 +45,142 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-4",
-					"maxclass" : "message",
-					"numinlets" : 2,
+					"id" : "obj-18",
+					"maxclass" : "o.display",
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 160.0, 220.0, 18.0 ],
-					"text" : "nothing"
+					"patching_rect" : [ 168.5, 263.0, 217.0, 34.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 168.5, 230.0, 134.0, 20.0 ],
+					"text" : "o.select /diamond/state"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"ghostbar" : 77,
+					"id" : "obj-10",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"orientation" : 0,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 30.0, 268.0, 130.0, 29.0 ],
+					"setminmax" : [ 0.0, 15.0 ],
+					"settype" : 0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 129.5, 10.0, 73.0, 20.0 ],
+					"text" : "choose port"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "bpatcher",
+					"name" : "o.io.serial.display.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 3.0, 1.0 ],
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 84.0, 30.0, 164.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-15",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 640.0, 113.0, 82.0, 47.0 ],
+					"text" : "here are the diamond parameters"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 520.0, 140.0, 105.0, 20.0 ],
+					"text" : "o.select /diamond"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"maxclass" : "o.display",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 520.0, 170.0, 217.0, 34.0 ],
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-3",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 140.0, 140.0, 190.0, 60.0 ],
+					"text" : "inside of this abstraction, we map the input booleans to ints, then combine them into a parameter called \"/diamond/state\""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 110.0, 70.0, 158.0, 20.0 ],
+					"text" : "here is our controller's input"
 				}
 
 			}
@@ -61,19 +193,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 111.0, 119.0, 130.0, 20.0 ],
+					"patching_rect" : [ 30.0, 230.0, 130.0, 20.0 ],
 					"text" : "o.route /diamond/state"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-31",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 15.0, 15.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -85,8 +206,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 111.0, 47.0, 73.0, 20.0 ],
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 30.0, 70.0, 73.0, 20.0 ],
 					"text" : "o.io.esplora"
 				}
 
@@ -100,7 +221,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 111.0, 87.0, 111.0, 20.0 ],
+					"patching_rect" : [ 30.0, 140.0, 101.0, 20.0 ],
 					"text" : "interpret_buttons"
 				}
 
@@ -108,10 +229,55 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
@@ -126,56 +292,83 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
+					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-31", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "interpret_buttons.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-Internal/max/patches/MMJSS_archive/MMJSS_2013/esplora_examples",
-				"patcherrelativepath" : ".",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/testing/abstractions",
-				"patcherrelativepath" : "../../../../../../CNMAT-odot/testing/abstractions",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers/io",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../../../../../CNMAT-odot/abstractions",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers/io",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.expr.mxo",
-				"type" : "iLaX"
+				"name" : "o.arguments.maxpat",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.righttoleft.maxpat",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers/core",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.in.maxpat",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers/core",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.port.maxpat",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers/core",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.aspect.joinpoint.maxpat",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers/aspect",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers/aspect",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.out.maxpat",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers/core",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.serial.display.maxpat",
+				"bootpath" : "/Users/jml/Documents/Max/Packages/odot/patchers/io",
+				"patcherrelativepath" : "../../../../../../../../../Max/Packages/odot/patchers/io",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "o.union.mxo",
@@ -183,6 +376,10 @@
 			}
 , 			{
 				"name" : "o.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -194,19 +391,23 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.pack.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "slipOSC.mxo",
+				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.downcast.mxo",
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.context.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -214,11 +415,43 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "OpenSoundControl.mxo",
+				"name" : "o.pak.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.collect.mxo",
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.validate.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.slip.encode.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.slip.decode.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.downcast.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
  ]
