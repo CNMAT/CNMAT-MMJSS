@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
@@ -37,7 +37,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 150.0, 30.0, 101.0, 20.0 ],
-					"presentation_rect" : [ 126.0, 33.0, 0.0, 0.0 ],
 					"text" : "interpret_buttons"
 				}
 
@@ -102,9 +101,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 50.0, 140.0, 98.0, 20.0 ],
-					"text" : "mmjss.esplora a"
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 50.0, 140.0, 73.0, 20.0 ],
+					"text" : "o.io.esplora"
 				}
 
 			}
@@ -162,35 +161,66 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "interpret_buttons.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mmjss.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/io/esplora",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/io/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/io",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/io",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.expr.mxo",
-				"type" : "iLaX"
+				"name" : "o.arguments.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.righttoleft.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/core",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.in.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/core",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.port.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/core",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.aspect.joinpoint.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/aspect",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/aspect",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.out.maxpat",
+				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/core",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "o.union.mxo",
@@ -198,6 +228,10 @@
 			}
 , 			{
 				"name" : "o.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -209,15 +243,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "slipOSC.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.downcast.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -225,15 +251,55 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.context.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.var.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "OpenSoundControl.mxo",
+				"name" : "o.pak.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.collect.mxo",
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.validate.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.slip.encode.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.slip.decode.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.downcast.mxo",
 				"type" : "iLaX"
 			}
  ]
