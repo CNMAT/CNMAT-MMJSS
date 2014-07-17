@@ -15,3 +15,13 @@ Mac:
 
 Win:
 C:\Users\<your username>\Documents\Max\Packages
+
+================
+
+Then:
+
+Go to Max -> Options -> File Preferences
+Add a search path preference for the following folders (+ button):
+
+~/Documents/Max/Packages/CNMAT-MMJSS/deprecated
+~/Documents/Max/Packages/CNMAT-MMJSS/unstable
