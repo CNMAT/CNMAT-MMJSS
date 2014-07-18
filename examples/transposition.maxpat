@@ -29,17 +29,38 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 136.0, 440.0, 32.0, 32.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "gain~",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 136.5, 280.5, 31.5, 127.5 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
 					"id" : "obj-15",
 					"linecount" : 2,
 					"maxclass" : "o.compose",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 40.0, 70.0, 35.0 ],
-					"presentation_rect" : [ 90.0, 95.0, 0.0, 0.0 ],
-					"text" : "/freq 220.\n/trans 6",
+					"patching_rect" : [ 40.0, 40.0, 74.0, 35.0 ],
+					"text" : "/freq : 220.,\n/trans : 6",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -51,12 +72,11 @@
 					"id" : "obj-14",
 					"linecount" : 2,
 					"maxclass" : "o.compose",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 232.0, 40.0, 70.0, 35.0 ],
-					"presentation_rect" : [ 292.0, 96.0, 0.0, 0.0 ],
-					"text" : "/freq 220.\n/trans 12",
+					"patching_rect" : [ 232.0, 40.0, 74.0, 35.0 ],
+					"text" : "/freq : 220.,\n/trans : 12",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -86,18 +106,6 @@
 					"outlettype" : [ "", "FullPacket" ],
 					"patching_rect" : [ 136.0, 192.0, 70.0, 19.0 ],
 					"text" : "o.route /freq"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "bpatcher",
-					"name" : "simple-stereo-gain~.maxpat",
-					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 136.0, 288.0, 99.0, 181.0 ]
 				}
 
 			}
@@ -142,7 +150,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 288.0, 192.0, 96.0, 57.0 ],
-					"text" : "/freq 220.\n/trans 0\n/mult 1.",
+					"text" : "/freq : 440.,\n/trans : 12,\n/mult : 2.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -154,11 +162,11 @@
 					"id" : "obj-1",
 					"linecount" : 2,
 					"maxclass" : "o.compose",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 40.0, 70.0, 35.0 ],
-					"text" : "/freq 220.\n/trans 0",
+					"patching_rect" : [ 136.0, 40.0, 74.0, 35.0 ],
+					"text" : "/freq : 220.,\n/trans : 0",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -211,7 +219,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 1 ],
+					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-4", 0 ]
@@ -220,10 +228,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-7", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-4", 0 ]
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -247,13 +264,6 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "simple-stereo-gain~.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-MMJ-Depot/patchers/mixing_and_gain",
-				"patcherrelativepath" : "../../../Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-MMJ-Depot/patchers/mixing_and_gain",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
