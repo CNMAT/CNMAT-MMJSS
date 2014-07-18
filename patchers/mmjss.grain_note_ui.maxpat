@@ -328,7 +328,7 @@
 					"patching_rect" : [ 233.199997, 180.0, 141.200012, 14.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.5, 35.5, 190.0, 19.0 ],
-					"setminmax" : [ 0.0, 1000.0 ],
+					"setminmax" : [ 0.0, 500.0 ],
 					"slidercolor" : [ 0.710032, 0.793074, 0.612742, 1.0 ],
 					"thickness" : 4
 				}
