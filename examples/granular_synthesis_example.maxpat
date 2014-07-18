@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 48.0, 76.0, 323.0, 451.0 ],
+		"rect" : [ 48.0, 76.0, 696.0, 753.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 420.0, 170.0, 126.0, 29.0 ],
+					"patching_rect" : [ 420.0, 211.0, 126.0, 29.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 35.0, 11.0, 147.0, 18.0 ],
 					"text" : "jump to a loc value (click once)"
@@ -160,7 +160,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 69.0, 314.0, 327.0 ],
+						"rect" : [ 25.0, 69.0, 817.0, 492.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 32.0,
@@ -196,13 +196,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-15",
-									"linecount" : 5,
-									"maxclass" : "o.message",
+									"linecount" : 4,
+									"maxclass" : "o.compose",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 100.0, 210.0, 74.0 ],
-									"text" : "/loc/deviation 357.895\n/loc/range/ms 389.474\n/loc 0.\n/size/range/ms 126.316\n/size 0.",
+									"patching_rect" : [ 50.0, 100.0, 129.0, 64.0 ],
+									"text" : "/loc/deviation : 350.,\n/loc/range/ms : 390.,\n/loc : 0.,\n/size : 0.",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -304,7 +304,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 662.0, 104.0, 516.0, 526.0 ],
+						"rect" : [ 13.0, 79.0, 516.0, 526.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -525,7 +525,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 16,
 					"presentation_rect" : [ 11.0, 174.0, 249.0, 199.0 ],
-					"text" : "/rand/timing 0.63574\n/rand/size 0.820154\n/rand/offset 0.718336\n/loc/range/ms 231.579\n/loc 0.478947\n/size/range/ms 163.158\n/size 0.0947368\n/buffer/len 4000.\n/buffer/name \"bleems_fel.wav\"\n/loc/deviation 0.\n/speedfactor 1.\n/reverse 0\n/overdrive 0\n/offset/ms 2016.91\n/size/ms 483.419\n/sample \"grainstuff\"",
+					"text" : "/rand/timing : 0.79674,\n/rand/size : 0.290798,\n/rand/offset : 0.687387,\n/loc : 0.331579,\n/loc/range/ms : 147.368,\n/size/range/ms : 52.6316,\n/size : 0.257895,\n/loc/deviation : 65776.3,\n/buffer/len : 624.875,\n/buffer/name : \"dad12.wav\",\n/speedfactor : 1.,\n/reverse : 0,\n/overdrive : 0,\n/offset/ms : 262.425,\n/size/ms : 139.131,\n/sample : \"grainstuff\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -579,13 +579,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-5",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 240.0, 128.0, 43.0 ],
-					"text" : "/buffer/len 624.875\n/buffer/name \"dad12.wav\"",
+					"patching_rect" : [ 360.0, 240.0, 128.0, 54.0 ],
+					"text" : "/buffer/len : 624.875,\n/buffer/name : \"dad12.wav\"",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1045,7 +1045,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bordercolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-2",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -1092,7 +1091,7 @@
 				"box" : 				{
 					"decodemode" : 1,
 					"id" : "obj-7",
-					"legend" : "bleems_fel.wav",
+					"legend" : "dad12.wav",
 					"maxclass" : "live.drop",
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1201,8 +1200,8 @@
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 30.0, 490.0, 229.0, 20.0 ],
 					"text" : "poly~ o.grainplayer @voices 30 @steal 1"
 				}
@@ -1446,63 +1445,63 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-22" : [ "grains", "grains", 0 ],
+			"obj-7" : [ "yo", "live.drop", 0 ],
 			"obj-46" : [ "revert sample", "revert sample", 0 ],
-			"obj-7" : [ "yo", "live.drop", 0 ]
+			"obj-22" : [ "grains", "grains", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "o.grainplayer.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-MMJ-Depot/patchers/soundfiles_sampling/granular",
-				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/patchers/soundfiles_sampling/granular",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mmjss.grain_note_ui.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-MMJSS/patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.uniform.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers",
 				"patcherrelativepath" : "../../CNMAT-odot/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/core",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
 				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.in.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/core",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
 				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.port.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/core",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
 				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.aspect.joinpoint.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/aspect",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/aspect",
 				"patcherrelativepath" : "../../CNMAT-odot/patchers/aspect",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.out.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/CNMAT-odot/patchers/core",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
 				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1512,11 +1511,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.message.mxo",
+				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.route.mxo",
+				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1549,10 +1548,6 @@
 			}
 , 			{
 				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pak.mxo",
 				"type" : "iLaX"
 			}
 , 			{
