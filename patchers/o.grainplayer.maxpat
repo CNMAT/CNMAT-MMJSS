@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 17.0, 59.0, 751.0, 608.0 ],
+		"rect" : [ 236.0, 99.0, 751.0, 608.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,11 +31,31 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"linecount" : 7,
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 328.0, 8.0, 134.0, 104.0 ],
+					"text" : "/sample : \"grainstuff\",\n/offset/ms : 1100,\n/size/ms : 300,\n/speedfactor : 1.,\n/reverse : 0,\n/overdrive : 1,\n/time : 2000.",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 248.75, 562.0, 37.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out 1"
 				}
 
@@ -50,23 +70,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "FullPacket" ],
 					"patching_rect" : [ 49.0, 208.0, 184.0, 20.0 ],
-					"text" : "o.route /linelist /sample /size_ms"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-103",
-					"linecount" : 7,
-					"maxclass" : "o.message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 336.0, 16.0, 150.0, 101.0 ],
-					"text" : "/sample \"grainstuff\" \n/offset_ms 1170.66 \n/size_ms 312.399 \n/speed_factor 1 \n/reverse 0 \n/overdrive 1 \n/time 2844.76 ",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"text" : "o.route /linelist /sample /size/ms"
 				}
 
 			}
@@ -75,13 +79,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-24",
-					"linecount" : 2,
-					"maxclass" : "newobj",
+					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 49.0, 160.0, 448.0, 33.0 ],
-					"text" : "o.expr /linelist = if(/reverse == 0\\, [/offset_ms\\, 0.\\, /offset_ms + /size_ms\\, /size_ms]\\, [/offset_ms + /size_ms\\, 0.\\, /offset_ms\\, /size_ms])"
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 49.0, 160.0, 645.0, 33.0 ],
+					"text" : "/linelist = if(/reverse == 0, [/offset/ms, 0., /offset/ms + /size/ms, /size/ms], [/offset/ms + /size/ms, 0., /offset/ms, /size/ms])",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -277,6 +281,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 35.5, 16.0, 30.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -290,6 +298,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 154.25, 562.0, 43.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out~ 1"
 				}
 
@@ -352,15 +364,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-103", 0 ]
 				}
 
 			}
@@ -528,6 +531,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -570,19 +582,6 @@
 					"source" : [ "obj-9", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.expr.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
