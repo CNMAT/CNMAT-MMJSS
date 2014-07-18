@@ -34,10 +34,10 @@
 					"id" : "obj-2",
 					"linecount" : 4,
 					"maxclass" : "o.compose",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 100.0, 150.0, 64.0 ],
+					"patching_rect" : [ 510.0, 120.0, 150.0, 64.0 ],
 					"text" : "/id/forward 1\n/id/backward 2\n/id/right 4\n/id/left 8",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -133,7 +133,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 20.0, 25.0, 25.0 ]
 				}
 
@@ -201,6 +201,27 @@
 					"source" : [ "obj-70", 0 ]
 				}
 
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.change.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
