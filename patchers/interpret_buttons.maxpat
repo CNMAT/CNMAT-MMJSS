@@ -31,6 +31,22 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-2",
+					"linecount" : 4,
+					"maxclass" : "o.compose",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 510.0, 100.0, 150.0, 64.0 ],
+					"text" : "/id/forward 1\n/id/backward 2\n/id/right 4\n/id/left 8",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -86,27 +102,12 @@
 					"fontsize" : 12.0,
 					"id" : "obj-20",
 					"linecount" : 2,
-					"maxclass" : "newobj",
+					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 30.0, 220.0, 780.0, 33.0 ],
-					"text" : "o.expr /diamond/state = (/diamond/forward/button/down * /id/forward)+(/diamond/backward/button/down * /id/backward)+(/diamond/right/button/down * /id/right)+(/diamond/left/button/down * /id/left)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-15",
-					"linecount" : 4,
-					"maxclass" : "o.message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 110.0, 150.0, 60.0 ],
-					"text" : "/id/forward 1\n/id/backward 2\n/id/right 4\n/id/left 8",
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 30.0, 220.0, 779.0, 46.0 ],
+					"text" : " /diamond/state = (/diamond/forward/button/down * /id/forward)+(/diamond/backward/button/down * /id/backward)+(/diamond/right/button/down * /id/right)+(/diamond/left/button/down * /id/left)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -170,7 +171,7 @@
 					"destination" : [ "obj-11", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -185,7 +186,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
