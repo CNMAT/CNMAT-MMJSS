@@ -46,11 +46,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-5",
-					"maxclass" : "o.message",
+					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 151.0, 120.0, 150.0, 20.0 ],
+					"patching_rect" : [ 151.0, 120.0, 150.0, 24.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
