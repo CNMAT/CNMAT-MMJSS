@@ -52,9 +52,9 @@
 					], 
 					"text": "jump to a loc value (click once)", 
 					"numinlets": 1, 
-					"linecount": 2, 
-					"numoutlets": 0, 
 					"maxclass": "comment", 
+					"numoutlets": 0, 
+					"linecount": 2, 
 					"frgb": 0.0, 
 					"fontsize": 10.0, 
 					"presentation": 1, 
@@ -69,10 +69,6 @@
 			}, 
 			{
 				"box": {
-					"outlettype": [
-						"", 
-						""
-					], 
 					"slidercolor": [
 						0.710032, 
 						0.793074, 
@@ -96,7 +92,10 @@
 					"numinlets": 1, 
 					"thickness": 4, 
 					"numoutlets": 2, 
-					"border_right": 0, 
+					"outlettype": [
+						"", 
+						""
+					], 
 					"maxclass": "multislider", 
 					"border_top": 0, 
 					"border_left": 0, 
@@ -104,6 +103,7 @@
 						0.0, 
 						1.0
 					], 
+					"border_right": 0, 
 					"border_bottom": 0, 
 					"presentation": 1, 
 					"id": "obj-48", 
@@ -119,7 +119,7 @@
 			{
 				"box": {
 					"fontname": "Arial", 
-					"text": "/sample = grainstuff,", 
+					"text": "/sample = grainstuff", 
 					"numinlets": 1, 
 					"numoutlets": 2, 
 					"outlettype": [
@@ -288,12 +288,12 @@
 									"fontname": "Arial", 
 									"text": "/loc/deviation : 350.,\n/loc/range/ms : 390.,\n/loc : 0.,\n/size : 0.", 
 									"numinlets": 2, 
-									"maxclass": "o.compose", 
+									"linecount": 4, 
 									"numoutlets": 1, 
 									"outlettype": [
 										""
 									], 
-									"linecount": 4, 
+									"maxclass": "o.compose", 
 									"fontsize": 12.0, 
 									"textcolor": [
 										0.0, 
@@ -372,9 +372,9 @@
 						"fontname": "Arial", 
 						"description": "", 
 						"tags": "", 
-						"fontface": 0, 
-						"globalpatchername": "", 
 						"fontsize": 32.0, 
+						"globalpatchername": "", 
+						"fontface": 0, 
 						"default_fontface": 0, 
 						"default_fontname": "Arial", 
 						"default_fontsize": 32.0, 
@@ -469,15 +469,15 @@
 							{
 								"box": {
 									"fontname": "Arial", 
-									"text": "/loc/deviation = (/loc/deviation * /buffer/len) / 2.,\n/offset/ms = (((/rand/offset * 2.) - 1.) * /loc/range/ms) + (/loc * /buffer/len),\n/size/ms = (((/rand/size * 2.) - 1.) * /size/range/ms) + (/size * /buffer/len),", 
+									"text": "/loc/deviation = (/loc/deviation * /buffer/len) / 2.,\n/offset/ms = (((/rand/offset * 2.) - 1.) * /loc/range/ms) + (/loc * /buffer/len),\n/size/ms = (((/rand/size * 2.) - 1.) * /size/range/ms) + (/size * /buffer/len)", 
 									"numinlets": 1, 
-									"maxclass": "o.expr.codebox", 
+									"linecount": 3, 
 									"numoutlets": 2, 
 									"outlettype": [
 										"FullPacket", 
 										"FullPacket"
 									], 
-									"linecount": 3, 
+									"maxclass": "o.expr.codebox", 
 									"fontsize": 12.0, 
 									"textcolor": [
 										0.0, 
@@ -497,15 +497,15 @@
 							{
 								"box": {
 									"fontname": "Arial", 
-									"text": "/speedfactor ??= 1.,\n/reverse ??= 0,\n/overdrive ??= 0,\n/buffer/len ??= 1000.,", 
+									"text": "/speedfactor ??= 1.,\n/reverse ??= 0,\n/overdrive ??= 0,\n/buffer/len ??= 1000.", 
 									"numinlets": 1, 
-									"maxclass": "o.expr.codebox", 
+									"linecount": 4, 
 									"numoutlets": 2, 
 									"outlettype": [
 										"FullPacket", 
 										"FullPacket"
 									], 
-									"linecount": 4, 
+									"maxclass": "o.expr.codebox", 
 									"fontsize": 12.0, 
 									"textcolor": [
 										0.0, 
@@ -567,9 +567,9 @@
 									"fontname": "Arial", 
 									"text": "timing deviation is a probability (static) that a number will get offset by a certain amount", 
 									"numinlets": 1, 
-									"linecount": 3, 
-									"numoutlets": 0, 
 									"maxclass": "comment", 
+									"numoutlets": 0, 
+									"linecount": 3, 
 									"frgb": 0.0, 
 									"fontsize": 12.0, 
 									"id": "obj-11", 
@@ -737,9 +737,9 @@
 						"fontname": "Arial", 
 						"description": "", 
 						"tags": "", 
-						"fontface": 0, 
-						"globalpatchername": "", 
 						"fontsize": 12.0, 
+						"globalpatchername": "", 
+						"fontface": 0, 
 						"default_fontface": 0, 
 						"default_fontname": "Arial", 
 						"default_fontsize": 12.0, 
@@ -768,12 +768,12 @@
 					"presentation_linecount": 16, 
 					"text": "/rand/timing : 0.79674,\n/rand/size : 0.290798,\n/rand/offset : 0.687387,\n/loc : 0.331579,\n/loc/range/ms : 147.368,\n/size/range/ms : 52.6316,\n/size : 0.257895,\n/loc/deviation : 65776.3,\n/buffer/len : 624.875,\n/buffer/name : \"dad12.wav\",\n/speedfactor : 1.,\n/reverse : 0,\n/overdrive : 0,\n/offset/ms : 262.425,\n/size/ms : 139.131,\n/sample : \"grainstuff\"", 
 					"numinlets": 1, 
-					"maxclass": "o.display", 
+					"linecount": 16, 
 					"numoutlets": 1, 
 					"outlettype": [
 						""
 					], 
-					"linecount": 16, 
+					"maxclass": "o.display", 
 					"fontsize": 10.0, 
 					"presentation_rect": [
 						11.0, 
@@ -880,12 +880,12 @@
 					"fontname": "Arial", 
 					"text": "/buffer/len : 624.875,\n/buffer/name : \"dad12.wav\"", 
 					"numinlets": 1, 
-					"maxclass": "o.display", 
+					"linecount": 3, 
 					"numoutlets": 1, 
 					"outlettype": [
 						""
 					], 
-					"linecount": 3, 
+					"maxclass": "o.display", 
 					"fontsize": 10.0, 
 					"textcolor": [
 						0.0, 
@@ -1524,9 +1524,9 @@
 						"fontname": "Arial", 
 						"description": "", 
 						"tags": "", 
-						"fontface": 0, 
-						"globalpatchername": "", 
 						"fontsize": 12.0, 
+						"globalpatchername": "", 
+						"fontface": 0, 
 						"default_fontface": 0, 
 						"default_fontname": "Arial", 
 						"default_fontsize": 12.0, 
@@ -1604,6 +1604,24 @@
 						0.4, 
 						0.0
 					], 
+					"presentation_rect": [
+						11.0, 
+						378.0, 
+						249.0, 
+						17.0
+					], 
+					"text": "revert sample", 
+					"numinlets": 1, 
+					"id": "obj-46", 
+					"numoutlets": 2, 
+					"outlettype": [
+						"", 
+						""
+					], 
+					"maxclass": "live.text", 
+					"fontface": 0, 
+					"mode": 0, 
+					"varname": "live.text", 
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_shortname": "revert sample", 
@@ -1617,31 +1635,13 @@
 							"parameter_type": 2
 						}
 					}, 
-					"presentation_rect": [
-						11.0, 
-						378.0, 
-						249.0, 
-						17.0
-					], 
-					"text": "revert sample", 
-					"numinlets": 1, 
-					"numoutlets": 2, 
-					"outlettype": [
-						"", 
-						""
-					], 
-					"maxclass": "live.text", 
-					"fontface": 0, 
-					"mode": 0, 
-					"varname": "live.text", 
+					"presentation": 1, 
 					"activebgoncolor": [
 						0.562468, 
 						1.0, 
 						0.880484, 
 						1.0
 					], 
-					"presentation": 1, 
-					"id": "obj-46", 
 					"patching_rect": [
 						540.0, 
 						107.0, 
@@ -1661,7 +1661,7 @@
 					], 
 					"decodemode": 1, 
 					"numinlets": 1, 
-					"legend": "dad12.wav", 
+					"id": "obj-7", 
 					"numoutlets": 2, 
 					"outlettype": [
 						"", 
@@ -1679,7 +1679,7 @@
 						}
 					}, 
 					"presentation": 1, 
-					"id": "obj-7", 
+					"legend": "dad12.wav", 
 					"patching_rect": [
 						360.0, 
 						107.0, 
@@ -1715,7 +1715,7 @@
 			}, 
 			{
 				"box": {
-					"numoutlets": 4, 
+					"channels": 1, 
 					"presentation_rect": [
 						265.0, 
 						169.0, 
@@ -1724,7 +1724,7 @@
 					], 
 					"varname": "grains", 
 					"numinlets": 1, 
-					"channels": 1, 
+					"numoutlets": 4, 
 					"outlettype": [
 						"signal", 
 						"", 
@@ -2219,60 +2219,60 @@
 		"bglocked": 0, 
 		"dependency_cache": [
 			{
-				"patcherrelativepath": "../patchers", 
-				"implicit": 1, 
+				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers", 
 				"type": "JSON", 
+				"patcherrelativepath": "../patchers", 
 				"name": "o.grainplayer.maxpat", 
-				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers"
+				"implicit": 1
 			}, 
 			{
+				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers", 
+				"type": "JSON", 
 				"patcherrelativepath": "../patchers", 
-				"implicit": 1, 
-				"type": "JSON", 
 				"name": "mmjss.grain_note_ui.maxpat", 
-				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers"
+				"implicit": 1
 			}, 
 			{
+				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers", 
+				"type": "JSON", 
 				"patcherrelativepath": "../../CNMAT-odot/patchers", 
-				"implicit": 1, 
-				"type": "JSON", 
 				"name": "o.uniform.maxpat", 
-				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers"
+				"implicit": 1
 			}, 
 			{
-				"patcherrelativepath": "../../CNMAT-odot/patchers/core", 
-				"implicit": 1, 
+				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core", 
 				"type": "JSON", 
+				"patcherrelativepath": "../../CNMAT-odot/patchers/core", 
 				"name": "o.righttoleft.maxpat", 
-				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core"
+				"implicit": 1
 			}, 
 			{
-				"patcherrelativepath": "../../CNMAT-odot/patchers/core", 
-				"implicit": 1, 
+				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core", 
 				"type": "JSON", 
+				"patcherrelativepath": "../../CNMAT-odot/patchers/core", 
 				"name": "o.in.maxpat", 
-				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core"
+				"implicit": 1
 			}, 
 			{
-				"patcherrelativepath": "../../CNMAT-odot/patchers/core", 
-				"implicit": 1, 
+				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core", 
 				"type": "JSON", 
+				"patcherrelativepath": "../../CNMAT-odot/patchers/core", 
 				"name": "o.port.maxpat", 
-				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core"
+				"implicit": 1
 			}, 
 			{
+				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/aspect", 
+				"type": "JSON", 
 				"patcherrelativepath": "../../CNMAT-odot/patchers/aspect", 
-				"implicit": 1, 
-				"type": "JSON", 
 				"name": "o.aspect.joinpoint.maxpat", 
-				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/aspect"
+				"implicit": 1
 			}, 
 			{
-				"patcherrelativepath": "../../CNMAT-odot/patchers/core", 
-				"implicit": 1, 
+				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core", 
 				"type": "JSON", 
+				"patcherrelativepath": "../../CNMAT-odot/patchers/core", 
 				"name": "o.out.maxpat", 
-				"bootpath": "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core"
+				"implicit": 1
 			}, 
 			{
 				"type": "iLaX", 

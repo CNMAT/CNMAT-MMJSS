@@ -27,15 +27,15 @@
 			{
 				"box": {
 					"fontname": "Arial", 
-					"text": "/f0 ??= 65.405998,\n/transpose ??= 1,", 
+					"text": "/f0 ??= 65.405998,\n/transpose ??= 1", 
 					"numinlets": 1, 
-					"maxclass": "o.expr.codebox", 
+					"linecount": 2, 
 					"numoutlets": 2, 
 					"outlettype": [
 						"FullPacket", 
 						"FullPacket"
 					], 
-					"linecount": 2, 
+					"maxclass": "o.expr.codebox", 
 					"fontsize": 12.0, 
 					"textcolor": [
 						0.0, 
@@ -166,7 +166,7 @@
 			{
 				"box": {
 					"fontname": "Arial", 
-					"text": "/calc_dist = bang,", 
+					"text": "/calc_dist = bang", 
 					"numinlets": 1, 
 					"numoutlets": 2, 
 					"outlettype": [
@@ -213,15 +213,15 @@
 			{
 				"box": {
 					"fontname": "Arial", 
-					"text": "/f0 = mtof(/f0),\n/len = length(/randdist),\n/seq = aseq(1, /len, 1),\n/scaled = /seq * /f0,\n/laced = interleave(/scaled, /randdist),\n/transpose = pow(2., /transpose / 12.),\n/to/migrator = /transpose * /laced,", 
+					"text": "/f0 = mtof(/f0),\n/len = length(/randdist),\n/seq = aseq(1, /len, 1),\n/scaled = /seq * /f0,\n/laced = interleave(/scaled, /randdist),\n/transpose = pow(2., /transpose / 12.),\n/to/migrator = /transpose * /laced", 
 					"numinlets": 1, 
-					"maxclass": "o.expr.codebox", 
+					"linecount": 7, 
 					"numoutlets": 2, 
 					"outlettype": [
 						"FullPacket", 
 						"FullPacket"
 					], 
-					"linecount": 7, 
+					"maxclass": "o.expr.codebox", 
 					"fontsize": 12.0, 
 					"textcolor": [
 						0.0, 
@@ -500,9 +500,9 @@
 						"fontname": "Arial", 
 						"description": "", 
 						"tags": "", 
-						"fontface": 0, 
-						"globalpatchername": "", 
 						"fontsize": 11.0, 
+						"globalpatchername": "", 
+						"fontface": 0, 
 						"default_fontface": 0, 
 						"default_fontname": "Arial", 
 						"default_fontsize": 11.0, 
@@ -801,9 +801,9 @@
 									"fontname": "Arial", 
 									"text": "quick note:\n\nnOsc is set to 64\n(64 / 8 outputs) = 8, so we have 8 partials per output\nwe use 16 elements per list, as we have to account for the frequency and amplitude for each set", 
 									"numinlets": 1, 
-									"linecount": 5, 
-									"numoutlets": 0, 
 									"maxclass": "comment", 
+									"numoutlets": 0, 
+									"linecount": 5, 
 									"frgb": 0.0, 
 									"fontsize": 12.0, 
 									"id": "obj-2", 
@@ -1916,9 +1916,9 @@
 						"fontname": "Arial", 
 						"description": "", 
 						"tags": "", 
-						"fontface": 0, 
-						"globalpatchername": "", 
 						"fontsize": 12.0, 
+						"globalpatchername": "", 
+						"fontface": 0, 
 						"default_fontface": 0, 
 						"default_fontname": "Arial", 
 						"default_fontsize": 12.0, 
