@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 19.0, 56.0, 829.0, 382.0 ],
+		"rect" : [ 19.0, 56.0, 411.0, 351.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -75,7 +75,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 510.0, 80.0, 60.0, 20.0 ],
+					"patching_rect" : [ 170.0, 58.0, 60.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -85,13 +85,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-20",
-					"linecount" : 2,
+					"linecount" : 4,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 220.0, 537.0, 46.0 ],
-					"text" : "/diamond/state = (/diamond/forward/button/down * /id/forward)+(/diamond/backward/button/down * /id/backward)+(/diamond/right/button/down * /id/right)+(/diamond/left/button/down * /id/left)",
+					"patching_rect" : [ 30.0, 220.0, 359.0, 73.0 ],
+					"text" : "/diamond/state = (/diamond/forward/button/down * /id/forward) + \n(/diamond/backward/button/down * /id/backward) + \n(/diamond/right/button/down * /id/right) + \n(/diamond/left/button/down * /id/left)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -106,7 +106,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 510.0, 110.0, 150.0, 64.0 ],
+					"patching_rect" : [ 170.0, 88.0, 150.0, 64.0 ],
 					"text" : "/id/forward : 1,\n/id/backward : 2,\n/id/right : 4,\n/id/left : 8",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
