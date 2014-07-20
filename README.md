@@ -9,8 +9,8 @@ Installation:
 
 Download these zipped archive of the current materials:
 
-    https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip
-    https://github.com/CNMAT/CNMAT-odot/archive/master.zip
+    <link>https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip</link>
+    <link>https://github.com/CNMAT/CNMAT-odot/archive/master.zip</link>
 
 Unzip, and place the resultant folders in the following location, depending on your OS:
 
