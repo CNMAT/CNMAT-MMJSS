@@ -13,7 +13,7 @@ Download these zipped archives of the current materials:
 
 [CNMAT 'odot' Files](https://github.com/CNMAT/CNMAT-odot/archive/master.zip)
 
-[CNMAT externals](https://github.com/CNMAT/CNMAT-odot/archive/master.zip)
+[CNMAT Externals](http://cnmat.berkeley.edu/files/maxdl/archive/CNMAT_Externals-MacOSX-1.0-78-gd490ddd.tgz)
 
 Double-click to unzip, and place the resultant folders in the following location, depending on your OS:
 
