@@ -35,6 +35,6 @@ Then:
 - Go to Max -> Options -> File Preferences
 - Add a search path preference for the following folder (+ button), then click on 'choose':
 
-    <code>~/Documents/Max/Packages/CNMAT-MMJSS/dev</code>
+    <code>~/Documents/Max/Packages/odot/dev</code>
 
-- If you're having trouble, please ask one of our TAs
+- If you're having trouble, please ask one of our beloved TAs!
