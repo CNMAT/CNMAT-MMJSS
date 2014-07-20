@@ -605,8 +605,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 328.5, 364.0, 220.0, 20.0 ],
-					"text" : "o.io.esplora /port usbmodemOSCes311"
+					"patching_rect" : [ 328.5, 364.0, 73.0, 20.0 ],
+					"text" : "o.io.esplora"
 				}
 
 			}
@@ -627,7 +627,7 @@
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 539.0, 384.0, 627.0, 384.0, 627.0, 225.0, 392.0, 225.0 ],
+					"midpoints" : [ 392.0, 384.0, 627.0, 384.0, 627.0, 225.0, 392.0, 225.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -638,7 +638,7 @@
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 539.0, 384.0, 638.0, 384.0, 638.0, 246.0, 653.0, 246.0 ],
+					"midpoints" : [ 392.0, 384.0, 638.0, 384.0, 638.0, 246.0, 653.0, 246.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -865,14 +865,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -880,83 +880,83 @@
 , 			{
 				"name" : "o.arguments.maxpat",
 				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
 				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../core",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.in.maxpat",
 				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../core",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.port.maxpat",
 				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../core",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.aspect.joinpoint.maxpat",
 				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/aspect",
-				"patcherrelativepath" : "../aspect",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/aspect",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.out.maxpat",
 				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../core",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.serial.display.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.display.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c.esplora.buttonui.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c.esplora.buttonhelper.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c.lcd.xydraw.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c.lcd.circle.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -964,7 +964,7 @@
 , 			{
 				"name" : "o.gather.maxpat",
 				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/namespace",
-				"patcherrelativepath" : "../namespace",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/namespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
