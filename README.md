@@ -17,11 +17,13 @@ Double-click to unzip, and place the resultant folders in the following location
 
 Mac:
     <code>~/Documents/Max/Packages/</code>
-(Folder may not be there; if not, you need to create it.  Be sure to use a capital 'P' and lowercase 'ackages'
+
+    (Folder may not be there; if not, you need to create it.  Be sure to use a capital 'P' and lowercase 'ackages')
 
 Win:
     <code>C:\Users\<your username>\Documents\Max\Packages</code>
-(Folder may not be there; if not, you need to create it.  Be sure to use a capital 'P' and lowercase 'ackages'
+
+    (Folder may not be there; if not, you need to create it.  Be sure to use a capital 'P' and lowercase 'ackages')
 
 ================
 
