@@ -1,7 +1,7 @@
 CNMAT-MMJSS-2014
 ================
 
-For this class, we need some special files which we need to install.
+For this class, we need to install some special files.\n
 This set of files and folders operates an extension to the Max application.
 
 Installation:
