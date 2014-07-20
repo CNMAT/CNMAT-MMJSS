@@ -1,7 +1,8 @@
 CNMAT-MMJSS-2014
 ================
 
-This set of files and folders operates as a Max package.  
+For this class, we need some special files which we need to install.
+This set of files and folders operates an extension to the Max application.
 
 Installation:
 
