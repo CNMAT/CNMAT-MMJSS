@@ -184,11 +184,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-14",
+					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.0, 7.666664, 108.0, 24.0 ],
+					"patching_rect" : [ 616.0, 7.666664, 108.0, 37.0 ],
 					"text" : "/tone : [200, 200]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -213,13 +214,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-3",
-					"linecount" : 5,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 643.5, 260.0, 158.0, 88.0 ],
-					"text" : "/port : \"Bluetooth-Serial-1\",\n/rate/output : 0,\n/rate/input : 0,\n/mediansize/received,\n/baud",
+					"patching_rect" : [ 643.5, 260.0, 158.0, 34.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -514,11 +513,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-24",
+					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 40.0, 108.0, 24.0 ],
+					"patching_rect" : [ 360.0, 40.0, 108.0, 37.0 ],
 					"text" : "/led/rgb : [0, 0, 0]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -541,11 +541,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-11",
+					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 7.666664, 101.0, 24.0 ],
+					"patching_rect" : [ 230.0, 7.666664, 101.0, 37.0 ],
 					"text" : "/led/green : 200",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -556,11 +557,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-10",
+					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 72.333336, 93.0, 24.0 ],
+					"patching_rect" : [ 230.0, 72.333336, 93.0, 37.0 ],
 					"text" : "/led/blue : 200",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -571,11 +573,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-9",
+					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 40.0, 88.0, 24.0 ],
+					"patching_rect" : [ 230.0, 40.0, 88.0, 37.0 ],
 					"text" : "/led/red : 100",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -586,11 +589,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-6",
+					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 7.666664, 121.0, 24.0 ],
+					"patching_rect" : [ 360.0, 7.666664, 121.0, 37.0 ],
 					"text" : "/led/rgb : [200, 0, 0]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -605,8 +609,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 328.5, 364.0, 220.0, 20.0 ],
-					"text" : "o.io.esplora /port usbmodemOSCes311"
+					"patching_rect" : [ 328.5, 364.0, 73.0, 20.0 ],
+					"text" : "o.io.esplora"
 				}
 
 			}
@@ -627,7 +631,7 @@
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 539.0, 384.0, 627.0, 384.0, 627.0, 225.0, 392.0, 225.0 ],
+					"midpoints" : [ 392.0, 384.0, 627.0, 384.0, 627.0, 225.0, 392.0, 225.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -638,7 +642,7 @@
 					"destination" : [ "obj-3", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 539.0, 384.0, 638.0, 384.0, 638.0, 246.0, 653.0, 246.0 ],
+					"midpoints" : [ 392.0, 384.0, 638.0, 384.0, 638.0, 246.0, 653.0, 246.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -865,98 +869,63 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.arguments.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.in.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.port.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.aspect.joinpoint.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/aspect",
-				"patcherrelativepath" : "../aspect",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.out.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../core",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/ordering",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.serial.display.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.display.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c.esplora.buttonui.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c.esplora.buttonhelper.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c.lcd.xydraw.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c.lcd.circle.maxpat",
-				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -964,7 +933,7 @@
 , 			{
 				"name" : "o.gather.maxpat",
 				"bootpath" : "/Users/adrian2013/Documents/Max/Packages/CNMAT-odot/patchers/namespace",
-				"patcherrelativepath" : "../namespace",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/namespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -978,34 +947,6 @@
 			}
 , 			{
 				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.context.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1025,7 +966,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.timetag.mxo",
+				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1045,6 +986,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.expr.mxo",
 				"type" : "iLaX"
 			}
@@ -1053,11 +998,19 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.collect.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.difference.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
  ]
