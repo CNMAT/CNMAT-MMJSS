@@ -10,6 +10,7 @@ Installation:
 Download these zipped archive of the current materials:
 
 [MMJ Summer School Files](https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip)
+
 [CNMAT 'odot' Files](https://github.com/CNMAT/CNMAT-odot/archive/master.zip)
 
 Unzip, and place the resultant folders in the following location, depending on your OS:
