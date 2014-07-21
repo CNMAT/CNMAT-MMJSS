@@ -18,12 +18,12 @@ Download these zipped archives of the current materials:
 Double-click to unzip, and place the resultant folders in the following location, depending on your OS:
 
 Mac:
-    <code>~/Documents/Max/Packages/</code>
+    `~/Documents/Max/Packages/`
 
 (Folder may not be there; if not, you need to create it.  Be sure to use a capital 'P' and lowercase 'ackages')
 
 Win:
-    <code>C:\Users\<your username>\Documents\Max\Packages</code>
+    `C:\Users\<your username>\Documents\Max\Packages`
 
 (Folder may not be there; if not, you need to create it.  Be sure to use a capital 'P' and lowercase 'ackages')
 
@@ -35,7 +35,7 @@ Then:
 - Go to Max -> Options -> File Preferences
 - Add a search path preference for the following folder (+ button), then click on 'choose':
 
-    <code>~/Documents/Max/Packages/odot/dev</code>
+    `~/Documents/Max/Packages/odot/dev`
 
 - If you're having trouble, please ask one of our beloved TAs!
 
