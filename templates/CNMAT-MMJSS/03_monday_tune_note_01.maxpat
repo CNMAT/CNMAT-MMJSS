@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 13.0, 58.0, 720.0, 892.0 ],
+		"rect" : [ 58.0, 44.0, 720.0, 892.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,29 +29,6 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 140.0, 530.0, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 109.0, 530.0, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bubble" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -60,7 +37,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 193.5, 750.0, 162.0, 24.0 ],
+					"patching_rect" : [ 193.5, 720.0, 162.0, 24.0 ],
 					"text" : "toggle can display values"
 				}
 
@@ -74,7 +51,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 600.0, 720.0, 108.0, 20.0 ],
+					"patching_rect" : [ 600.0, 690.0, 108.0, 20.0 ],
 					"text" : "toggle hides state."
 				}
 
@@ -88,8 +65,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 600.0, 750.0, 105.0, 20.0 ],
-					"text" : "ooo lots of bangs!"
+					"patching_rect" : [ 600.0, 720.0, 82.0, 20.0 ],
+					"text" : "lots of bangs!"
 				}
 
 			}
@@ -103,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 193.5, 820.0, 309.0, 24.0 ],
+					"patching_rect" : [ 149.0, 780.0, 309.0, 24.0 ],
 					"text" : "select can output bangs when a button is pressed (1)"
 				}
 
@@ -118,7 +95,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 193.5, 720.0, 256.0, 24.0 ],
+					"patching_rect" : [ 193.5, 690.0, 256.0, 24.0 ],
 					"text" : "change only outputs upon a changed value"
 				}
 
@@ -133,7 +110,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 336.5, 460.0, 360.0, 33.0 ],
+					"patching_rect" : [ 336.5, 430.0, 360.0, 33.0 ],
 					"text" : "saw accepts a frequency to set it's number of cycles per second (hz) value.  it also outputs a cool tone."
 				}
 
@@ -148,7 +125,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 379.5, 360.0, 189.0, 74.0 ],
+					"patching_rect" : [ 379.5, 330.0, 189.0, 74.0 ],
 					"text" : "ezdac~ is a way to get two channels of audio out to your speakers or headphones.  simply wire signals to the left and right inlets (channels)"
 				}
 
@@ -162,8 +139,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 120.0, 570.0, 530.0, 20.0 ],
-					"text" : "mmjss.esplora contains all of the functionality of the esplora controller.  we'll use this from now on."
+					"patching_rect" : [ 110.0, 540.0, 530.0, 20.0 ],
+					"text" : "my-esplora contains all of the functionality of the esplora controller.  we'll use this from now on."
 				}
 
 			}
@@ -176,7 +153,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.0, 460.0, 213.0, 20.0 ],
+					"patching_rect" : [ 62.0, 430.0, 213.0, 20.0 ],
 					"text" : "multislider can send a float for storage"
 				}
 
@@ -190,7 +167,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.0, 360.0, 189.0, 20.0 ],
+					"patching_rect" : [ 62.0, 330.0, 189.0, 20.0 ],
 					"text" : "gain~ allows you to scale a signal"
 				}
 
@@ -204,7 +181,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 356.5, 630.0, 219.0, 20.0 ],
+					"patching_rect" : [ 356.5, 600.0, 219.0, 20.0 ],
 					"text" : "view all the esplora  (output) messages"
 				}
 
@@ -218,7 +195,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.0, 270.0, 590.0, 20.0 ],
+					"patching_rect" : [ 80.0, 260.0, 590.0, 20.0 ],
 					"text" : "mtof can accept floats for "
 				}
 
@@ -232,7 +209,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.0, 240.0, 590.0, 20.0 ],
+					"patching_rect" : [ 62.0, 230.0, 590.0, 20.0 ],
 					"text" : "[*~] is the MSP equivalent of [*].  it multiplies signals, and can be used to scale the amplitude of audio in MSP"
 				}
 
@@ -246,7 +223,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.0, 210.0, 253.0, 20.0 ],
+					"patching_rect" : [ 62.0, 200.0, 253.0, 20.0 ],
 					"text" : "f can store a float and we can bang it out later"
 				}
 
@@ -275,7 +252,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 16.5, 60.0, 680.0, 128.0 ],
+					"patching_rect" : [ 16.5, 60.0, 680.0, 127.0 ],
 					"text" : "Objectives:\n1. use an esplora button to trigger a float value for saw~\n2. patch an MSP network together so that you have control messages going into the MSP objects, and audio out the ezdac~\n3. use mtof in combination with multislider (in single slider mode) to store a frequency and send it when a button is depressed\n4. see how the [change] object can help you when you have lots of values coming out of the esplora at once\n5. use debugging to be clear about what sort of data is being sent around your patch\n6. key: only tune the oscillator when you have a button depressed\n\nextra credit:  make this patch polyphonic by adding more voices and using more than 1 button"
 				}
 
@@ -287,7 +264,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 158.5, 780.0, 20.0, 20.0 ]
+					"patching_rect" : [ 140.0, 750.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -299,7 +276,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 140.0, 750.0, 20.0, 20.0 ]
+					"patching_rect" : [ 140.0, 720.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -310,7 +287,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 570.0, 750.0, 20.0, 20.0 ]
+					"patching_rect" : [ 570.0, 720.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -322,7 +299,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 570.0, 720.0, 20.0, 20.0 ]
+					"patching_rect" : [ 570.0, 690.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -336,7 +313,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 170.0, 680.0, 174.0, 24.0 ],
+					"patching_rect" : [ 170.0, 650.0, 174.0, 24.0 ],
 					"text" : "numbers streaming through"
 				}
 
@@ -350,7 +327,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 76.5, 300.0, 431.0, 20.0 ],
+					"patching_rect" : [ 76.5, 290.0, 431.0, 20.0 ],
 					"text" : "flonum can display/send MIDI or frequency values (or any floats for that matter)"
 				}
 
@@ -365,7 +342,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 16.5, 300.0, 50.0, 20.0 ]
+					"patching_rect" : [ 16.5, 290.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -378,7 +355,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 16.5, 210.0, 32.5, 20.0 ],
+					"patching_rect" : [ 16.5, 200.0, 32.5, 20.0 ],
 					"text" : "f"
 				}
 
@@ -396,7 +373,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
@@ -423,29 +400,13 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"id" : "obj-7",
-									"linecount" : 27,
-									"maxclass" : "o.message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 120.0, 490.0, 369.0 ],
-									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit ",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-4",
-									"maxclass" : "newobj",
+									"id" : "obj-1",
+									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 130.0, 80.0, 93.0, 20.0 ],
-									"text" : "o.broadcast.api"
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 30.0, 70.0, 380.0, 34.0 ],
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -456,24 +417,15 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 130.0, 20.0, 25.0, 25.0 ]
+									"outlettype" : [ "FullPacket" ],
+									"patching_rect" : [ 30.0, 20.0, 25.0, 25.0 ]
 								}
 
 							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-8", 0 ]
@@ -483,7 +435,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 256.5, 630.0, 94.0, 20.0 ],
+					"patching_rect" : [ 256.5, 600.0, 94.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -510,7 +462,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 140.0, 820.0, 36.0, 20.0 ],
+					"patching_rect" : [ 100.0, 780.0, 36.0, 20.0 ],
 					"text" : "sel 1"
 				}
 
@@ -524,7 +476,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 16.5, 605.5, 101.0, 20.0 ],
+					"patching_rect" : [ 16.5, 575.5, 101.0, 20.0 ],
 					"text" : "o.route /diamond"
 				}
 
@@ -538,7 +490,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 16.5, 240.0, 36.0, 20.0 ],
+					"patching_rect" : [ 16.5, 230.0, 36.0, 20.0 ],
 					"text" : "*~ 0."
 				}
 
@@ -552,7 +504,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 140.0, 720.0, 50.0, 20.0 ],
+					"patching_rect" : [ 140.0, 690.0, 50.0, 20.0 ],
 					"text" : "change"
 				}
 
@@ -566,19 +518,18 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 16.5, 270.0, 47.0, 20.0 ],
+					"patching_rect" : [ 16.5, 260.0, 47.0, 20.0 ],
 					"text" : "mtof 0."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bordercolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-14",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 290.0, 360.0, 77.5, 77.5 ]
+					"patching_rect" : [ 290.0, 330.0, 77.5, 77.5 ]
 				}
 
 			}
@@ -591,7 +542,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 16.5, 460.0, 40.0, 90.0 ],
+					"patching_rect" : [ 16.5, 430.0, 40.0, 90.0 ],
 					"setminmax" : [ 0.0, 127.0 ]
 				}
 
@@ -605,7 +556,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 680.0, 59.0, 20.0 ],
+					"patching_rect" : [ 100.0, 650.0, 59.0, 20.0 ],
 					"text" : "press2int"
 				}
 
@@ -619,7 +570,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "FullPacket" ],
-					"patching_rect" : [ 16.5, 633.5, 205.0, 20.0 ],
+					"patching_rect" : [ 16.5, 603.5, 205.0, 20.0 ],
 					"text" : "o.route /left /forward /right /backward"
 				}
 
@@ -630,11 +581,11 @@
 					"fontsize" : 12.0,
 					"id" : "obj-3",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
+					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 16.5, 570.0, 99.0, 20.0 ],
-					"text" : "mmjss.esplora a"
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 16.5, 540.0, 70.0, 20.0 ],
+					"text" : "my-esplora"
 				}
 
 			}
@@ -646,7 +597,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 16.5, 360.0, 39.0, 90.0 ]
+					"patching_rect" : [ 16.5, 330.0, 39.0, 90.0 ]
 				}
 
 			}
@@ -659,7 +610,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 290.0, 460.0, 39.0, 20.0 ],
+					"patching_rect" : [ 290.0, 430.0, 39.0, 20.0 ],
 					"text" : "saw~"
 				}
 
@@ -694,15 +645,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -725,15 +667,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -775,50 +708,84 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "mmjss.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
+				"name" : "my-esplora.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../../patchers/esplora",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.arguments.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.righttoleft.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.in.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.port.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.aspect.joinpoint.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/aspect",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/aspect",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.out.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.serial.display.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "press2int.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "o.broadcast.api.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "slipOSC.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.downcast.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -826,11 +793,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "OpenSoundControl.mxo",
+				"name" : "o.union.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -838,15 +801,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.union.mxo",
+				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.mappatch.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.mxo",
+				"name" : "o.var.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -854,7 +813,47 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.message.mxo",
+				"name" : "o.context.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.prepend.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.cond.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.validate.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.slip.encode.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.slip.decode.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.timetag.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.downcast.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
  ]
