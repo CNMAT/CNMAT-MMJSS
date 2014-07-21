@@ -15,7 +15,7 @@ Download these zipped archives of the current materials:
 
 [CNMAT odot Library]()
 
-[CNMAT Externals](http://cnmat.berkeley.edu/files/maxdl/archive/CNMAT_Externals-MacOSX-1.0-78-gd490ddd.tgz)
+[CNMAT Externals Mac](http://cnmat.berkeley.edu/files/maxdl/archive/CNMAT_Externals-MacOSX-1.0-78-gd490ddd.tgz) / [CNMAT Externals Win](http://cnmat.berkeley.edu/files/maxdl/archive/CNMAT_Externals-Windows-1.0-58-gea4b1d0.tgz)
 
 Double-click to unzip, and place the resultant folders in the following location, depending on your OS:
 
