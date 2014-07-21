@@ -51,6 +51,7 @@ In the Windows version of Max, the application will not respond well to hot plug
 
 Each day, please do the following after finding your seat and setting up:
 
+- With Max quit, plug your Esplora device into a USB port
 - Launch Max
 - Find my-esplora in `Extras -> MMJSS-extras -> my-esplora`
 - Mouse over the menu and wait 3 seconds 
