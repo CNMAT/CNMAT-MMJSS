@@ -42,3 +42,17 @@ Then:
 **Windows users:**
 
 Please make sure to install Arduino environment, found [here](http://arduino.googlecode.com/files/arduino-1.0.5-r2-windows.zip)
+
+The Esplora will not respond well to hot-plugging (unplugging and re-plugging) in general for the course, but this problem is much larger on Windows.  The best idea is to follow the Esplora guidelines below.
+
+**Esplora Guidelines**
+
+Each day, please do the following after finding your seat and setting up:
+
+- Launch Max
+- Find my-esplora in `Extras -> MMJSS-extras -> my-esplora`
+- Mouse over the menu and wait 3 seconds 
+- Choose your Esplora port
+- Save patch
+- Close patch
+
