@@ -11,9 +11,9 @@ This set of files and folders operates as an extension to the Max application.
 
 Download these zipped archives of the current materials:
 
-[MMJ Summer School Files](https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip)
+[CNMAT MMJ Summer School Files](https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip)
 
-[CNMAT 'odot' Files]()
+[CNMAT odot Library]()
 
 [CNMAT Externals](http://cnmat.berkeley.edu/files/maxdl/archive/CNMAT_Externals-MacOSX-1.0-78-gd490ddd.tgz)
 
