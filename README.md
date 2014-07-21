@@ -38,3 +38,7 @@ Then:
     <code>~/Documents/Max/Packages/odot/dev</code>
 
 - If you're having trouble, please ask one of our beloved TAs!
+
+**Windows users:**
+
+Please make sure to install Arduino environment, found [here](http://arduino.googlecode.com/files/arduino-1.0.5-r2-windows.zip)
