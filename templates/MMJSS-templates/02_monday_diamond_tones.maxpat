@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 17.0, 53.0, 850.0, 638.0 ],
+		"rect" : [ 25.0, 69.0, 850.0, 638.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,7 +36,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 320.0, 59.0, 20.0 ],
+					"patching_rect" : [ 380.0, 413.0, 59.0, 20.0 ],
 					"text" : "press2int"
 				}
 
@@ -51,7 +51,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 566.0, 574.5, 181.0, 25.0 ],
+					"patching_rect" : [ 556.0, 607.5, 181.0, 25.0 ],
 					"text" : "peek inside here (shhhhh!)"
 				}
 
@@ -66,7 +66,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 121.0, 289.0, 216.0, 33.0 ],
+					"patching_rect" : [ 111.0, 362.0, 216.0, 33.0 ],
 					"text" : "the prepend message prepends 'refer' to whatever comes into its inlet."
 				}
 
@@ -80,7 +80,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 289.0, 83.0, 20.0 ],
+					"patching_rect" : [ 21.0, 362.0, 83.0, 20.0 ],
 					"text" : "prepend refer"
 				}
 
@@ -94,7 +94,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 334.5, 210.0, 136.0, 19.0 ]
+					"patching_rect" : [ 324.5, 303.0, 136.0, 19.0 ]
 				}
 
 			}
@@ -2616,7 +2616,7 @@
 						"lines" : [  ]
 					}
 ,
-					"patching_rect" : [ 458.0, 574.5, 94.0, 23.0 ],
+					"patching_rect" : [ 448.0, 607.5, 94.0, 23.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -2643,7 +2643,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 17.0, 829.0, 43.0 ],
+					"patching_rect" : [ 10.0, 10.0, 829.0, 43.0 ],
 					"text" : "Assignment 2: play esplora notes in various scales"
 				}
 
@@ -2654,12 +2654,12 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-6",
-					"linecount" : 6,
+					"linecount" : 13,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 60.0, 714.0, 87.0 ],
-					"text" : "Objectives:\n1. use a menu to select scales in the collection\n2. use the various combinations of esplora buttons to play notes in the selected scale\n3. input integers to coll so that coll outputs the corresponding note of a scale of your choice\n4. send the note data to the esplora buzzer for a buzzy surprise! (keep in mind that you can use any combinations of diamond buttons)"
+					"patching_rect" : [ 10.0, 53.0, 751.0, 181.0 ],
+					"text" : "Objectives:\n\nBIG PICTURE - use the various combinations of esplora buttons to play notes in a scale; use the slider to change the range of the scale.\n\n1. use a menu to set (via refer) scales in the collection (coll) by inputing \n2. input integers into coll (collection) so that coll outputs the corresponding note of a scale\n3. use the output of /diamond/state (o.route) to call up a note from the chosen scale in coll (bonus: what midi note is it?)\n4. attach the output back to the esplora to get some sound *\n5. WOOP!  zero is quite a low midi value.  let's use the slider to fix that.  \n6. scale the output of your esplora's slider to offset the range of that note\n7. add this scaled value to the output of your collection\n\n* you can use any combinations of diamond buttons"
 				}
 
 			}
@@ -2673,7 +2673,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.0, 561.5, 254.0, 36.0 ],
+					"patching_rect" : [ 136.0, 594.5, 254.0, 36.0 ],
 					"text" : "note that the output is a float unless we convert it"
 				}
 
@@ -2688,7 +2688,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.0, 523.5, 254.0, 36.0 ],
+					"patching_rect" : [ 136.0, 556.5, 254.0, 36.0 ],
 					"text" : "scale a number between 0-1 to a range between 32 and 120"
 				}
 
@@ -2702,7 +2702,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.0, 254.083313, 248.0, 21.0 ],
+					"patching_rect" : [ 470.0, 347.083313, 248.0, 21.0 ],
 					"text" : "add a number to another"
 				}
 
@@ -2716,7 +2716,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 480.0, 284.083313, 248.0, 21.0 ],
+					"patching_rect" : [ 470.0, 377.083313, 248.0, 21.0 ],
 					"text" : "send or display a message"
 				}
 
@@ -2731,7 +2731,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 451.0, 459.833313, 150.0, 47.0 ],
+					"patching_rect" : [ 441.0, 552.833313, 150.0, 47.0 ],
 					"text" : "the diamond state maps a specific int to any button combination you press."
 				}
 
@@ -2745,7 +2745,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 94.0, 340.0, 239.0, 21.0 ],
+					"patching_rect" : [ 84.0, 403.0, 239.0, 21.0 ],
 					"text" : "this is an graphical int box (number)"
 				}
 
@@ -2762,7 +2762,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 31.0, 340.0, 54.0, 20.0 ]
+					"patching_rect" : [ 21.0, 403.0, 54.0, 20.0 ]
 				}
 
 			}
@@ -2772,11 +2772,11 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-8",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 74.0, 228.083313, 170.0, 47.0 ],
+					"patching_rect" : [ 64.0, 311.083313, 226.0, 33.0 ],
 					"text" : "select outputs a bang if zero, and the rest comes out the right outlet..."
 				}
 
@@ -2791,7 +2791,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 74.0, 170.0, 170.0, 33.0 ],
+					"patching_rect" : [ 64.0, 263.0, 170.0, 33.0 ],
 					"text" : "mtof converts a MIDI value (0-127) to a frequency in Hz"
 				}
 
@@ -2806,7 +2806,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 118.0, 446.333313, 255.0, 47.0 ],
+					"patching_rect" : [ 108.0, 499.333313, 255.0, 47.0 ],
 					"text" : "this coll (collection) is empty, so you'll need to find a way to issue a special name to it to get it to contain some delicious notes."
 				}
 
@@ -2821,7 +2821,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 600.0, 371.416687, 192.0, 33.0 ],
+					"patching_rect" : [ 590.0, 464.416687, 192.0, 33.0 ],
 					"text" : "inlet of esplora_io_2 accepts a frequency for a tone to be output"
 				}
 
@@ -2836,7 +2836,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 640.0, 473.333313, 50.0, 20.0 ]
+					"patching_rect" : [ 630.0, 566.333313, 50.0, 20.0 ]
 				}
 
 			}
@@ -2850,7 +2850,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 460.0, 439.833313, 50.0, 20.0 ]
+					"patching_rect" : [ 450.0, 532.833313, 50.0, 20.0 ]
 				}
 
 			}
@@ -2864,7 +2864,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 94.0, 371.416687, 243.0, 50.0 ],
+					"patching_rect" : [ 84.0, 434.416687, 243.0, 50.0 ],
 					"text" : "this is also an int box, but set to a specific mode.  the mode we've set when it receives an int between 0-127."
 				}
 
@@ -2880,7 +2880,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 31.0, 371.416687, 54.0, 21.0 ]
+					"patching_rect" : [ 21.0, 434.416687, 54.0, 21.0 ]
 				}
 
 			}
@@ -2893,7 +2893,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 31.0, 561.5, 32.5, 20.0 ],
+					"patching_rect" : [ 21.0, 594.5, 32.5, 20.0 ],
 					"text" : "i"
 				}
 
@@ -2907,7 +2907,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "FullPacket" ],
-					"patching_rect" : [ 460.0, 409.833313, 221.0, 20.0 ],
+					"patching_rect" : [ 450.0, 502.833313, 221.0, 20.0 ],
 					"text" : "o.route /diamond/state /slider/horizontal"
 				}
 
@@ -2921,7 +2921,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 460.0, 379.833313, 98.0, 20.0 ],
+					"patching_rect" : [ 450.0, 472.833313, 98.0, 20.0 ],
 					"text" : "esplora_basic02"
 				}
 
@@ -2935,7 +2935,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 31.0, 228.083313, 36.0, 20.0 ],
+					"patching_rect" : [ 21.0, 311.083313, 36.0, 20.0 ],
 					"text" : "sel 0"
 				}
 
@@ -2949,7 +2949,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 393.0, 284.083313, 66.0, 19.0 ]
+					"patching_rect" : [ 383.0, 377.083313, 66.0, 19.0 ]
 				}
 
 			}
@@ -2962,7 +2962,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 523.5, 105.0, 20.0 ],
+					"patching_rect" : [ 21.0, 556.5, 105.0, 20.0 ],
 					"text" : "scale 0. 1. 32 120"
 				}
 
@@ -2979,7 +2979,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 540.0, 170.0, 275.0, 40.0 ],
+					"patching_rect" : [ 530.0, 263.0, 275.0, 40.0 ],
 					"text" : "Choose a scale with this handy menu.  How might this work with coll?"
 				}
 
@@ -2995,7 +2995,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 393.0, 170.0, 136.0, 21.0 ]
+					"patching_rect" : [ 383.0, 263.0, 136.0, 21.0 ]
 				}
 
 			}
@@ -3008,7 +3008,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 170.0, 36.0, 21.0 ],
+					"patching_rect" : [ 21.0, 263.0, 36.0, 21.0 ],
 					"text" : "mtof"
 				}
 
@@ -3022,7 +3022,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 393.0, 254.083313, 53.0, 21.0 ],
+					"patching_rect" : [ 383.0, 347.083313, 53.0, 21.0 ],
 					"text" : "+ 0"
 				}
 
@@ -3037,7 +3037,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 31.0, 446.333313, 59.5, 21.0 ],
+					"patching_rect" : [ 21.0, 499.333313, 59.5, 21.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0
 					}
@@ -3118,8 +3118,8 @@
 			}
 , 			{
 				"name" : "my-esplora.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../../patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
+				"patcherrelativepath" : "../../extras/MMJSS-extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3138,44 +3138,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.arguments.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.in.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.port.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.aspect.joinpoint.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/aspect",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/aspect",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.out.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/ordering",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3222,30 +3187,6 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.context.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.validate.mxo",
 				"type" : "iLaX"
 			}
@@ -3262,7 +3203,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.timetag.mxo",
+				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
