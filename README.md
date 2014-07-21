@@ -13,9 +13,10 @@ Download these zipped archives of the current materials:
 
 [CNMAT MMJ Summer School Files](https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip)
 
-[CNMAT odot Library]()
+[CNMAT odot Library Mac](https://github.com/CNMAT/CNMAT-MMJSS/releases/download/v1.0.0b/odot-Max-MacOSX-v1.0.0b-0-ge74e420-master.tgz)
+[CNMAT odot Library Win](https://github.com/CNMAT/CNMAT-MMJSS/releases/download/v1.0.0b/odot-Max-Windows-v1.0.0b-0-ge74e420-master.zip)
 
-[CNMAT Externals Mac](http://cnmat.berkeley.edu/files/maxdl/archive/CNMAT_Externals-MacOSX-1.0-78-gd490ddd.tgz) / [CNMAT Externals Win](http://cnmat.berkeley.edu/files/maxdl/archive/CNMAT_Externals-Windows-1.0-58-gea4b1d0.tgz)
+[CNMAT Externals Mac](https://github.com/CNMAT/CNMAT-MMJSS/releases/download/v1.0.0b/CNMAT-Externals-MacOSX-20140721.zip) / [CNMAT Externals Win](https://github.com/CNMAT/CNMAT-MMJSS/releases/download/v1.0.0b/CNMAT-Externals-Windows-20140721.zip)
 
 Double-click to unzip, and place the resultant folders in the following location, depending on your OS:
 
