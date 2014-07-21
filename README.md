@@ -38,6 +38,7 @@ Then:
 - Add a search path preference for the following folder (+ button), then click on 'choose':
 
     Choose this folder for Mac:  `~/Documents/Max/Packages/odot/dev`
+    
     Choose this folder for Win:  `C:\Users\<your username>\Documents\Max\Packages\odot\dev`
 
 - If you're having trouble, please ask one of our beloved TAs!
