@@ -45,7 +45,7 @@ Then:
 
 Please make sure to install Arduino environment, found [here](http://arduino.googlecode.com/files/arduino-1.0.5-r2-windows.zip)
 
-The Esplora will not respond well to hot-plugging (unplugging and re-plugging) in general for the course, but this problem is much larger on Windows.  The best idea is to follow the Esplora guidelines below.
+In the Windows version of Max, the application will not respond well to hot plugging (unplugging and re-plugging).  The easiest way to avoid this issue is to follow the Esplora guidelines below.  Mac users are encouraged to follow the same guidelines in the event of any issues arising from hot plugging.
 
 **Esplora Guidelines**
 
