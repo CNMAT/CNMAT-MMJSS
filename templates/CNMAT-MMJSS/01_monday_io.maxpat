@@ -30,6 +30,36 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
+					"id" : "obj-5",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 560.0, 427.0, 110.0, 74.0 ],
+					"presentation_rect" : [ 562.0, 430.0, 0.0, 0.0 ],
+					"text" : "unpack unpacks a list into a number of elements specified by its arguments"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 15.0,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "float", "float", "float", "float" ],
+					"patching_rect" : [ 550.0, 400.0, 126.0, 23.0 ],
+					"text" : "unpack 0. 0. 0. 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
 					"fontsize" : 15.0,
 					"id" : "obj-38",
 					"maxclass" : "newobj",
@@ -96,13 +126,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 11.0,
 									"id" : "obj-1",
-									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 144.0, 216.0, 176.0, 70.0 ],
-									"text" : "/hue : 0.647,\n/sat : 1.,\n/lum : 0.5,\n/to/swatch : [\"hsl\", 0.647, 1., 0.5]",
+									"patching_rect" : [ 144.0, 216.0, 176.0, 33.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -148,7 +176,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 144.0, 106.0, 188.0, 60.0 ],
+									"patching_rect" : [ 144.0, 106.0, 188.0, 59.0 ],
 									"text" : "/sat = 1.,\n/lum = 0.5,\n/to/swatch = [hsl, /hue, /sat, /lum]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -349,7 +377,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 430.0, 313.0, 159.0, 60.0 ],
+					"patching_rect" : [ 430.0, 321.0, 159.0, 60.0 ],
 					"text" : "print prints anything to the max window, and the @popup attr allows you to see the result in your patch"
 				}
 
@@ -595,15 +623,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
