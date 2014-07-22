@@ -11,7 +11,7 @@ This set of files and folders operates as an extension to the Max application.
 
 Download these zipped archives of the current materials:
 
-[CNMAT MMJ Summer School Files](https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip)
+[CNMAT MMJ Summer School Files (updated each day)](https://github.com/CNMAT/CNMAT-MMJSS/archive/master.zip)
 
 [CNMAT odot Library Mac](https://github.com/CNMAT/CNMAT-MMJSS/releases/download/v1.0.0b/odot-Max-MacOSX-v1.0.0b-0-ge74e420-master.tgz) /
 [CNMAT odot Library Win](https://github.com/CNMAT/CNMAT-MMJSS/releases/download/v1.0.0b/odot-Max-Windows-v1.0.0b-0-ge74e420-master.zip)
