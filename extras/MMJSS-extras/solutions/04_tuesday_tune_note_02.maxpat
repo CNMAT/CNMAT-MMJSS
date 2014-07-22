@@ -526,29 +526,15 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"id" : "obj-7",
-									"linecount" : 27,
-									"maxclass" : "o.message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 120.0, 250.0, 369.0 ],
-									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit ",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-4",
-									"maxclass" : "newobj",
+									"id" : "obj-1",
+									"linecount" : 38,
+									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 130.0, 80.0, 93.0, 20.0 ],
-									"text" : "o.broadcast.api"
+									"patching_rect" : [ 40.0, 70.0, 227.0, 530.0 ],
+									"text" : "/Manufacturer : \"Arduino\",\n/Device : \"Esplora\",\n/UniqueID : \"usbmodemOSCes131\",\n/Sequence/Number : 214274,\n/acceleration/x : 0.015625,\n/acceleration/y : 0.078125,\n/acceleration/z : 0.316406,\n/photoresistor : 0.97263,\n/slider/horizontal : 0.196481,\n/connector/white/right : 0.943304,\n/connector/orange/left : true,\n/connector/orange/right : false,\n/units/temperature : \"Celsius\",\n/temperature/celsius : 21.,\n/microphone/loudness : 0.,\n/led/rgb : [0, 0, 0],\n/joystick/horizontal : 0.0117188,\n/joystick/vertical : 0.0136719,\n/connector/white/left : 0.498534,\n/joystick/button/down : false,\n/joystick/button/up : true,\n/joystick/forward/button/down : false,\n/joystick/forward/button/up : true,\n/joystick/left/button/down : false,\n/joystick/left/button/up : true,\n/joystick/right/button/down : false,\n/joystick/right/button/up : true,\n/joystick/backward/button/down : false,\n/joystick/backward/button/up : true,\n/diamond/backward/button/down : false,\n/diamond/backward/button/up : true,\n/diamond/left/button/down : false,\n/diamond/left/button/up : true,\n/diamond/right/button/down : false,\n/diamond/right/button/up : true,\n/diamond/forward/button/down : false,\n/diamond/forward/button/up : true,\n/microseconds : 1534453276",
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -567,16 +553,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-8", 0 ]
@@ -1314,7 +1291,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.message.mxo",
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
  ]
