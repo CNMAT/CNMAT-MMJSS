@@ -566,7 +566,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 578.0, 286.5, 158.0, 20.0 ],
-					"text" : "mmjss.osc~ @/type triangle"
+					"text" : "mmjss.osc~ @type triangle"
 				}
 
 			}
