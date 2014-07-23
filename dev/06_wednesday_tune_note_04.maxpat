@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 7,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 9.0, 51.0, 828.0, 719.0 ],
+		"rect" : [ 9.0, 77.0, 828.0, 693.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,7 +53,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 214.5, 450.0, 138.0, 91.0 ],
+					"patching_rect" : [ 214.5, 450.0, 140.0, 91.0 ],
 					"text" : "this time, maybe figure out what press2int is doing... why is it necessary?  is it _really_ necessary?"
 				}
 
@@ -85,7 +85,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 594.5, 283.5, 148.0, 37.0 ],
-					"presentation_rect" : [ 1288.0, 499.0, 0.0, 0.0 ],
 					"text" : "don't worry about the attributes for now."
 				}
 
@@ -220,7 +219,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 560.0, 450.0, 34.0, 18.0 ],
-					"presentation_rect" : [ 961.0, 262.0, 0.0, 0.0 ],
 					"text" : "n $1"
 				}
 
@@ -334,7 +332,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 63.0, 471.0, 128.0 ],
+					"patching_rect" : [ 17.0, 63.0, 471.0, 127.0 ],
 					"text" : "Objectives:\n1. slowly migrate from one cloud of frequency content to another\n2. use migrator in combination with sinusoids~ to manage birhts and deaths of partials\n3. use the horizontal slider (or another parameter) of the esplora to change the fundamental frequency that generates harmonics for the migrator.\n4. suss out how to silence the migrator by having it \"migrate to no sound\".\n\nextra credit: use the 'interpret buttons' patch from the diamond tones assignment to choose frequencies for the migrator to migrate to."
 				}
 
@@ -500,11 +498,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 7,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 32.0, 67.0, 271.0, 510.0 ],
+						"rect" : [ 32.0, 93.0, 271.0, 484.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -527,29 +525,13 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
-									"id" : "obj-7",
-									"linecount" : 28,
-									"maxclass" : "o.message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 120.0, 160.0, 369.0 ],
-									"text" : "/acceleration/x \n/acceleration/y \n/acceleration/z \n/connector/orange/left \n/connector/orange/right \n/connector/white/left \n/connector/white/right \n/diamond/backward \n/diamond/forward \n/diamond/left \n/diamond/right \n/joystick/backward \n/joystick/but \n/joystick/button \n/joystick/forward \n/joystick/horizontal \n/joystick/left \n/joystick/right \n/joystick/vertical \n/led/blue \n/led/green \n/led/red \n/led/rgb \n/microphone/loudness \n/photoresistor \n/slider/horizontal \n/temperature/celsius \n/temperature/fahrenheit ",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-4",
-									"maxclass" : "newobj",
+									"id" : "obj-1",
+									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 130.0, 80.0, 93.0, 20.0 ],
-									"text" : "o.broadcast.api"
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 70.0, 120.0, 150.0, 34.0 ],
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -568,16 +550,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-7", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-4", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-4", 0 ],
+									"destination" : [ "obj-1", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-8", 0 ]
@@ -635,7 +608,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bordercolor" : [ 0.5, 0.5, 0.5, 1.0 ],
 					"id" : "obj-14",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -703,9 +675,9 @@
 					"fontsize" : 12.0,
 					"id" : "obj-3",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "FullPacket" ],
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 127.0, 253.5, 98.0, 20.0 ],
 					"text" : "mmjss.esplora a"
 				}
@@ -915,107 +887,32 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "mmjss.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-odot/abstractions",
-				"patcherrelativepath" : "../../CNMAT-odot/abstractions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "press2int.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.broadcast.api.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mmjss.harmonics.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJSS/patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "harmonics.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJ-Depot/modules/data_generation",
-				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/modules/data_generation",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/dev",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "list-norm-expdecay.maxpat",
-				"bootpath" : "/Users/jml/Documents/materials/programming/max_files/5_berkeley/projects/cnmat/repositories/git/CNMAT-MMJ-Depot/modules/lists",
-				"patcherrelativepath" : "../../CNMAT-MMJ-Depot/modules/lists",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "slipOSC.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.downcast.mxo",
-				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "OpenSoundControl.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.mappatch.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.message.mxo",
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
 , 			{

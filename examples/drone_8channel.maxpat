@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 31.0, 84.0, 1219.0, 617.0 ],
+		"rect" : [ 31.0, 61.0, 1219.0, 617.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -581,7 +581,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 272.0, 344.0, 120.0, 24.0 ],
+					"patching_rect" : [ 272.0, 344.0, 125.0, 24.0 ],
 					"text" : "/drone/*/migrate : 0",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -596,7 +596,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 136.0, 344.0, 120.0, 24.0 ],
+					"patching_rect" : [ 136.0, 344.0, 125.0, 24.0 ],
 					"text" : "/drone/*/migrate : 1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -1803,71 +1803,36 @@
 			}
 , 			{
 				"name" : "my-esplora.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
+				"patcherrelativepath" : "../extras/MMJSS-extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/io/esplora",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers/io/esplora",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/io",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers/io",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.arguments.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.in.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.port.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.aspect.joinpoint.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/aspect",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers/aspect",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.out.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers/core",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/ordering",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.serial.display.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/io",
-				"patcherrelativepath" : "../../CNMAT-odot/patchers/io",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1888,15 +1853,23 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.display.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.pack.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1908,31 +1881,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.context.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1952,15 +1901,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.timetag.mxo",
+				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.downcast.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
  ]

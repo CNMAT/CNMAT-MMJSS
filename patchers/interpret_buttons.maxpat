@@ -29,6 +29,18 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-2",
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 116.0, 300.0, 25.0, 25.0 ],
+					"presentation_rect" : [ 99.0, 301.0, 0.0, 0.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-12",
@@ -58,9 +70,9 @@
 					"fontsize" : 12.0,
 					"id" : "obj-70",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 30.0, 110.0, 60.0, 20.0 ],
 					"text" : "o.change"
 				}
@@ -154,6 +166,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 1 ]
 				}
 
 			}
