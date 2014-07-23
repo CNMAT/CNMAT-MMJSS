@@ -7,4 +7,4 @@ It is meant to serve as a compliment to the MMJ course at The Center for New Mus
 
 ================
 
-Please see our [WIKI home page](https://github.com/CNMAT/CNMAT-MMJSS/wiki) for further instructions.
+Please see our [WIKI home page](https://github.com/CNMAT/CNMAT-MMJSS/wiki) for further information.
