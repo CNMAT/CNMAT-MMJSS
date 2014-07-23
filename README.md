@@ -1,9 +1,9 @@
 CNMAT-MMJSS-2014
 ================
 
-For this class, we need to install some special files.
-
 This set of files and folders operates as an extension to the Max application.
+
+It is meant to serve as a compliment to the MMJ course at The Center for New Music and Audio Technologies, at UC Berkeley.
 
 ================
 
