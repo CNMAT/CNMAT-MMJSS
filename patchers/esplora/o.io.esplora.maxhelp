@@ -143,7 +143,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.0, 115.666664, 102.0, 24.0 ],
+					"patching_rect" : [ 616.0, 115.666664, 66.0, 24.0 ],
 					"text" : "/tone/off",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -158,7 +158,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.0, 80.166664, 102.0, 24.0 ],
+					"patching_rect" : [ 616.0, 80.166664, 83.0, 24.0 ],
 					"text" : "/tone : 220.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -173,7 +173,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.0, 41.666664, 102.0, 24.0 ],
+					"patching_rect" : [ 616.0, 41.666664, 79.0, 24.0 ],
 					"text" : "/tone : 440",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -184,12 +184,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-14",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 616.0, 7.666664, 108.0, 37.0 ],
+					"patching_rect" : [ 616.0, 7.666664, 113.0, 24.0 ],
 					"text" : "/tone : [200, 200]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -200,13 +199,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-13",
-					"linecount" : 38,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 19.0, 405.0, 267.0, 530.0 ],
-					"text" : "/Manufacturer : \"Arduino\",\n/Device : \"Esplora\",\n/UniqueID : \"usbmodemOSCes131\",\n/Sequence/Number : 28708,\n/acceleration/x : 0.0332031,\n/acceleration/y : 0.0742188,\n/acceleration/z : 0.314453,\n/photoresistor : 0.968719,\n/slider/horizontal : 0.840665,\n/connector/white/right : 0.937439,\n/connector/orange/left : true,\n/connector/orange/right : false,\n/units/temperature : \"Celsius\",\n/temperature/celsius : 24.,\n/microphone/loudness : 0.,\n/led/rgb : [0, 0, 0],\n/joystick/horizontal : 0.0117188,\n/joystick/vertical : 0.0136719,\n/connector/white/left : 0.498534,\n/joystick/button/down : false,\n/joystick/button/up : true,\n/joystick/forward/button/down : false,\n/joystick/forward/button/up : true,\n/joystick/left/button/down : false,\n/joystick/left/button/up : true,\n/joystick/right/button/down : false,\n/joystick/right/button/up : true,\n/joystick/backward/button/down : false,\n/joystick/backward/button/up : true,\n/diamond/backward/button/down : false,\n/diamond/backward/button/up : true,\n/diamond/left/button/down : false,\n/diamond/left/button/up : true,\n/diamond/right/button/down : false,\n/diamond/right/button/up : true,\n/diamond/forward/button/down : false,\n/diamond/forward/button/up : true,\n/microseconds : 812193052",
+					"patching_rect" : [ 19.0, 405.0, 267.0, 34.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -216,13 +213,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-3",
-					"linecount" : 6,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 643.5, 260.0, 158.0, 101.0 ],
-					"text" : "/port : \"usbmodemOSCes131\",\n/rate/output : 98,\n/rate/input : 0,\n/mediansize/received : -1,\n/baud",
+					"patching_rect" : [ 643.5, 260.0, 158.0, 34.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -233,11 +228,10 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-33",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 351.0, 150.0, 33.0 ],
+					"patching_rect" : [ 30.0, 351.0, 174.0, 20.0 ],
 					"text" : "Adrian Freed, Jeff Lubow 2014"
 				}
 
@@ -252,7 +246,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 382.5, 168.5, 170.0, 47.0 ],
+					"patching_rect" : [ 690.0, 160.0, 170.0, 47.0 ],
 					"text" : "On Macintosh look for your Esplora named like this: \nusbmodemXXXX\n"
 				}
 
@@ -515,12 +509,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-24",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 40.0, 108.0, 37.0 ],
+					"patching_rect" : [ 360.0, 40.0, 113.0, 24.0 ],
 					"text" : "/led/rgb : [0, 0, 0]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -543,12 +536,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-11",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 7.666664, 101.0, 37.0 ],
+					"patching_rect" : [ 230.0, 7.666664, 106.0, 24.0 ],
 					"text" : "/led/green : 200",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -559,12 +551,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-10",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 72.333336, 93.0, 37.0 ],
+					"patching_rect" : [ 230.0, 72.333336, 98.0, 24.0 ],
 					"text" : "/led/blue : 200",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -575,12 +566,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-9",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 230.0, 40.0, 88.0, 37.0 ],
+					"patching_rect" : [ 230.0, 40.0, 93.0, 24.0 ],
 					"text" : "/led/red : 100",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -591,12 +581,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-6",
-					"linecount" : 2,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 7.666664, 121.0, 37.0 ],
+					"patching_rect" : [ 360.0, 7.666664, 126.0, 24.0 ],
 					"text" : "/led/rgb : [200, 0, 0]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -988,7 +977,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.expr.mxo",
+				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1001,10 +990,6 @@
 			}
 , 			{
 				"name" : "o.difference.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
 , 			{
