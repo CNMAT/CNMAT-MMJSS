@@ -43,23 +43,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bubble" : 1,
-					"bubblepoint" : 0.22,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-48",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 214.5, 450.0, 140.0, 91.0 ],
-					"text" : "this time, maybe figure out what press2int is doing... why is it necessary?  is it _really_ necessary?"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
@@ -379,18 +362,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 167.0, 223.5, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "spectroscope~",
 					"numinlets" : 2,
@@ -530,7 +501,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.0, 120.0, 150.0, 34.0 ],
+									"patching_rect" : [ 50.0, 70.0, 150.0, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -542,7 +513,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "FullPacket" ],
 									"patching_rect" : [ 130.0, 20.0, 25.0, 25.0 ]
 								}
 
@@ -575,20 +546,6 @@
 					}
 ,
 					"text" : "p all_messages"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-68",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "bang", "bang", "" ],
-					"patching_rect" : [ 146.5, 480.0, 46.0, 20.0 ],
-					"text" : "sel 1 0"
 				}
 
 			}
@@ -634,20 +591,6 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 146.5, 450.0, 59.0, 20.0 ],
-					"text" : "press2int"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -660,26 +603,15 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 127.0, 223.5, 20.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.0, 253.5, 98.0, 20.0 ],
-					"text" : "mmjss.esplora a"
+					"numoutlets" : 2,
+					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"patching_rect" : [ 127.0, 253.5, 70.0, 20.0 ],
+					"text" : "my-esplora"
 				}
 
 			}
@@ -698,28 +630,10 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-68", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-23", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -824,15 +738,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-5", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -887,9 +792,37 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "press2int.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../patchers",
+				"name" : "my-esplora.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
+				"patcherrelativepath" : "../extras/MMJSS-extras",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.esplora.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../patchers/esplora",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.slipserial.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../patchers/esplora",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.righttoleft.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/ordering",
+				"patcherrelativepath" : "../../CNMAT-odot/patchers/ordering",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "o.io.serial.display.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -908,7 +841,43 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.pack.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.route.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.union.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.validate.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.print.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.slip.encode.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.slip.decode.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.if.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.downcast.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{

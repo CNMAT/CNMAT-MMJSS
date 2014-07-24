@@ -51,7 +51,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 260.0, 353.5, 49.0, 100.0 ],
-					"presentation_rect" : [ 260.0, 351.0, 0.0, 0.0 ],
 					"setminmax" : [ 0.0, 127.0 ]
 				}
 
@@ -396,7 +395,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 133.5, 554.0, 102.0, 20.0 ],
+					"patching_rect" : [ 133.5, 554.0, 104.0, 20.0 ],
 					"text" : "mmjss.harmonics"
 				}
 
@@ -952,78 +951,57 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "my-esplora.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/esplora",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.arguments.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.in.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.port.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.aspect.joinpoint.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/aspect",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/aspect",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.out.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/core",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/core",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/ordering",
+				"patcherrelativepath" : "../../../../CNMAT-odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.serial.display.maxpat",
-				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/esplora",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/esplora",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"patcherrelativepath" : "../../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mmjss.harmonics.maxpat",
 				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "..",
+				"patcherrelativepath" : "../../../patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "harmonics.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/dev",
+				"patcherrelativepath" : "../../../dev",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "list-norm-expdecay.maxpat",
+				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "../../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -1037,34 +1015,6 @@
 			}
 , 			{
 				"name" : "o.union.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.collect.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.var.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.context.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.prepend.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.cond.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1084,7 +1034,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.timetag.mxo",
+				"name" : "o.if.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1092,19 +1042,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "o.compose.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "sinusoids~.mxo",
+				"name" : "o.display.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "o.expr.codebox.mxo",
+				"name" : "sinusoids~.mxo",
 				"type" : "iLaX"
 			}
 , 			{

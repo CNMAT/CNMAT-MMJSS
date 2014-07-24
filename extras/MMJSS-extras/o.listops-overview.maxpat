@@ -262,7 +262,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 280.0, 190.0, 128.0, 20.0 ],
-					"presentation_rect" : [ 641.0, 278.0, 0.0, 0.0 ],
 					"text" : "Jeff Lubow et al, 2014"
 				}
 
@@ -889,13 +888,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-28",
-									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 744.0, 400.0, 150.0, 74.0 ],
-									"text" : "/list : [1, 2, 3, 4, 5, 6],\n/count : 2,\n/slice/left : [1, 2, 3, 4],\n/slice/right : [5, 6]",
+									"patching_rect" : [ 744.0, 400.0, 150.0, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1008,13 +1005,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-79",
-									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 351.5, 400.0, 150.0, 74.0 ],
-									"text" : "/list : [1, 2, 3, 4, 5, 6],\n/count : 4,\n/slice/left : [1, 2, 3, 4],\n/slice/right : [5, 6]",
+									"patching_rect" : [ 351.5, 400.0, 150.0, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1085,13 +1080,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-80",
-									"linecount" : 4,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 40.0, 400.0, 150.0, 74.0 ],
-									"text" : "/list : [1, 2, 3, 4, 5, 6],\n/count : 2,\n/slice/left : [1, 2],\n/slice/right : [3, 4, 5, 6]",
+									"patching_rect" : [ 40.0, 400.0, 150.0, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2093,13 +2086,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-6",
-									"linecount" : 2,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 362.0, 198.5, 64.0, 47.0 ],
-									"text" : "/a,\n/b",
+									"patching_rect" : [ 362.0, 198.5, 64.0, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2169,13 +2160,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-62",
-									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 251.5, 178.5, 61.0 ],
-									"text" : "/a : [1, 2, 3],\n/b : [\"a\", \"b\", \"c\"],\n/laced : [1, \"a\", 2, \"b\", 3, \"c\"]",
+									"patching_rect" : [ 138.0, 251.5, 178.5, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2330,11 +2319,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-5",
+									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 144.0, 168.0, 200.0, 34.0 ],
+									"patching_rect" : [ 144.0, 168.0, 200.0, 61.0 ],
+									"text" : "/a : [1, -2, -15.],\n/b : [\"a\", \"CNMAT\"],\n/joined : [1, -2, -15., \"a\", \"CNMAT\"]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2380,7 +2371,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 144.0, 80.5, 116.0, 32.0 ],
-									"text" : "/a ??= /b ??= list(),\n",
+									"text" : "/a ??= /b ??= list()",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2832,13 +2823,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-25",
-									"linecount" : 5,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 379.0, 384.0, 216.0, 88.0 ],
-									"text" : "/list : [1, 2, 3.14159, 4, \"bear\", 6, 7, 8],\n/every2/from0 : [0, 2, 4, 6],\n/every2/from1 : [1, 3, 5, 7],\n/delaced/left : [1, 3.14159, \"bear\", 7],\n/delaced/right : [2, 4, 6, 8]",
+									"patching_rect" : [ 379.0, 384.0, 216.0, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2950,13 +2939,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-71",
-									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.0, 329.333374, 216.0, 61.0 ],
-									"text" : "/list : [1, 2, 3.14159, 4, \"bear\", 6, 7, 8],\n/delaced/left : [1, 3.14159, \"bear\", 7],\n/delaced/right : [2, 4, 6, 8]",
+									"patching_rect" : [ 28.0, 329.333374, 216.0, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -3926,14 +3913,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "o.gather.maxpat",
 				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/namespace",
-				"patcherrelativepath" : "../../../../../../../Max/Packages/CNMAT-odot/patchers/namespace",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/namespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
 				"bootpath" : "/Users/jeffreylubow/Documents/Max/Packages/CNMAT-odot/patchers/ordering",
-				"patcherrelativepath" : "../../../../../../../Max/Packages/CNMAT-odot/patchers/ordering",
+				"patcherrelativepath" : "../../../CNMAT-odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
