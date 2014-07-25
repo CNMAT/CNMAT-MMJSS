@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 35.0, 62.0, 440.0, 238.0 ],
+		"rect" : [ 24.0, 58.0, 492.0, 233.0 ],
 		"bgcolor" : [ 0.963931, 0.96936, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -46,7 +46,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 69.0, 621.0, 391.0 ],
+						"rect" : [ 377.0, 267.0, 669.0, 342.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 20.0,
@@ -74,7 +74,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 30.0, 123.0, 20.0 ],
+									"patching_rect" : [ 40.0, 30.166656, 123.0, 20.0 ],
 									"text" : "2. use said functions"
 								}
 
@@ -88,7 +88,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 330.0, 30.0, 225.0, 20.0 ],
+									"patching_rect" : [ 320.0, 30.166656, 225.0, 20.0 ],
 									"text" : "1. pass in a number of functions as a list"
 								}
 
@@ -102,8 +102,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 140.0, 234.0, 219.0, 20.0 ],
-									"text" : "o.gather /median/input /compared/input"
+									"patching_rect" : [ 30.0, 224.0, 115.0, 20.0 ],
+									"text" : "o.gather /med /truth"
 								}
 
 							}
@@ -116,7 +116,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 140.0, 154.0, 50.0, 20.0 ],
+									"patching_rect" : [ 30.0, 144.0, 50.0, 20.0 ],
 									"text" : "o.union"
 								}
 
@@ -131,7 +131,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 40.0, 59.833344, 171.0, 51.0 ],
+									"patching_rect" : [ 30.0, 60.0, 171.0, 51.0 ],
 									"text" : "/list : [1.1231, 3, 2.3123, 3],\n/a : [\"a\", \"b\", \"c\", \"a\"],\n/b : [\"a\", \"b\", \"c\", \"a\"]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -147,8 +147,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 140.0, 280.0, 343.0, 47.0 ],
-									"text" : "/median/input : 2.65615,\n/compared/input : true",
+									"patching_rect" : [ 30.0, 270.0, 343.0, 47.0 ],
+									"text" : "/med : 2.65615,\n/truth : true",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -162,8 +162,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 140.0, 180.0, 341.0, 32.0 ],
-									"text" : "/median/input = /med(/list), /compared/input = /truth(/eqv(/list))",
+									"patching_rect" : [ 30.0, 170.0, 341.0, 32.0 ],
+									"text" : "/med = /median(/list), /truth = /compare(/a, /b)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -173,13 +173,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-116",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "o.compose",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 240.0, 59.833344, 360.0, 51.0 ],
-									"text" : "/med : \"lambda([l], median(l))\",\n/eqv : \"lambda([a, b], (length(/a) == length(/b)) && (/a == /b))\",\n/truth : \"lambda([eqv], lreduce(and, eqv))\"",
+									"patching_rect" : [ 227.0, 60.0, 434.0, 37.0 ],
+									"text" : "/median : \"lambda([l], median(l))\",\n/compare : \"lambda([a, b], lreduce(and, (length(a) == length(b)) && (a == b)))\"",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -233,7 +233,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 30.0, 150.0, 213.0, 20.0 ],
+					"patching_rect" : [ 30.0, 160.0, 283.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -247,7 +247,7 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p anonymous_functions_using_listops",
+					"text" : "p library_of_functions_using_anonymous_functions",
 					"textcolor" : [ 0.216, 0.435, 0.7137, 1.0 ]
 				}
 
@@ -261,7 +261,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.0, 190.0, 128.0, 20.0 ],
+					"patching_rect" : [ 310.0, 120.0, 128.0, 20.0 ],
 					"text" : "Jeff Lubow et al, 2014"
 				}
 
@@ -276,7 +276,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.0, 110.0, 158.0, 74.0 ],
+					"patching_rect" : [ 310.0, 40.0, 158.0, 74.0 ],
 					"text" : "exemplary list operations with o.expr.codebox"
 				}
 
@@ -1950,11 +1950,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 11.0,
 									"id" : "obj-4",
+									"linecount" : 2,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 136.0, 144.0, 150.0, 33.0 ],
+									"patching_rect" : [ 136.0, 144.0, 150.0, 45.0 ],
+									"text" : "/mylist : [1, 2, 3, 4, 5],\n/length : 5",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1968,7 +1970,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 136.0, 66.0, 124.0, 23.0 ],
+									"patching_rect" : [ 136.0, 24.0, 124.0, 23.0 ],
 									"text" : "/mylist : [1, 2, 3, 4, 5]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -1993,12 +1995,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 11.0,
 									"id" : "obj-36",
+									"linecount" : 2,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 136.0, 100.0, 127.0, 31.0 ],
-									"text" : "/length = length(/mylist)",
+									"patching_rect" : [ 136.0, 72.0, 127.0, 43.0 ],
+									"text" : "/list ??= list(),\n/length = length(/mylist)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2086,11 +2089,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-6",
+									"linecount" : 2,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 362.0, 198.5, 64.0, 34.0 ],
+									"patching_rect" : [ 362.0, 198.5, 64.0, 47.0 ],
+									"text" : "/a,\n/b",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2160,11 +2165,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-62",
+									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 138.0, 251.5, 178.5, 34.0 ],
+									"patching_rect" : [ 138.0, 251.5, 178.5, 61.0 ],
+									"text" : "/a : [1, 2, 3],\n/b : [\"a\", \"b\", \"c\"],\n/laced : [1, \"a\", 2, \"b\", 3, \"c\"]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2823,11 +2830,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-25",
+									"linecount" : 5,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 379.0, 384.0, 216.0, 34.0 ],
+									"patching_rect" : [ 379.0, 384.0, 216.0, 88.0 ],
+									"text" : "/list : [1, 2, 3.14159, 4, \"bear\", 6, 7, 8],\n/every2/from0 : [0, 2, 4, 6],\n/every2/from1 : [1, 3, 5, 7],\n/delaced/left : [1, 3.14159, \"bear\", 7],\n/delaced/right : [2, 4, 6, 8]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2867,11 +2876,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 11.0,
 									"id" : "obj-28",
+									"linecount" : 2,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 393.25, 208.0, 78.75, 33.0 ],
+									"patching_rect" : [ 393.25, 208.0, 78.75, 45.0 ],
+									"text" : "/a : \"a\",\n/list",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -2939,11 +2950,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-71",
+									"linecount" : 3,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 28.0, 329.333374, 216.0, 34.0 ],
+									"patching_rect" : [ 28.0, 329.333374, 216.0, 61.0 ],
+									"text" : "/list : [1, 2, 3.14159, 4, \"bear\", 6, 7, 8],\n/delaced/left : [1, 3.14159, \"bear\", 7],\n/delaced/right : [2, 4, 6, 8]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -3788,7 +3801,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 296.0, 79.166656, 65.0, 35.0 ],
+									"patching_rect" : [ 296.0, 56.0, 65.0, 35.0 ],
 									"text" : "/a : 300,\n/b : 230",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -3829,7 +3842,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 209.0, 79.166656, 65.0, 35.0 ],
+									"patching_rect" : [ 209.0, 56.0, 65.0, 35.0 ],
 									"text" : "/a : 300,\n/b : 300",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
