@@ -36,7 +36,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 30.0, 147.0, 114.0, 20.0 ],
+					"patching_rect" : [ 30.0, 147.0, 160.0, 20.0 ],
 					"text" : "o.union"
 				}
 
@@ -248,7 +248,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 125.0, 70.0, 75.0, 20.0 ],
+					"patching_rect" : [ 225.0, 75.0, 75.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
@@ -275,7 +275,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 70.0, 30.0, 74.0, 20.0 ],
+					"patching_rect" : [ 170.0, 35.0, 74.0, 20.0 ],
 					"text" : "patcherargs"
 				}
 
@@ -290,7 +290,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 220.0, 196.0, 87.0 ],
+					"patching_rect" : [ 30.0, 180.0, 196.0, 87.0 ],
 					"text" : "/partials ??= 2,\n/fund ??= 220.,\n/idx = aseq(1, /partials, 1),\n/harmonics =  /idx * float32(/fund),\ndelete(/idx)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -303,7 +303,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 30.0, 30.0, 25.0, 25.0 ]
 				}
 
