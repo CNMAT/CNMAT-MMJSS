@@ -82,8 +82,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 94.0, 299.0, 153.0 ],
-					"text" : "/amp ??= 1.,\n/idx/1 = aseq(1, /n, 1),\n/idx/2 = [rest(/idx/1), /n],\n/norm = /idx/1 / float32(/n),\n/scaledamp = (pow(exp(/norm), (-5. * /norm))) * /amp,\n/harmonics =  /idx/1 * mtof(/midifreq),\n/laced = interleave(/harmonics, /scaledamp),\ndelete(/idx/1),\ndelete(/idx/2),\ndelete(/norm)",
+					"patching_rect" : [ 30.0, 94.0, 303.0, 153.0 ],
+					"text" : "/amp ??= 1., /n ??= 10, /offset ??= 0.,\n/idx/1 = aseq(1, /n, 1),\n/idx/2 = [rest(/idx/1), /n],\n/norm = /idx/1 / float32(/n),\n/amp/scaled = (pow(exp(/norm), (-5. * /norm))) * /amp,\n/harmonics =  (/idx/1 * mtof(/midifreq)) + /offset,\n/laced = interleave(/harmonics, /amp/scaled),\ndelete(/idx/1),\ndelete(/idx/2),\ndelete(/norm)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -106,7 +106,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "FullPacket" ],
 					"patching_rect" : [ 30.0, 19.0, 25.0, 25.0 ]
 				}
 
@@ -138,15 +138,6 @@
 					"source" : [ "obj-25", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
 			}
  ]
 	}
