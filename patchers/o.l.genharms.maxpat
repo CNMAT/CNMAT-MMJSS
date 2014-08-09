@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 32.0, 70.0, 573.0, 362.0 ],
+		"rect" : [ 32.0, 70.0, 502.0, 383.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -31,13 +31,30 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"linecount" : 5,
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 130.0, 19.0, 99.0, 78.0 ],
+					"presentation_rect" : [ 269.0, 19.0, 0.0, 0.0 ],
+					"text" : "/midifreq : 60,\n/offset : 0.,\n/n : 10,\n/amp : 1.,\n/zeros : true",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-22",
 					"linecount" : 4,
 					"maxclass" : "o.compose",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 100.0, 10.0, 99.0, 64.0 ],
+					"patching_rect" : [ 270.0, 19.0, 100.0, 64.0 ],
 					"text" : "/midifreq : 60,\n/offset : 0.,\n/n : 10,\n/amp : 1.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
@@ -52,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 203.0, 10.0, 66.0, 20.0 ],
+					"patching_rect" : [ 383.0, 19.0, 66.0, 20.0 ],
 					"text" : "harmonics"
 				}
 
@@ -67,7 +84,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 350.0, 100.0, 144.0, 127.0 ],
+					"patching_rect" : [ 350.0, 136.0, 144.0, 127.0 ],
 					"text" : "input:\n\nmidifreq, offset, n\n(optional: amp)\n\noutput\nfreq / amp pairs with exponentially decaying amplitudes (/laced)"
 				}
 
@@ -77,13 +94,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-25",
-					"linecount" : 10,
+					"linecount" : 11,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 30.0, 94.0, 303.0, 153.0 ],
-					"text" : "/amp ??= 1., /n ??= 10, /offset ??= 0.,\n/idx/1 = aseq(1, /n, 1),\n/idx/2 = [rest(/idx/1), /n],\n/norm = /idx/1 / float32(/n),\n/amp/scaled = (pow(exp(/norm), (-5. * /norm))) * /amp,\n/harmonics =  (/idx/1 * mtof(/midifreq)) + /offset,\n/laced = interleave(/harmonics, /amp/scaled),\ndelete(/idx/1),\ndelete(/idx/2),\ndelete(/norm)",
+					"patching_rect" : [ 30.0, 140.0, 309.0, 166.0 ],
+					"text" : "/amp ??= 1., /n ??= 10, /offset ??= 0., /zeros ??= false,\nif(/zeros == true, [/offset = 0., /midifreq = 0.]),\n/idx/1 = aseq(1, /n, 1),\n/idx/2 = [rest(/idx/1), /n],\n/norm = /idx/1 / float32(/n),\n/amp/scaled = (pow(exp(/norm), (-5. * /norm))) * /amp,\n/harmonics =  (/idx/1 * mtof(/midifreq)) + /offset,\n/laced = interleave(/harmonics, /amp/scaled),\ndelete(/idx/1),\ndelete(/idx/2),\ndelete(/norm)",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -95,7 +112,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 300.0, 25.0, 25.0 ]
+					"patching_rect" : [ 30.0, 320.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -106,7 +123,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 30.0, 19.0, 25.0, 25.0 ]
 				}
 
@@ -136,6 +153,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
