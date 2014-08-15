@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
@@ -52,7 +52,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 32.5, 373.0, 91.0, 34.0 ],
-					"text" : "/line : [0, 1000]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -196,7 +195,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
 					"patching_rect" : [ 150.0, 64.0, 306.0, 72.0 ],
-					"text" : "/min = 0., /max = 0.9,\nif((/photoresistor >= /min && /photoresistor <= /max), /clipped = clip(/photoresistor, 0.7, 0.9), /clipped = 0.9), \n/line = [int32(/photoresistor < 0.9), 1000]",
+					"text" : "/min = 0., /max = 0.9,\nif((/photoresistor >= /min && /photoresistor <= /max), /clipped = clip(/photoresistor, 0.7, 0.9), /clipped = 0.9), \n/line = [int32(/photoresistor < /max), 1000]",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -224,7 +223,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 390.0, 340.0, 80.0, 20.0 ],
 					"text" : "o.l.genharms"
 				}
@@ -396,7 +395,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x86"
 						}
 ,
