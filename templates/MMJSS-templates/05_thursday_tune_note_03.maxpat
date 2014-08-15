@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 7.0, 49.0, 1073.0, 667.0 ],
+		"rect" : [ 25.0, 69.0, 1073.0, 667.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -60,11 +60,11 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 25.0, 69.0, 592.0, 874.0 ],
+						"rect" : [ 603.0, 44.0, 592.0, 693.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -86,13 +86,42 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-6",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 92.5, 660.0, 225.0, 20.0 ],
+									"text" : "* if the '/line' values change, output them"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-2",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 42.5, 610.0, 33.0, 20.0 ],
+									"presentation_rect" : [ 38.5, 590.0, 0.0, 0.0 ],
+									"text" : "tips:"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
 									"fontsize" : 32.353584,
 									"frgb" : 0.0,
 									"id" : "obj-15",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 17.0, 79.0, 43.0 ],
+									"patching_rect" : [ 20.0, 7.0, 79.0, 43.0 ],
 									"text" : "stop!"
 								}
 
@@ -107,7 +136,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 229.0, 246.0, 90.0, 20.0 ]
+									"patching_rect" : [ 229.0, 226.0, 90.0, 20.0 ]
 								}
 
 							}
@@ -120,7 +149,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 229.0, 270.0, 122.0, 20.0 ],
+									"patching_rect" : [ 229.0, 250.0, 122.0, 20.0 ],
 									"text" : "o.pack /photoresistor"
 								}
 
@@ -135,7 +164,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 174.0, 560.0, 228.0, 45.0 ],
+									"patching_rect" : [ 172.0, 545.0, 228.0, 45.0 ],
 									"text" : "/clip/min = 0.7, /clip/max = 0.9,\n/clipped = clip(/input, /clip/min, /clip/max)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -150,7 +179,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 487.0, 299.0, 20.0 ],
+									"patching_rect" : [ 20.0, 460.0, 299.0, 20.0 ],
 									"text" : "here is a review of the concepts involved in the above:"
 								}
 
@@ -160,58 +189,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"frgb" : 0.0,
-									"id" : "obj-51",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 260.0, 754.5, 90.0, 74.0 ],
-									"text" : "if the number is between 0. and 0.9, send it out the left outlet."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-55",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 744.5, 90.0, 33.0 ],
-									"text" : "is the number less than 0.9?"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-44",
-									"linecount" : 5,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 363.5, 728.5, 130.0, 74.0 ],
-									"text" : "scale some expected range of values to another... like this one that is handy for a MIDI frequency"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
 									"id" : "obj-56",
-									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 363.5, 668.5, 130.0, 33.0 ],
-									"text" : "if the input floats change, output them"
+									"patching_rect" : [ 92.5, 640.0, 245.0, 20.0 ],
+									"text" : "* if the '/clipped' values change, output them"
 								}
 
 							}
@@ -225,7 +208,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 100.0, 520.0, 380.0, 33.0 ],
+									"patching_rect" : [ 92.5, 500.0, 380.0, 33.0 ],
 									"text" : "clip to a specific range of values.  anything lower than 0.7 will be 0.7, and anything larger than 0.9 will be 0.9"
 								}
 
@@ -236,12 +219,11 @@
 									"fontsize" : 12.0,
 									"frgb" : 0.0,
 									"id" : "obj-41",
-									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 641.5, 156.0, 60.0 ],
-									"text" : "find range for min/max by covering up the light with your hand, then noting the values "
+									"patching_rect" : [ 92.5, 620.0, 471.0, 20.0 ],
+									"text" : "* find range for min/max by covering up the light with your hand, then noting the values "
 								}
 
 							}
@@ -255,7 +237,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 70.0, 540.0, 33.0 ],
+									"patching_rect" : [ 20.0, 60.0, 540.0, 33.0 ],
 									"text" : "if you'd like to take the time to figure out your own expressions for the assignment, please look no further.  if you feel that you need assistance forming the expressions, please continue.  :)"
 								}
 
@@ -266,11 +248,12 @@
 									"fontsize" : 12.0,
 									"frgb" : 0.0,
 									"id" : "obj-72",
+									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 109.5, 400.0, 361.0, 20.0 ],
-									"text" : "this expression scales a value called \"/clipped\" to a midifreq range"
+									"patching_rect" : [ 109.5, 370.0, 361.0, 33.0 ],
+									"text" : "this expression scales a value called \"/clipped\" to a midifreq range.  we'll need it for o.l.genharms"
 								}
 
 							}
@@ -283,7 +266,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 172.0, 430.0, 236.0, 32.0 ],
+									"patching_rect" : [ 172.0, 410.0, 236.0, 32.0 ],
 									"text" : "/midifreq = scale(/clipped, 0.7, 0.9, 0., 64.)",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
@@ -299,8 +282,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 92.5, 300.0, 371.0, 72.0 ],
-									"text" : "/min = 0.7, /max = 0.9,\n/inside/range = (/photoresistor >= /min && /photoresistor <= /max), \n/clipped = clip(/photoresistor, /min, /max),\n/line = [int32(/inside/range), 1000]",
+									"patching_rect" : [ 92.5, 280.0, 371.0, 72.0 ],
+									"text" : "/min = 0., /max = 0.9,\nif((/photoresistor >= /min && /photoresistor <= /max), /clipped = clip(/photoresistor, 0.7, 0.9), /clipped = 0.9), \n/line = [int32(/photoresistor < /max), 1000]",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -315,7 +298,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 110.0, 540.0, 114.0 ],
+									"patching_rect" : [ 20.0, 100.0, 540.0, 114.0 ],
 									"text" : "this expression takes a min and a max, then does a check to see if the photo resistor is within that range.  if it meets the min/max requirements, then it passes the value as \"/clipped\".  otherwise, it sets that \"/clipped\" value to the max value.  this means that we would not usually want the max value to be below the min.  \n\nsecondarily, it generates a ramp message for line~ by doing a check to see if the photo resistor is within a valid range and building a list out of that information.  notice that the second value in the list is the target time, and can be parameterized."
 								}
 
@@ -723,11 +706,11 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-33",
-					"linecount" : 9,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 917.0, 524.5, 137.0, 127.0 ],
+					"patching_rect" : [ 917.0, 524.5, 140.0, 114.0 ],
 					"text" : "line~ generates a ramp from a list of values that you give it.  you can issue <destination time> pairs instead of multiple messages.  this is similar to the way you send a list to sinusoids~."
 				}
 
@@ -961,7 +944,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 510.0, 80.0, 20.0 ],
 					"text" : "o.l.genharms"
 				}
@@ -990,7 +973,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x86"
 						}
 ,
