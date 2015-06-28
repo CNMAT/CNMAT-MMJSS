@@ -2,433 +2,52 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 6,
-			"minor" : 1,
-			"revision" : 8,
-			"architecture" : "x86"
+			"major" : 7,
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x86",
+			"modernui" : 1
 		}
 ,
-		"rect" : [ 25.0, 69.0, 1073.0, 667.0 ],
+		"rect" : [ 58.0, 84.0, 828.0, 714.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
-		"gridonopen" : 0,
+		"gridonopen" : 1,
 		"gridsize" : [ 10.0, 10.0 ],
-		"gridsnaponopen" : 0,
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
-		"imprint" : 0,
 		"enablehscroll" : 1,
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bubble" : 1,
-					"bubblepoint" : 0.24,
-					"bubbleside" : 0,
-					"fontface" : 2,
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
-					"frgb" : 0.0,
-					"id" : "obj-7",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 530.0, 120.0, 48.0 ],
-					"text" : "right click and select 'open o.l.genharms help'"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.106028, 0.375571, 0.839216, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-81",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patcher" : 					{
-						"fileversion" : 1,
-						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 8,
-							"architecture" : "x86"
-						}
-,
-						"rect" : [ 603.0, 44.0, 592.0, 693.0 ],
-						"bglocked" : 0,
-						"openinpresentation" : 0,
-						"default_fontsize" : 12.0,
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"gridonopen" : 0,
-						"gridsize" : [ 10.0, 10.0 ],
-						"gridsnaponopen" : 0,
-						"statusbarvisible" : 2,
-						"toolbarvisible" : 1,
-						"boxanimatetime" : 200,
-						"imprint" : 0,
-						"enablehscroll" : 1,
-						"enablevscroll" : 1,
-						"devicewidth" : 0.0,
-						"description" : "",
-						"digest" : "",
-						"tags" : "",
-						"boxes" : [ 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-6",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 92.5, 660.0, 225.0, 20.0 ],
-									"text" : "* if the '/line' values change, output them"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-2",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 42.5, 610.0, 33.0, 20.0 ],
-									"presentation_rect" : [ 38.5, 590.0, 0.0, 0.0 ],
-									"text" : "tips:"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 32.353584,
-									"frgb" : 0.0,
-									"id" : "obj-15",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 7.0, 79.0, 43.0 ],
-									"text" : "stop!"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-7",
-									"maxclass" : "flonum",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "float", "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 229.0, 226.0, 90.0, 20.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-5",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 229.0, 250.0, 122.0, 20.0 ],
-									"text" : "o.pack /photoresistor"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-4",
-									"linecount" : 2,
-									"maxclass" : "o.expr.codebox",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 172.0, 545.0, 228.0, 45.0 ],
-									"text" : "/clip/min = 0.7, /clip/max = 0.9,\n/clipped = clip(/input, /clip/min, /clip/max)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-3",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 460.0, 299.0, 20.0 ],
-									"text" : "here is a review of the concepts involved in the above:"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-56",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 92.5, 640.0, 245.0, 20.0 ],
-									"text" : "* if the '/clipped' values change, output them"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-45",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 92.5, 500.0, 380.0, 33.0 ],
-									"text" : "clip to a specific range of values.  anything lower than 0.7 will be 0.7, and anything larger than 0.9 will be 0.9"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-41",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 92.5, 620.0, 471.0, 20.0 ],
-									"text" : "* find range for min/max by covering up the light with your hand, then noting the values "
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-1",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 60.0, 540.0, 33.0 ],
-									"text" : "if you'd like to take the time to figure out your own expressions for the assignment, please look no further.  if you feel that you need assistance forming the expressions, please continue.  :)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-72",
-									"linecount" : 2,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 109.5, 370.0, 361.0, 33.0 ],
-									"text" : "this expression scales a value called \"/clipped\" to a midifreq range.  we'll need it for o.l.genharms"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-58",
-									"maxclass" : "o.expr.codebox",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 172.0, 410.0, 236.0, 32.0 ],
-									"text" : "/midifreq = scale(/clipped, 0.7, 0.9, 0., 64.)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-79",
-									"linecount" : 4,
-									"maxclass" : "o.expr.codebox",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 92.5, 280.0, 371.0, 72.0 ],
-									"text" : "/min = 0., /max = 0.9,\nif((/photoresistor >= /min && /photoresistor <= /max), /clipped = clip(/photoresistor, 0.7, 0.9), /clipped = 0.9), \n/line = [int32(/photoresistor < /max), 1000]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"frgb" : 0.0,
-									"id" : "obj-78",
-									"linecount" : 8,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 20.0, 100.0, 540.0, 114.0 ],
-									"text" : "this expression takes a min and a max, then does a check to see if the photo resistor is within that range.  if it meets the min/max requirements, then it passes the value as \"/clipped\".  otherwise, it sets that \"/clipped\" value to the max value.  this means that we would not usually want the max value to be below the min.  \n\nsecondarily, it generates a ramp message for line~ by doing a check to see if the photo resistor is within a valid range and building a list out of that information.  notice that the second value in the list is the target time, and can be parameterized."
-								}
-
-							}
- ],
-						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-79", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-7", 0 ]
-								}
-
-							}
- ]
-					}
-,
-					"patching_rect" : [ 279.0, 450.0, 121.0, 20.0 ],
-					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"default_fontsize" : 12.0,
-						"description" : "",
-						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
-						"globalpatchername" : "",
-						"tags" : ""
-					}
-,
-					"text" : "p expression_tutorial"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-77",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 470.0, 581.125, 269.0, 20.0 ],
-					"text" : "issue a message with the mouse by clicking on it"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-76",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 206.666672, 121.0, 24.0 ],
-					"text" : "view esplora data"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-75",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 170.0, 96.0, 24.0 ],
-					"text" : "esplora input"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubblepoint" : 0.13,
-					"bubbleside" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-74",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 470.0, 487.625, 227.0, 20.0 ],
-					"text" : "convert a midi value to a frequency in Hz"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-73",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 870.0, 524.5, 47.0, 18.0 ],
-					"text" : "0 1000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-69",
+					"id" : "obj-60",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 450.0, 133.5, 47.0 ],
-					"text" : "o.expr.codebox:  process input bundles and output the result(s)"
+					"patching_rect" : [ 631.5, 465.5, 162.0, 47.0 ],
+					"style" : "",
+					"text" : "loadmess allows us to send a message when the patch is loaded."
 				}
 
 			}
@@ -436,239 +55,61 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-68",
-					"maxclass" : "o.expr.codebox",
+					"id" : "obj-58",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 10.0, 450.0, 132.0, 41.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 560.0, 465.5, 62.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-56",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "FullPacket" ],
+					"patching_rect" : [ 17.0, 540.0, 175.0, 22.0 ],
+					"style" : "",
+					"text" : "o.pack /n 20 /offset 0. /midifreq"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-40",
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 370.0, 416.0, 86.0, 24.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 122, 101, 114, 111, 115, 0, 0, 44, 84, 0, 0 ],
+					"saved_bundle_length" : 32,
+					"text" : "/zeros : true",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"bubble" : 1,
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-67",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 353.333344, 220.0, 24.0 ],
-					"text" : "union two separate bundles into one"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-87",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 10.0, 353.333344, 50.0, 20.0 ],
-					"text" : "o.union"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-66",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 590.0, 40.0, 20.0 ],
-					"text" : "gain~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-35",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 759.9375, 211.0, 248.0, 20.0 ],
-					"text" : "you can scale this down if you really want.  :)"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-63",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 750.0, 234.0, 267.875, 267.875 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubblepoint" : 0.35,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-31",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 472.0, 381.5, 233.0, 60.0 ],
-					"text" : "this object is called [resdisplay] - it can be helpful in displaying frequency and amplitude content from a list that contains frequency/amplitude pairs."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-39",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 316.666656, 178.0, 24.0 ],
-					"text" : "output a bundle if it changes"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-36",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 280.0, 249.0, 24.0 ],
-					"text" : "select a specfiic parameter _as a bundle_"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-34",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 243.333328, 329.0, 24.0 ],
-					"text" : "route off info from a bundle and send it from odot to Max."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-32",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 146.5, 510.0, 203.0, 60.0 ],
-					"text" : "o.l.genharms generates a list of harmonics, a list of amplitudes, and a laced version of both.  use o.route to access the parameters '/laced'"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-29",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 443.5, 210.0, 94.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 487.625, 47.0, 20.0 ],
-					"text" : "mtof 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-25",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 543.5, 210.0, 148.0, 20.0 ],
-					"text" : "input a value from a slider"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-65",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 470.0, 521.125, 87.0, 20.0 ],
-					"text" : "scale a signal "
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-23",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 470.0, 620.0, 238.0, 20.0 ],
-					"text" : "display an o. bundle instead of using [print]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-22",
+					"id" : "obj-38",
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 620.0, 80.0, 34.0 ],
+					"patching_rect" : [ 40.0, 320.0, 150.0, 34.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -677,162 +118,48 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-70",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 470.0, 551.125, 217.0, 20.0 ],
-					"text" : "post a message instead of using [print]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-61",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 551.125, 70.0, 18.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-33",
-					"linecount" : 8,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 917.0, 524.5, 140.0, 114.0 ],
-					"text" : "line~ generates a ramp from a list of values that you give it.  you can issue <destination time> pairs instead of multiple messages.  this is similar to the way you send a list to sinusoids~."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-38",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 810.0, 524.5, 47.0, 18.0 ],
-					"text" : "1 1000"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubblepoint" : 0.13,
-					"bubbleside" : 0,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-30",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 750.0, 80.0, 243.0, 74.0 ],
-					"text" : "sinusoids~ takes a list containing frequency amplitude pairs - it doesn't care how many pairs are in the list.  it then generates the combined sinusoidal output that you can hear as summed tones."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-85",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 110.0, 390.0, 213.0, 24.0 ],
-					"text" : "create a midifreq offset with o.pack"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-11",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 10.0, 390.0, 82.0, 20.0 ],
-					"text" : "o.pack /offset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-18",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 380.0, 581.125, 32.5, 18.0 ],
-					"text" : "0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"contdata" : 1,
-					"id" : "obj-15",
-					"maxclass" : "multislider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"orientation" : 0,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 443.5, 170.0, 234.5, 31.0 ],
-					"setminmax" : [ 0.0, 127.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-20",
+					"id" : "obj-34",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 559.25, 288.875, 174.25, 60.0 ],
-					"text" : "feed this prepend object a list of freq/amp pairs to see a depiction of those values in resdisplay"
+					"patching_rect" : [ 220.0, 323.5, 99.0, 60.0 ],
+					"style" : "",
+					"text" : "find a way to update theese parameters independantly"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"ampmin_log" : 0.0,
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"freqmax" : 18000.0,
-					"id" : "obj-13",
-					"log" : 0,
-					"maxclass" : "resdisplay",
+					"id" : "obj-30",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 220.0, 488.5, 83.0, 22.0 ],
+					"style" : "",
+					"text" : "o.route /laced"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-15",
+					"linecount" : 3,
+					"maxclass" : "o.compose",
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 443.5, 355.125, 290.0, 112.75 ]
+					"patching_rect" : [ 220.0, 388.0, 93.0, 51.0 ],
+					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 109, 105, 100, 105, 102, 114, 101, 113, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 60, 0, 0, 0, 16, 47, 111, 102, 102, 115, 101, 116, 0, 44, 105, 0, 0, 0, 0, 1, -72, 0, 0, 0, 12, 47, 110, 0, 0, 44, 105, 0, 0, 0, 0, 0, 20 ],
+					"saved_bundle_length" : 76,
+					"text" : "/midifreq : 60,\n/offset : 440,\n/n : 20",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -845,8 +172,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 443.5, 288.875, 108.0, 20.0 ],
-					"text" : "prepend sinusoids"
+					"patching_rect" : [ 220.0, 460.0, 80.0, 22.0 ],
+					"style" : "",
+					"text" : "o.l.genharms"
 				}
 
 			}
@@ -854,29 +182,13 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-54",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 380.0, 521.125, 39.5, 20.0 ],
-					"text" : "*~ 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.886398, 1.0, 0.976373, 1.0 ],
-					"color" : [ 0.212645, 0.500023, 0.839216, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-53",
-					"maxclass" : "newobj",
+					"id" : "obj-50",
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 750.0, 51.5, 68.0, 20.0 ],
-					"text" : "sinusoids~"
+					"numoutlets" : 0,
+					"patching_rect" : [ 137.5, 260.0, 215.0, 20.0 ],
+					"style" : "",
+					"text" : "remember the diamond tones lesson..."
 				}
 
 			}
@@ -884,27 +196,109 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-46",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 137.5, 580.0, 89.0, 20.0 ],
+					"style" : "",
+					"text" : "spectroscope~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.21,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-44",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 594.5, 273.5, 148.0, 37.0 ],
+					"style" : "",
+					"text" : "don't worry about the attributes for now."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.26,
+					"bubbleside" : 2,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-43",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 500.0, 531.0, 190.0, 66.0 ],
+					"style" : "",
+					"text" : "res-display is again handy for printing output of lists containing frequency/amplitude pairs"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-41",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 693.5, 112.0, 104.0, 87.0 ],
+					"style" : "",
+					"text" : "our noise maker.  you know what to do.  :)\nif you've forgotten, check the help file!"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-39",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 395.5, 223.5, 163.0, 24.0 ],
+					"style" : "",
+					"text" : "turn the migrator on or off"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-37",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 810.0, 554.5, 50.0, 20.0 ],
-					"text" : "line~ 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-82",
-					"maxclass" : "newobj",
+					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 10.0, 243.333328, 48.0, 20.0 ],
-					"text" : "o.route"
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 365.5, 223.5, 20.0, 20.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.2,
+					"bubbleside" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 10.0,
+					"id" : "obj-35",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 370.0, 449.0, 118.0, 59.0 ],
+					"style" : "",
+					"text" : "if a frequency has been input, send that number of zeros out."
 				}
 
 			}
@@ -912,13 +306,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-60",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 10.0, 316.666656, 60.0, 20.0 ],
-					"text" : "o.change"
+					"id" : "obj-29",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 464.625, 410.0, 240.25, 33.0 ],
+					"style" : "",
+					"text" : "number of frequencies and amplitudes (both lists have /n number of elements)"
 				}
 
 			}
@@ -927,12 +322,27 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-17",
-					"maxclass" : "newobj",
+					"linecount" : 6,
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 10.0, 280.0, 52.0, 20.0 ],
-					"text" : "o.select"
+					"numoutlets" : 0,
+					"patching_rect" : [ 370.0, 310.0, 315.5, 87.0 ],
+					"style" : "",
+					"text" : "migrator allows you to migrate from one set of frequencies to another.  the list that is input most recently is what is used as a statistical model of frequencies to migrate to.  if you send a list of zeros in, you can silence the migrator as the frequencies migrated to will be zeros, and it will gradually quiet down.  "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 33.0,
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.0, 10.0, 603.0, 43.0 ],
+					"style" : "",
+					"text" : "Assignment 6: migration of the sines"
 				}
 
 			}
@@ -940,23 +350,132 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-28",
-					"maxclass" : "newobj",
+					"id" : "obj-6",
+					"linecount" : 9,
+					"maxclass" : "comment",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 10.0, 510.0, 80.0, 20.0 ],
-					"text" : "o.l.genharms"
+					"numoutlets" : 0,
+					"patching_rect" : [ 17.0, 53.0, 471.0, 127.0 ],
+					"style" : "",
+					"text" : "Objectives:\n1. slowly migrate from one cloud of frequency content to another\n2. use migrator in combination with sinusoids~ to manage birhts and deaths of partials\n3. use the horizontal slider (or another parameter) of the esplora to change the fundamental frequency that generates harmonics for the migrator.\n4. silence the migrator by having it \"migrate to no sound\".\n\nextra credit: use the 'interpret buttons' patch from the diamond tones assignment to choose frequencies for the migrator to migrate to."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-40",
-					"maxclass" : "scope~",
+					"id" : "obj-28",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 17.0, 499.0, 20.0, 20.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"format" : 6,
+					"id" : "obj-26",
+					"maxclass" : "flonum",
+					"maximum" : 1.0,
+					"minimum" : 0.0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 70.0, 383.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "spectroscope~",
 					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 810.0, 584.5, 100.0, 57.875 ]
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 17.0, 600.0, 330.0, 90.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 70.0, 413.0, 42.0, 22.0 ],
+					"style" : "",
+					"text" : "* 127."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-13",
+					"log" : 0,
+					"maxclass" : "resdisplay",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 370.0, 600.0, 330.0, 90.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 370.0, 570.0, 109.0, 22.0 ],
+					"style" : "",
+					"text" : "prepend sinusoids"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-65",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "list", "float", "int", "bang" ],
+					"patching_rect" : [ 365.5, 273.5, 229.0, 22.0 ],
+					"style" : "",
+					"text" : "migrator @nOsc 50 @fade 5 @var 0.01"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-53",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 646.5, 72.0, 68.0, 22.0 ],
+					"style" : "",
+					"text" : "sinusoids~"
 				}
 
 			}
@@ -971,33 +490,43 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 6,
-							"minor" : 1,
-							"revision" : 8,
-							"architecture" : "x86"
+							"major" : 7,
+							"minor" : 0,
+							"revision" : 3,
+							"architecture" : "x86",
+							"modernui" : 1
 						}
 ,
-						"rect" : [ 32.0, 67.0, 271.0, 510.0 ],
+						"rect" : [ 32.0, 93.0, 271.0, 484.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Arial",
-						"gridonopen" : 0,
+						"gridonopen" : 1,
 						"gridsize" : [ 10.0, 10.0 ],
-						"gridsnaponopen" : 0,
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
 						"statusbarvisible" : 2,
 						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
 						"boxanimatetime" : 200,
-						"imprint" : 0,
 						"enablehscroll" : 1,
 						"enablevscroll" : 1,
 						"devicewidth" : 0.0,
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-1",
@@ -1005,7 +534,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 10.0, 50.0, 250.0, 34.0 ],
+									"patching_rect" : [ 50.0, 70.0, 150.0, 34.0 ],
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
@@ -1018,7 +547,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 10.0, 10.0, 25.0, 25.0 ]
+									"patching_rect" : [ 130.0, 20.0, 25.0, 25.0 ],
+									"style" : ""
 								}
 
 							}
@@ -1032,24 +562,95 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
-					"patching_rect" : [ 10.0, 206.666672, 94.0, 20.0 ],
+					"patching_rect" : [ 17.0, 257.0, 94.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontface" : 0,
-						"default_fontname" : "Arial",
-						"default_fontsize" : 12.0,
 						"description" : "",
 						"digest" : "",
-						"fontface" : 0,
-						"fontname" : "Arial",
-						"fontsize" : 12.0,
 						"globalpatchername" : "",
+						"style" : "",
 						"tags" : ""
 					}
 ,
+					"style" : "",
 					"text" : "p all_messages"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "FullPacket" ],
+					"patching_rect" : [ 127.0, 233.5, 202.0, 22.0 ],
+					"style" : "",
+					"text" : "o.route /diamond /slider/horizontal"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 549.5, 131.5, 70.5, 70.5 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"contdata" : 1,
+					"id" : "obj-11",
+					"maxclass" : "multislider",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 70.0, 443.0, 33.0, 71.0 ],
+					"setminmax" : [ 0.0, 127.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "FullPacket" ],
+					"patching_rect" : [ 127.0, 287.0, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "o.route /left"
 				}
 
 			}
@@ -1062,7 +663,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 10.0, 170.0, 70.0, 20.0 ],
+					"patching_rect" : [ 127.0, 203.5, 70.0, 22.0 ],
+					"style" : "",
 					"text" : "my-esplora"
 				}
 
@@ -1070,48 +672,21 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-2",
+					"interpinlet" : 1,
 					"maxclass" : "gain~",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 10.0, 590.0, 80.0, 20.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 33.0,
-					"frgb" : 0.0,
-					"id" : "obj-27",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 10.0, 676.0, 43.0 ],
-					"text" : "Assignment 5: photoresistor as plucked string"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : 0.0,
-					"id" : "obj-8",
-					"linecount" : 6,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 53.0, 724.0, 87.0 ],
-					"text" : "Objectives:\n1. use esplora photoresistor output to mimic a plucked string instrument.\n2. instead of many oscillator~ instances, use sinusoids~ to manage many sine waves at once\n3. generate harmonics for sinusoids~, but based on movements from the pluck motion\n4. utilize splitting, clipping, changes, and scaling to massage input data from the photoresistor for sinusoids.\n5. use the odot library to manage complexity"
+					"patching_rect" : [ 646.5, 112.0, 39.0, 90.0 ],
+					"style" : ""
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-13", 0 ],
+					"destination" : [ "obj-30", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1", 0 ]
@@ -1120,10 +695,46 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-29", 0 ],
+					"destination" : [ "obj-56", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-56", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-28", 0 ]
 				}
 
 			}
@@ -1138,7 +749,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-40", 0 ],
+					"destination" : [ "obj-24", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-37", 0 ]
@@ -1147,61 +767,88 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-38", 0 ]
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-73", 0 ]
+					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-53", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "my-esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/Max/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
 				"patcherrelativepath" : "../../extras/MMJSS-extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "/Users/jml/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "/Users/jml/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "/Users/jml/Documents/Max/Packages/CNMAT-odot/patchers/ordering",
-				"patcherrelativepath" : "../../../CNMAT-odot/patchers/ordering",
+				"bootpath" : "~/Documents/programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
+				"patcherrelativepath" : "../../../../../programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.serial.display.maxpat",
-				"bootpath" : "/Users/jml/Documents/Max/Packages/CNMAT-MMJSS/patchers/esplora",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
 				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.l.genharms.maxpat",
-				"bootpath" : "/Users/jml/Documents/Max/Packages/CNMAT-MMJSS/patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
 				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1251,6 +898,18 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "sinusoids~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "migrator.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "resdisplay.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
@@ -1258,19 +917,8 @@
 				"name" : "o.select.mxo",
 				"type" : "iLaX"
 			}
-, 			{
-				"name" : "o.change.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sinusoids~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "resdisplay.mxo",
-				"type" : "iLaX"
-			}
- ]
+ ],
+		"embedsnapshot" : 0
 	}
 
 }
