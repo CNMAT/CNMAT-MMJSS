@@ -2747,7 +2747,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 90.0, 60.0, 98.0, 22.0 ],
 					"style" : "default",
 					"text" : "esplora_basic02"
@@ -3087,10 +3087,6 @@
 			}
 , 			{
 				"name" : "o.validate.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
