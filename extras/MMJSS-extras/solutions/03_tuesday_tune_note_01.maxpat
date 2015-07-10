@@ -151,9 +151,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 917.5, 477.089172, 138.0, 22.0 ],
+					"patching_rect" : [ 917.5, 477.089172, 164.0, 22.0 ],
 					"style" : "",
-					"text" : "mmjss.osc~ @type sine"
+					"text" : "mmjss.osc~ @type sawtooth"
 				}
 
 			}
@@ -167,7 +167,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 623.5, 367.0, 36.0, 22.0 ],
-					"presentation_rect" : [ 660.0, 370.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "sel 1"
 				}
@@ -183,7 +182,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
 					"patching_rect" : [ 768.0, 296.5, 50.0, 22.0 ],
-					"presentation_rect" : [ 804.5, 299.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "change"
 				}
@@ -199,7 +197,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 623.5, 416.5, 84.5, 22.0 ],
-					"presentation_rect" : [ 660.0, 419.5, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "f"
 				}
@@ -215,7 +212,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "signal", "signal", "", "" ],
 					"patching_rect" : [ 768.0, 330.0, 131.0, 22.0 ],
-					"presentation_rect" : [ 804.5, 333.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "adsr~ 10 300 0.7 3000"
 				}
@@ -231,7 +227,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 623.5, 507.383759, 36.0, 22.0 ],
-					"presentation_rect" : [ 660.0, 510.383759, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "*~ 0."
 				}
@@ -247,7 +242,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 623.5, 446.794586, 47.0, 22.0 ],
-					"presentation_rect" : [ 660.0, 449.794586, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "mtof 0."
 				}
@@ -263,7 +257,6 @@
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 689.0, 296.5, 49.0, 100.0 ],
-					"presentation_rect" : [ 725.5, 299.5, 0.0, 0.0 ],
 					"setminmax" : [ 0.0, 127.0 ],
 					"style" : ""
 				}
@@ -279,10 +272,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 623.5, 477.089172, 138.0, 22.0 ],
-					"presentation_rect" : [ 660.0, 480.089172, 0.0, 0.0 ],
+					"patching_rect" : [ 623.5, 477.089172, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "mmjss.osc~ @type sine"
+					"text" : "mmjss.osc~ @type rectangle"
 				}
 
 			}
@@ -1239,10 +1231,6 @@
 			}
 , 			{
 				"name" : "o.validate.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
