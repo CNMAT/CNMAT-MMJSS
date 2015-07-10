@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
-			"architecture" : "x86",
+			"revision" : 4,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -190,6 +190,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-19",
@@ -197,14 +198,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 578.0, 376.5, 168.0, 22.0 ],
+					"patching_rect" : [ 578.0, 376.5, 164.0, 22.0 ],
 					"style" : "",
-					"text" : "mmjss.osc~ @/type sawtooth"
+					"text" : "mmjss.osc~ @type sawtooth"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-18",
@@ -212,14 +214,15 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 578.0, 346.5, 141.0, 22.0 ],
+					"patching_rect" : [ 578.0, 346.5, 138.0, 22.0 ],
 					"style" : "",
-					"text" : "mmjss.osc~ @/type sine"
+					"text" : "mmjss.osc~ @type sine"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-16",
@@ -227,9 +230,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 578.0, 316.5, 168.0, 22.0 ],
+					"patching_rect" : [ 578.0, 316.5, 165.0, 22.0 ],
 					"style" : "",
-					"text" : "mmjss.osc~ @/type rectangle"
+					"text" : "mmjss.osc~ @type rectangle"
 				}
 
 			}
@@ -422,8 +425,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -465,7 +468,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 20.0, 60.0, 330.0, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -704,42 +707,36 @@
 		"dependency_cache" : [ 			{
 				"name" : "mmjss.osc~.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "my-esplora.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
-				"patcherrelativepath" : "../../extras/MMJSS-extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "~/Documents/programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
-				"patcherrelativepath" : "../../../../../programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
+				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.serial.display.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
