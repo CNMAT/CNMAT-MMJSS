@@ -522,7 +522,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "FullPacket" ],
-					"patching_rect" : [ 140.0, 256.5, 147.0, 22.0 ],
+					"patching_rect" : [ 140.0, 221.5, 147.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /diamond /joystick"
 				}
@@ -556,6 +556,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontface" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-6",
@@ -563,9 +564,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "FullPacket" ],
-					"patching_rect" : [ 140.0, 280.0, 371.0, 22.0 ],
+					"patching_rect" : [ 140.0, 255.0, 480.0, 22.0 ],
 					"style" : "",
-					"text" : "o.route /left/button/down /forward /right /backward"
+					"text" : "o.route /left/button/down /forward/button/down /right/button/down /backward/button/down"
 				}
 
 			}
@@ -578,7 +579,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 140.0, 230.0, 70.0, 22.0 ],
+					"patching_rect" : [ 140.0, 195.0, 70.0, 22.0 ],
 					"style" : "",
 					"text" : "my-esplora"
 				}
