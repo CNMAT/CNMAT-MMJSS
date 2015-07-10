@@ -103,6 +103,47 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontsize" : 9.0,
+									"id" : "obj-13",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 340.0, 341.333344, 214.0, 17.0 ],
+									"presentation_rect" : [ 340.0, 346.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "< otherwise, set the value to 0.9"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 9.0,
+									"id" : "obj-12",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 340.0, 327.666656, 214.0, 17.0 ],
+									"presentation_rect" : [ 340.0, 332.0, 0.0, 0.0 ],
+									"style" : "",
+									"text" : "< then clip the value"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 9.0,
+									"id" : "obj-11",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 340.0, 314.0, 214.0, 17.0 ],
+									"style" : "",
+									"text" : "< if the photo resistor is betweeen the min and max"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-6",
@@ -154,7 +195,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 127.0, 234.0, 90.0, 22.0 ],
+									"patching_rect" : [ 17.0, 234.0, 90.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -168,7 +209,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 127.0, 258.0, 122.0, 22.0 ],
+									"patching_rect" : [ 17.0, 258.0, 122.0, 22.0 ],
 									"style" : "",
 									"text" : "o.pack /photoresistor"
 								}
@@ -231,8 +272,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 81.0, 551.0, 418.0, 33.0 ],
 									"style" : "",
-									"text" : "1. clip to a specific range of values.  anything lower than 0.7 will be 0.7, and \n2. anything larger than 0.9 will be 0.9",
-									"textjustification" : 0
+									"text" : "1. clip to a specific range of values.  anything lower than 0.7 will be 0.7, and \n2. anything larger than 0.9 will be 0.9"
 								}
 
 							}
@@ -303,13 +343,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-79",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 127.0, 288.0, 316.0, 112.0 ],
-									"text" : "/min = 0., /max = 0.9,\nif(\n  ((/photoresistor >= /min) && (/photoresistor <= /max)), \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
+									"patching_rect" : [ 17.0, 288.0, 316.0, 99.0 ],
+									"text" : "/min = 0., /max = 0.9,\nif(((/photoresistor >= /min) && (/photoresistor <= /max)), \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
 									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
@@ -904,7 +944,6 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"id" : "obj-53",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
