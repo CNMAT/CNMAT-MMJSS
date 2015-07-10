@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
-			"architecture" : "x86",
+			"revision" : 4,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 76.0, 122.0, 770.0, 664.0 ],
+		"rect" : [ 82.0, 126.0, 770.0, 726.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,11 +53,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-6",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 260.0, 150.0, 280.0, 33.0 ],
+					"patching_rect" : [ 257.0, 160.0, 178.0, 47.0 ],
 					"style" : "",
 					"text" : "if the clipped value changes, generate a midifreq that can be used to generate harmonics"
 				}
@@ -74,8 +74,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 32.5, 373.0, 91.0, 34.0 ],
-					"text" : "/line : [0, 1000]",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -88,7 +87,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "FullPacket" ],
-					"patching_rect" : [ 150.0, 240.0, 97.0, 22.0 ],
+					"patching_rect" : [ 150.0, 252.783707, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "o.union"
 				}
@@ -133,7 +132,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 150.0, 330.0, 73.0, 22.0 ],
+					"patching_rect" : [ 150.0, 356.694214, 73.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /line"
 				}
@@ -148,7 +147,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 150.0, 270.0, 259.0, 22.0 ],
+					"patching_rect" : [ 150.0, 288.264465, 259.0, 22.0 ],
 					"style" : "",
 					"text" : "o.select /line"
 				}
@@ -163,7 +162,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 150.0, 300.0, 60.0, 22.0 ],
+					"patching_rect" : [ 150.0, 322.47934, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "o.change"
 				}
@@ -179,9 +178,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 150.0, 200.0, 235.0, 32.0 ],
+					"patching_rect" : [ 150.0, 214.669174, 235.0, 32.0 ],
 					"text" : "/midifreq = scale(/clipped, 0.7, 0.9, 0., 64.)",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
 			}
@@ -194,7 +193,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 150.0, 170.0, 60.0, 22.0 ],
+					"patching_rect" : [ 150.0, 185.084579, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "o.change"
 				}
@@ -209,7 +208,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 150.0, 140.0, 97.0, 22.0 ],
+					"patching_rect" : [ 150.0, 155.5, 97.0, 22.0 ],
 					"style" : "",
 					"text" : "o.select /clipped"
 				}
@@ -221,14 +220,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-52",
-					"linecount" : 4,
+					"linecount" : 6,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 150.0, 64.0, 306.0, 72.0 ],
-					"text" : "/min = 0., /max = 0.9,\nif((/photoresistor >= /min && /photoresistor <= /max), /clipped = clip(/photoresistor, 0.7, 0.9), /clipped = 0.9), \n/line = [int32(/photoresistor < /max), 1000]",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"patching_rect" : [ 150.0, 44.5, 321.0, 99.0 ],
+					"text" : "/min = 0., /max = 0.9,\nif(((/photoresistor >= /min) && (/photoresistor <= /max)),   \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
 			}
@@ -237,11 +236,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-41",
-					"linecount" : 4,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 460.0, 64.0, 156.0, 60.0 ],
+					"patching_rect" : [ 478.0, 44.5, 96.0, 100.0 ],
 					"style" : "",
 					"text" : "find range for min/max by covering up the light with your hand, then noting the values "
 				}
@@ -298,7 +297,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 217.5, 420.0, 100.0, 100.0 ],
+					"patching_rect" : [ 217.5, 440.0, 100.0, 100.0 ],
 					"style" : ""
 				}
 
@@ -312,7 +311,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 150.0, 360.0, 50.0, 22.0 ],
+					"patching_rect" : [ 150.0, 390.909088, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "line~ 0."
 				}
@@ -377,7 +376,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 529.5, 362.0, 83.0 ]
+					"patching_rect" : [ 390.0, 549.5, 362.0, 83.0 ]
 				}
 
 			}
@@ -390,7 +389,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 390.0, 480.0, 114.0, 22.0 ],
+					"patching_rect" : [ 390.0, 500.0, 114.0, 22.0 ],
 					"style" : "",
 					"text" : "prepend sinusoids"
 				}
@@ -405,7 +404,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 129.5, 450.0, 39.5, 22.0 ],
+					"patching_rect" : [ 129.5, 470.0, 39.5, 22.0 ],
 					"style" : "",
 					"text" : "*~ 0"
 				}
@@ -420,7 +419,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 129.5, 420.0, 68.0, 22.0 ],
+					"patching_rect" : [ 129.5, 440.0, 68.0, 22.0 ],
 					"style" : "",
 					"text" : "sinusoids~"
 				}
@@ -447,7 +446,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 129.5, 580.0, 32.5, 32.5 ],
+					"patching_rect" : [ 129.5, 600.0, 32.5, 32.5 ],
 					"style" : ""
 				}
 
@@ -476,7 +475,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 129.5, 480.0, 28.0, 90.0 ],
+					"patching_rect" : [ 129.5, 500.0, 28.0, 90.0 ],
 					"style" : ""
 				}
 
@@ -738,49 +737,42 @@
 		"dependency_cache" : [ 			{
 				"name" : "my-esplora.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
-				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "~/Documents/programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
-				"patcherrelativepath" : "../../../../../../programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
+				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.serial.display.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "show_messages.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.l.genharms.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
