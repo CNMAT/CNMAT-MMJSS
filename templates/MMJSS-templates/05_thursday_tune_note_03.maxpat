@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
-			"architecture" : "x86",
+			"revision" : 4,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -95,7 +95,7 @@
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 122, 101, 114, 111, 115, 0, 0, 44, 84, 0, 0 ],
 					"saved_bundle_length" : 32,
 					"text" : "/zeros : true",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
 			}
@@ -105,12 +105,14 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-38",
+					"linecount" : 2,
 					"maxclass" : "o.display",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 40.0, 320.0, 150.0, 34.0 ],
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"patching_rect" : [ 40.0, 320.0, 150.0, 47.0 ],
+					"text" : "/button/down : false,\n/button/up : true",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
 			}
@@ -159,7 +161,7 @@
 					"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 109, 105, 100, 105, 102, 114, 101, 113, 0, 0, 0, 44, 105, 0, 0, 0, 0, 0, 60, 0, 0, 0, 16, 47, 111, 102, 102, 115, 101, 116, 0, 44, 105, 0, 0, 0, 0, 1, -72, 0, 0, 0, 12, 47, 110, 0, 0, 44, 105, 0, 0, 0, 0, 0, 20 ],
 					"saved_bundle_length" : 76,
 					"text" : "/midifreq : 60,\n/offset : 440,\n/n : 20",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 
 			}
@@ -250,7 +252,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 693.5, 112.0, 104.0, 87.0 ],
+					"patching_rect" : [ 693.5, 112.0, 105.0, 87.0 ],
 					"style" : "",
 					"text" : "our noise maker.  you know what to do.  :)\nif you've forgotten, check the help file!"
 				}
@@ -357,7 +359,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 17.0, 53.0, 471.0, 127.0 ],
 					"style" : "",
-					"text" : "Objectives:\n1. slowly migrate from one cloud of frequency content to another\n2. use migrator in combination with sinusoids~ to manage birhts and deaths of partials\n3. use the horizontal slider (or another parameter) of the esplora to change the fundamental frequency that generates harmonics for the migrator.\n4. silence the migrator by having it \"migrate to no sound\".\n\nextra credit: use the 'interpret buttons' patch from the diamond tones assignment to choose frequencies for the migrator to migrate to."
+					"text" : "Objectives:\n1. slowly migrate from one cloud of frequency content to another\n2. use migrator in combination with sinusoids~ to manage births and deaths of partials\n3. use the horizontal slider (or another parameter) of the esplora to change the fundamental frequency that generates harmonics for the migrator.\n4. silence the migrator by having it \"migrate to no sound\".\n\nextra credit: use the 'interpret buttons' patch from the diamond tones assignment to choose frequencies for the migrator to migrate to."
 				}
 
 			}
@@ -492,8 +494,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -535,7 +537,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 70.0, 150.0, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -814,42 +816,36 @@
 		"dependency_cache" : [ 			{
 				"name" : "my-esplora.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
-				"patcherrelativepath" : "../../extras/MMJSS-extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.esplora.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.slipserial.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "~/Documents/programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
-				"patcherrelativepath" : "../../../../../programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
+				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.io.serial.display.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"patcherrelativepath" : "../../patchers/esplora",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.l.genharms.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
-				"patcherrelativepath" : "../../patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
