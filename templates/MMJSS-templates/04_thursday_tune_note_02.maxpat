@@ -109,7 +109,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 340.0, 341.333344, 214.0, 17.0 ],
-									"presentation_rect" : [ 340.0, 346.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "< otherwise, set the value to 0.9"
 								}
@@ -123,7 +122,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 340.0, 327.666656, 214.0, 17.0 ],
-									"presentation_rect" : [ 340.0, 332.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "< then clip the value"
 								}
@@ -1180,7 +1178,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 10.0, 676.0, 43.0 ],
 					"style" : "",
-					"text" : "Assignment 5: photoresistor as plucked string"
+					"text" : "Assignment 4: photoresistor as plucked string"
 				}
 
 			}
@@ -1195,7 +1193,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 53.0, 724.0, 87.0 ],
 					"style" : "",
-					"text" : "Objectives:\n1. use esplora photoresistor output to mimic a plucked string instrument.\n2. instead of many oscillator~ instances, use sinusoids~ to manage many sine waves at once\n3. generate harmonics for sinusoids~, but based on movements from the pluck motion\n4. utilize splitting, clipping, changes, and scaling to massage input data from the photoresistor for sinusoids.\n5. use the odot library to manage complexity"
+					"text" : "Objectives:\n1. use esplora photoresistor output to mimic a plucked string instrument.\n2. instead of many mmjss.osc~ instances, use sinusoids~ to manage many sine waves at once\n3. generate harmonics for sinusoids~, but based on movements from the pluck motion\n4. utilize splitting, clipping, changes, and scaling to massage input data from the photoresistor for sinusoids.\n5. use the odot library to manage complexity"
 				}
 
 			}
@@ -1305,10 +1303,6 @@
 			}
 , 			{
 				"name" : "o.validate.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
