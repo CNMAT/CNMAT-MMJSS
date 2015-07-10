@@ -38,6 +38,31 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 242.0, 634.0, 385.0, 20.0 ],
+					"style" : "",
+					"text" : "< this output range from the slider is the same as a MIDI range (0-127)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 180.0, 630.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -124,7 +149,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 56.5, 724.0, 114.0 ],
 					"style" : "",
-					"text" : "Objectives:\n1. use esplora buttons to trigger a float value (frequency) for various instances of oscillator~\n2. mimic the functionality of the last assignment, but add the adsr~ object into the mix by allowing adsr~ to scale the amplitude of your oscillator~ instances\n3. use the esplora joystick values (hint: use scale) to modify various parameters of the adsr~ object\n\nextra credit:  make an abstraction that has an oscillator, an adsr, and the controls necessary to be duplicated.  add an argument to change the type of oscillator from the outside."
+					"text" : "Objectives:\n1. use esplora buttons to continuously trigger a stored MIDI frequency for various instances of oscillator~\n2. mimic the functionality of the last assignment, but add the adsr~ object into the mix by allowing adsr~ to scale the amplitude of your oscillator~ instances\n3. use the esplora joystick values (hint: use scale) to modify various parameters of the adsr~ object\n\nextra credit:  make an abstraction that has an oscillator, an adsr, and the controls necessary to be duplicated.  add an argument to change the type of oscillator from the outside."
 				}
 
 			}
@@ -616,6 +641,15 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"disabled" : 0,
