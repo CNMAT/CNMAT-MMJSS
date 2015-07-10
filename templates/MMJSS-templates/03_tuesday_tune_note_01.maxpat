@@ -143,13 +143,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-28",
-					"linecount" : 8,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 56.5, 724.0, 114.0 ],
+					"patching_rect" : [ 10.0, 56.5, 724.0, 100.0 ],
 					"style" : "",
-					"text" : "Objectives:\n1. use esplora buttons to continuously trigger a stored MIDI frequency for various instances of oscillator~\n2. mimic the functionality of the last assignment, but add the adsr~ object into the mix by allowing adsr~ to scale the amplitude of your oscillator~ instances\n3. use the esplora joystick values (hint: use scale) to modify various parameters of the adsr~ object\n\nextra credit:  make an abstraction that has an oscillator, an adsr, and the controls necessary to be duplicated.  add an argument to change the type of oscillator from the outside."
+					"text" : "Objectives:\n1. use esplora buttons to continuously trigger a stored MIDI frequency for various instances of mmjss.osc~\n2. use the adsr~ object to scale the amplitude of your oscillators\n3. use the esplora joystick values (hint: use scale) to modify various parameters of the adsr~ object\n\nExtra credit:  Make an abstraction that has an oscillator, an adsr, and the controls necessary to be duplicated.  Add an argument to change the type of oscillator from the outside."
 				}
 
 			}
@@ -790,10 +790,6 @@
 			}
 , 			{
 				"name" : "o.validate.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
