@@ -208,13 +208,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-52",
-					"linecount" : 6,
+					"linecount" : 7,
 					"maxclass" : "o.expr.codebox",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "FullPacket", "FullPacket" ],
-					"patching_rect" : [ 150.0, 44.5, 321.0, 99.0 ],
-					"text" : "/min = 0., /max = 0.9,\nif((/photoresistor >= /min) && (/photoresistor <= /max),   \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
+					"patching_rect" : [ 150.0, 38.5, 313.0, 112.0 ],
+					"text" : "/min = 0., \n/max = 0.9,\nif((/photoresistor >= /min) && (/photoresistor <= /max),   \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
 					"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 				}
 

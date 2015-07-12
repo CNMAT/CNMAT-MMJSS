@@ -219,13 +219,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-4",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 176.0, 591.0, 228.0, 45.0 ],
-									"text" : "/clip/min = 0.7, /clip/max = 0.9,\n/clipped = clip(/input, /clip/min, /clip/max)",
+									"patching_rect" : [ 176.0, 591.0, 228.0, 59.0 ],
+									"text" : "/clip/min = 0.7, \n/clip/max = 0.9,\n/clipped = clip(/input, /clip/min, /clip/max)",
 									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
@@ -341,13 +341,13 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-79",
-									"linecount" : 6,
+									"linecount" : 7,
 									"maxclass" : "o.expr.codebox",
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
-									"patching_rect" : [ 17.0, 288.0, 316.0, 99.0 ],
-									"text" : "/min = 0., /max = 0.9,\nif((/photoresistor >= /min) && (/photoresistor <= /max), \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
+									"patching_rect" : [ 17.0, 288.0, 316.0, 112.0 ],
+									"text" : "/min = 0., \n/max = 0.9,\nif((/photoresistor >= /min) && (/photoresistor <= /max), \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
 									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
