@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 0,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 82.0, 126.0, 770.0, 726.0 ],
+		"rect" : [ 75.0, 103.0, 770.0, 726.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,18 +38,6 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 579.0, 382.0, 100.0, 22.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-6",
@@ -57,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 257.0, 160.0, 178.0, 47.0 ],
+					"patching_rect" : [ 257.0, 160.0, 178.0, 48.0 ],
 					"style" : "",
 					"text" : "if the clipped value changes, generate a midifreq that can be used to generate harmonics"
 				}
@@ -74,6 +62,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 32.5, 373.0, 91.0, 34.0 ],
+					"text" : "/line : [0, 1000]",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -117,7 +106,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.0, 228.0, 60.0, 33.0 ],
+					"patching_rect" : [ 560.0, 228.0, 60.0, 34.0 ],
 					"style" : "",
 					"text" : "midifreq \noffset\n"
 				}
@@ -240,7 +229,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 478.0, 44.5, 96.0, 100.0 ],
+					"patching_rect" : [ 478.0, 44.5, 96.0, 103.0 ],
 					"style" : "",
 					"text" : "find range for min/max by covering up the light with your hand, then noting the values "
 				}
@@ -457,9 +446,9 @@
 					"fontsize" : 12.0,
 					"id" : "obj-3",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "FullPacket", "FullPacket" ],
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 150.0, 10.0, 70.0, 22.0 ],
 					"style" : "",
 					"text" : "my-esplora"
@@ -736,109 +725,61 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "my-esplora.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.esplora.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.slipserial.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "o.io.serial.display.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
+				"bootpath" : "~/Max 7/Packages/CNMAT-MMJSS/extras/MMJSS-extras",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "show_messages.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"bootpath" : "~/Max 7/Packages/CNMAT-MMJSS/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.l.genharms.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"bootpath" : "~/Max 7/Packages/CNMAT-MMJSS/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "o.pack.mxo",
-				"type" : "iLaX"
+				"name" : "o.display.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.route.mxo",
-				"type" : "iLaX"
+				"name" : "sinusoids~.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.union.mxo",
-				"type" : "iLaX"
+				"name" : "resdisplay.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.validate.mxo",
-				"type" : "iLaX"
+				"name" : "o.pack.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.print.mxo",
-				"type" : "iLaX"
+				"name" : "o.route.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.slip.encode.mxo",
-				"type" : "iLaX"
+				"name" : "o.expr.codebox.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.slip.decode.mxo",
-				"type" : "iLaX"
+				"name" : "o.compose.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.if.mxo",
-				"type" : "iLaX"
+				"name" : "o.select.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.downcast.mxo",
-				"type" : "iLaX"
+				"name" : "o.union.mxe",
+				"type" : "iLaF"
 			}
 , 			{
-				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "sinusoids~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "resdisplay.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.select.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.change.mxo",
-				"type" : "iLaX"
+				"name" : "o.change.mxe",
+				"type" : "iLaF"
 			}
  ],
 		"embedsnapshot" : 0
