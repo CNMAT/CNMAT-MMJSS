@@ -118,7 +118,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 43.0, 109.5, 229.0, 114.0 ],
-									"text" : "if(/platform == \"macintosh\", \n  /pollval = 3, \n  if(/platform == \"windows\", \n    /pollval = 50, \n  NULL\n  )\n)",
+									"text" : "if(/platform == \"macintosh\", \n  /pollval = 3, \n  if(/platform == \"windows\", \n    /pollval = 80, \n  NULL\n  )\n)",
 									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
