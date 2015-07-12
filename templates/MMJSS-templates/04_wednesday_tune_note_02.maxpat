@@ -347,7 +347,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 17.0, 288.0, 316.0, 99.0 ],
-									"text" : "/min = 0., /max = 0.9,\nif(((/photoresistor >= /min) && (/photoresistor <= /max)), \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
+									"text" : "/min = 0., /max = 0.9,\nif((/photoresistor >= /min) && (/photoresistor <= /max), \n  /clipped = clip(/photoresistor, 0.7, 0.9), \n  /clipped = 0.9\n), \n/line = [int32(/photoresistor < /max), 1000]",
 									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
@@ -1278,6 +1278,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.maxplatform.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.io.serial.display.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
 				"type" : "JSON",
@@ -1318,6 +1324,10 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.downcast.mxo",
 				"type" : "iLaX"
 			}
@@ -1327,10 +1337,6 @@
 			}
 , 			{
 				"name" : "o.display.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
 , 			{
