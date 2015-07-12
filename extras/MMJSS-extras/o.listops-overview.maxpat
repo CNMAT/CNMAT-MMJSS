@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
-			"architecture" : "x86",
+			"revision" : 4,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -52,8 +52,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -157,7 +157,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 47, 108, 105, 115, 116, 0, 0, 0, 44, 100, 105, 100, 105, 0, 0, 0, 63, -15, -8, 55, -76, -94, 51, -100, 0, 0, 0, 3, 64, 2, 127, -105, 36, 116, 83, -113, 0, 0, 0, 3, 0, 0, 0, 28, 47, 97, 0, 0, 44, 115, 115, 115, 115, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 99, 0, 0, 0, 97, 0, 0, 0, 0, 0, 0, 28, 47, 98, 0, 0, 44, 115, 115, 115, 115, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 99, 0, 0, 0, 97, 0, 0, 0 ],
 									"saved_bundle_length" : 124,
 									"text" : "/list : [1.1231, 3, 2.3123, 3],\n/a : [\"a\", \"b\", \"c\", \"a\"],\n/b : [\"a\", \"b\", \"c\", \"a\"]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -174,7 +174,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 30.0, 270.0, 343.0, 47.0 ],
 									"text" : "/med : 2.65615,\n/truth : true",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -190,7 +190,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 30.0, 170.0, 341.0, 32.0 ],
 									"text" : "/med = /median(/list), /truth = /compare(/a, /b)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -209,7 +209,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 109, 101, 100, 105, 97, 110, 0, 44, 115, 0, 0, 108, 97, 109, 98, 100, 97, 40, 91, 108, 93, 44, 32, 109, 101, 100, 105, 97, 110, 40, 108, 41, 41, 0, 0, 0, 0, 0, 84, 47, 99, 111, 109, 112, 97, 114, 101, 0, 0, 0, 0, 44, 115, 0, 0, 108, 97, 109, 98, 100, 97, 40, 91, 97, 44, 32, 98, 93, 44, 32, 108, 114, 101, 100, 117, 99, 101, 40, 97, 110, 100, 44, 32, 40, 108, 101, 110, 103, 116, 104, 40, 97, 41, 32, 61, 61, 32, 108, 101, 110, 103, 116, 104, 40, 98, 41, 41, 32, 38, 38, 32, 40, 97, 32, 61, 61, 32, 98, 41, 41, 41, 0, 0 ],
 									"saved_bundle_length" : 144,
 									"text" : "/median : \"lambda([l], median(l))\",\n/compare : \"lambda([a, b], lreduce(and, (length(a) == length(b)) && (a == b)))\"",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -322,8 +322,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -367,7 +367,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 48.0, 150.0, 150.0, 45.0 ],
 									"text" : "/list : [1, 2, 3, 4],\n/rev : [4, 3, 2, 1]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -385,7 +385,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 4 ],
 									"saved_bundle_length" : 52,
 									"text" : "/list : [1, 2, 3, 4]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -402,7 +402,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 48.0, 88.0, 150.0, 43.0 ],
 									"text" : "/list ??= list(),\n/rev = reverse(/list)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -459,8 +459,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -502,7 +502,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 56.0, 168.0, 150.0, 33.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -521,7 +521,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3 ],
 									"saved_bundle_length" : 48,
 									"text" : "/list : [1, 2, 3]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -552,7 +552,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 115, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 97, 115, 100, 102, 0, 0, 0, 0 ],
 									"saved_bundle_length" : 56,
 									"text" : "/list : [1, 2, 3, \"asdf\"]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -642,8 +642,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -687,8 +687,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 3,
-											"architecture" : "x86",
+											"revision" : 4,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -797,7 +797,7 @@
 													"outlettype" : [ "FullPacket", "FullPacket" ],
 													"patching_rect" : [ 243.0, 95.0, 150.0, 46.0 ],
 													"text" : "/list = aseq( 1, 6, 1 ),\n/from/right = 2",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -814,7 +814,7 @@
 													"outlettype" : [ "FullPacket", "FullPacket" ],
 													"patching_rect" : [ 48.0, 95.0, 150.0, 46.0 ],
 													"text" : "/list = aseq( 1, 6, 1 ),\n/from/left = 5",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -831,7 +831,7 @@
 													"outlettype" : [ "FullPacket", "FullPacket" ],
 													"patching_rect" : [ 438.0, 95.0, 150.0, 60.0 ],
 													"text" : "/list = aseq( 1, 6, 1 ),\n/from/left = 2,\n/from/right = 2",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -848,7 +848,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 48.0, 530.0, 195.0, 104.0 ],
 													"text" : "/list : [1, 2, 3, 4, 5, 6],\n/from/left : 2,\n/from/right : 2,\n/slice/from/left : [1, 2],\n/slice/from/right : [5, 6],\n/slice/remainder : [3, 4]",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 												}
 
 											}
@@ -865,7 +865,7 @@
 													"outlettype" : [ "FullPacket", "FullPacket" ],
 													"patching_rect" : [ 48.0, 200.0, 464.0, 186.0 ],
 													"text" : "/list ??= list(),\n/start = 0,\n/end = length( /list ) - 1,\nif(bound(/from/left), progn(\n  /start = /from/left, \n  /slice/from/left = /list[[aseq(0, /from/left - 1, 1)]])),\n  if(bound(/from/right), progn(\n    /end = (length(/list) - 1) - /from/right, \n    /slice/from/right = /list[[aseq(length(/list) - /from/right, length(/list) - 1, 1)]])), \n    /slice/remainder = /list[[aseq(/start, /end, 1)]], \ndelete(/start), \ndelete(/end)",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -978,7 +978,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 744.0, 400.0, 150.0, 74.0 ],
 									"text" : "/list : [1, 2, 3, 4, 5, 6],\n/count : 2,\n/slice/left : [1, 2, 3, 4],\n/slice/right : [5, 6]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -995,7 +995,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 744.0, 320.0, 363.0, 45.0 ],
 									"text" : "/slice/left = /list[[aseq(0, (length(/list) - 1) - /count, 1)]], \n/slice/right = /list[[aseq((length(/list)) - /count, (length(/list) - 1), 1)]]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1069,7 +1069,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 192.0, 104.0, 293.0, 72.0 ],
 									"text" : "/list ??= list(),\n/count ??= length(/list),\n/count = (/count > length(/list)) ? length(/list) : /count,\n/count = (/count < 0) ? 0 : /count",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1100,7 +1100,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 351.5, 400.0, 150.0, 74.0 ],
 									"text" : "/list : [1, 2, 3, 4, 5, 6],\n/count : 4,\n/slice/left : [1, 2, 3, 4],\n/slice/right : [5, 6]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -1117,7 +1117,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 351.5, 320.0, 278.0, 45.0 ],
 									"text" : "/slice/left = /list[[aseq(0, /count - 1, 1)]], \n/slice/right = /list[[aseq(/count, length(/list) - 1, 1)]]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1133,7 +1133,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 351.5, 282.0, 164.0, 32.0 ],
 									"text" : "/count = length(/list) - /count",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1166,7 +1166,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 105, 105, 105, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 4, 0, 0, 0, 5, 0, 0, 0, 6, 0, 0, 0, 16, 47, 99, 111, 117, 110, 116, 0, 0, 44, 105, 0, 0, 0, 0, 0, 2 ],
 									"saved_bundle_length" : 80,
 									"text" : "/list : [1, 2, 3, 4, 5, 6],\n/count : 2",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1183,7 +1183,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 40.0, 400.0, 150.0, 74.0 ],
 									"text" : "/list : [1, 2, 3, 4, 5, 6],\n/count : 2,\n/slice/left : [1, 2],\n/slice/right : [3, 4, 5, 6]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -1200,7 +1200,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 40.0, 320.0, 278.0, 45.0 ],
 									"text" : "/slice/left = /list[[aseq(0, /count - 1, 1)]], \n/slice/right = /list[[aseq(/count, length(/list) - 1, 1)]]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1311,8 +1311,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1356,7 +1356,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 203.0, 221.0, 157.0, 43.0 ],
 									"text" : "/list = [last(/list), butlast(/list)],\n/count += 1",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1386,7 +1386,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 56.0, 285.0, 150.0, 33.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -1418,7 +1418,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 56.0, 112.0, 97.0, 43.0 ],
 									"text" : "/list = [2, 3, 4, 5],\n/count = 0",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1527,8 +1527,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1574,7 +1574,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 8, 0, 0, 0, 7, 64, 9, 12, -20, 65, -35, 26, 34, 63, -45, -41, 10, 61, 112, -93, -41, 63, -45, -41, 10, 61, 112, -93, -41, 63, -12, -6, 67, -2, 92, -111, -47 ],
 									"saved_bundle_length" : 84,
 									"text" : "/list : [9, 8, 7, 3.13131, 0.31, 0.31, 1.3111]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1591,7 +1591,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 409.0, 183.0, 84.0, 45.0 ],
 									"text" : "/n ??= -1,\n/list ??= list()",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1606,7 +1606,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 409.0, 284.0, 202.0, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -1625,7 +1625,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 110, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4, 0, 0, 0, 64, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 8, 0, 0, 0, 7, 64, 9, 12, -20, 65, -35, 26, 34, 63, -45, -41, 10, 61, 112, -93, -41, 63, -45, -41, 10, 61, 112, -93, -41, 63, -12, -6, 67, -2, 92, -111, -47 ],
 									"saved_bundle_length" : 100,
 									"text" : "/n : 4,\n/list : [9, 8, 7, 3.13131, 0.31, 0.31, 1.3111]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1641,7 +1641,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 409.0, 241.5, 112.0, 32.0 ],
 									"text" : "/nth = nth(/list, /n )",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1660,7 +1660,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 64, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 8, 0, 0, 0, 7, 64, 9, 12, -20, 65, -35, 26, 34, 63, -45, -41, 10, 61, 112, -93, -41, 63, -45, -41, 10, 61, 112, -93, -41, 63, -12, -6, 67, -2, 92, -111, -47 ],
 									"saved_bundle_length" : 84,
 									"text" : "/list : [9, 8, 7, 3.13131, 0.31, 0.31, 1.3111]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1677,7 +1677,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 41.0, 183.0, 84.0, 45.0 ],
 									"text" : "/n ??= -1,\n/list ??= list()",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1692,7 +1692,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 41.0, 284.0, 202.0, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -1711,7 +1711,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 110, 0, 0, 44, 105, 0, 0, 0, 0, 0, 4, 0, 0, 0, 64, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0, 0, 8, 0, 0, 0, 7, 64, 9, 12, -20, 65, -35, 26, 34, 63, -45, -41, 10, 61, 112, -93, -41, 63, -45, -41, 10, 61, 112, -93, -41, 63, -12, -6, 67, -2, 92, -111, -47 ],
 									"saved_bundle_length" : 100,
 									"text" : "/n : 4,\n/list : [9, 8, 7, 3.13131, 0.31, 0.31, 1.3111]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1727,7 +1727,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 41.0, 241.5, 126.0, 32.0 ],
 									"text" : "/nth = nth(/list, /n - 1)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1838,8 +1838,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1884,7 +1884,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 34, 0, 0, 0, 14, 0, 0, 0, 15, 0, 0, 0, 1 ],
 									"saved_bundle_length" : 68,
 									"text" : "/list : [1, 2, 3, 34, 14, 15, 1]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1900,7 +1900,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 72.0, 280.0, 134.0, 32.0 ],
 									"text" : "/median = median(/list)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1918,7 +1918,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 105, 105, 105, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 14, 0, 0, 0, 15, 0, 0, 0, 1 ],
 									"saved_bundle_length" : 60,
 									"text" : "/list : [1, 2, 3, 14, 15, 1]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1935,7 +1935,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 32.0, 336.0, 230.0, 101.0 ],
 									"text" : "/list : [1, 2, 3, 14, 15, 1],\n/sorted : [1, 1, 2, 3, 14, 15],\n/len : 6,\n/type : \"even\",\n/middle : [2, 3],\n/median : 2.5",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -1953,7 +1953,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 52, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 105, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 14, 0, 0, 0, 15, 0, 0, 0, 1, 0, 0, 0, 23, 0, 0, 0, 10 ],
 									"saved_bundle_length" : 72,
 									"text" : "/list : [1, 2, 3, 14, 15, 1, 23, 10]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1971,7 +1971,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 105, 105, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 34, 0, 0, 0, 14, 0, 0, 0, 15, 0, 0, 0, 1 ],
 									"saved_bundle_length" : 68,
 									"text" : "/list : [1, 2, 3, 34, 14, 15, 1]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -1988,7 +1988,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 32.0, 136.0, 381.0, 99.0 ],
 									"text" : "/sorted = sort(/list),\n/len = length(/sorted),\nif(/len % 2, /type = odd, /type = even),\nif(/type == odd, /middle = (/len / 2), /middle = [(/len / 2) - 1, (/len / 2)]),\n/median = /sorted[[/middle]],\nif(/type == even, /median = (/median[[1]] + /median[[0]]) / 2.)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2081,8 +2081,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2124,7 +2124,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 136.0, 144.0, 150.0, 33.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -2142,7 +2142,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 36, 47, 109, 121, 108, 105, 115, 116, 0, 44, 105, 105, 105, 105, 105, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 4, 0, 0, 0, 5 ],
 									"saved_bundle_length" : 56,
 									"text" : "/mylist : [1, 2, 3, 4, 5]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2173,7 +2173,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 136.0, 72.0, 127.0, 43.0 ],
 									"text" : "/list ??= list(),\n/length = length(/mylist)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2230,8 +2230,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2268,33 +2268,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-6",
-									"linecount" : 2,
 									"maxclass" : "o.display",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 362.0, 198.5, 64.0, 47.0 ],
-									"text" : "/a,\n/b",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontface" : 0,
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-5",
-									"linecount" : 2,
-									"maxclass" : "o.compose",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 257.0, 35.5, 39.0, 37.0 ],
-									"saved_bundle_data" : [  ],
-									"saved_bundle_length" : 0,
-									"text" : "/a,\n/b",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"patching_rect" : [ 362.0, 198.5, 64.0, 34.0 ],
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -2326,7 +2305,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 138.0, 92.5, 79.0, 45.0 ],
 									"text" : "/a ??= list(),\n/b ??= list()\n",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2355,7 +2334,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 138.0, 251.5, 178.5, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -2374,7 +2353,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 97, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 24, 47, 98, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 99, 0, 0, 0 ],
 									"saved_bundle_length" : 72,
 									"text" : "/a : [1, 2, 3],\n/b : [\"a\", \"b\", \"c\"]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2390,7 +2369,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 138.0, 198.5, 145.0, 32.0 ],
 									"text" : "/laced = interleave(/a, /b)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2440,15 +2419,6 @@
 								}
 
 							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
  ]
 					}
 ,
@@ -2483,8 +2453,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2526,7 +2496,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 144.0, 168.0, 200.0, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -2542,7 +2512,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 144.0, 127.0, 95.0, 32.0 ],
 									"text" : "/joined = [/a, /b]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2561,7 +2531,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 97, 0, 0, 44, 105, 105, 100, 0, 0, 0, 0, 0, 0, 0, 1, -1, -1, -1, -2, -64, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 98, 0, 0, 44, 115, 115, 0, 97, 0, 0, 0, 67, 78, 77, 65, 84, 0, 0, 0 ],
 									"saved_bundle_length" : 72,
 									"text" : "/a : [1, -2, -15.],\n/b : [\"a\", \"CNMAT\"]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2577,7 +2547,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 144.0, 80.5, 116.0, 32.0 ],
 									"text" : "/a ??= /b ??= list()",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2657,8 +2627,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2729,7 +2699,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 216.0, 344.0, 150.0, 33.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -2774,7 +2744,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 37.5, 344.0, 150.0, 33.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -2806,7 +2776,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 104.0, 83.0, 84.0, 43.0 ],
 									"text" : "/list = list(),\n/maxsize = 10",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -2822,7 +2792,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 24.0, 176.0, 97.0, 31.0 ],
 									"text" : "/list = [/list, /new]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3016,8 +2986,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3059,7 +3029,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 379.0, 384.0, 216.0, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -3076,7 +3046,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 379.0, 275.333374, 243.0, 72.0 ],
 									"text" : "/every2/from0 = aseq(0, length(/list) - 1, 2),\n/every2/from1 = aseq(1, length(/list) - 1, 2),\n/delaced/left = /list[[/every2/from0]],\n/delaced/right = /list[[/every2/from1]]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3105,7 +3075,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 393.25, 208.0, 78.75, 33.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -3138,7 +3108,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 97, 0, 0, 44, 115, 0, 0, 97, 0, 0, 0 ],
 									"saved_bundle_length" : 32,
 									"text" : "/a : \"a\"",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3154,7 +3124,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 220.0, 127.0, 80.0, 32.0 ],
 									"text" : "/list ??= list()",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3183,7 +3153,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 28.0, 329.333374, 216.0, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -3201,7 +3171,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60, 47, 108, 105, 115, 116, 0, 0, 0, 44, 105, 105, 100, 105, 115, 105, 105, 105, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 64, 9, 33, -7, -16, 27, -122, 110, 0, 0, 0, 4, 98, 101, 97, 114, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 7, 0, 0, 0, 8 ],
 									"saved_bundle_length" : 80,
 									"text" : "/list : [1, 2, 3.14159, 4, \"bear\", 6, 7, 8]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3218,7 +3188,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 28.0, 275.333374, 266.0, 45.0 ],
 									"text" : "/delaced/left = /list[[aseq(0, length(/list) - 1, 2)]],\n/delaced/right = /list[[aseq(1, length(/list) - 1, 2)]]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3329,8 +3299,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -3374,8 +3344,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 3,
-											"architecture" : "x86",
+											"revision" : 4,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -3435,7 +3405,7 @@
 													"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 97, 0, 0, 44, 100, 0, 0, 64, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 98, 0, 0, 44, 100, 0, 0, 64, 8, 0, 5, 62, 45, 98, 57 ],
 													"saved_bundle_length" : 56,
 													"text" : "/a : 3.,\n/b : 3.00001",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -3454,7 +3424,7 @@
 													"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 97, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 28, 47, 98, 0, 0, 44, 105, 105, 100, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 64, 2, 127, 46, 72, -24, -89, 30 ],
 													"saved_bundle_length" : 76,
 													"text" : "/a : [1, 2, 3],\n/b : [1, 2, 2.3121]",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -3469,7 +3439,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 40.0, 200.0, 150.0, 34.0 ],
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 												}
 
 											}
@@ -3488,7 +3458,7 @@
 													"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 97, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 24, 47, 98, 0, 0, 44, 105, 105, 105, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3 ],
 													"saved_bundle_length" : 72,
 													"text" : "/a : [1, 2, 3],\n/b : [1, 2, 3]",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -3504,7 +3474,7 @@
 													"outlettype" : [ "FullPacket", "FullPacket" ],
 													"patching_rect" : [ 40.0, 144.0, 332.0, 32.0 ],
 													"text" : "/test = (length( /a ) == length( /b )) && (l2norm(/a  -  /b) == 0)",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -3576,8 +3546,8 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 3,
-											"architecture" : "x86",
+											"revision" : 4,
+											"architecture" : "x64",
 											"modernui" : 1
 										}
 ,
@@ -3659,7 +3629,7 @@
 													"outlettype" : [ "FullPacket", "FullPacket" ],
 													"patching_rect" : [ 219.0, 71.5, 201.0, 46.0 ],
 													"text" : "/a = aseq(1, 10, 1),\n/b = list(aseq(1, 5, 1), aseq(9, 7, -1))",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -3676,7 +3646,7 @@
 													"outlettype" : [ "FullPacket", "FullPacket" ],
 													"patching_rect" : [ 24.0, 71.5, 116.0, 46.0 ],
 													"text" : "/a = aseq(1, 10, 1),\n/b = aseq(1, 9, 1)",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -3691,7 +3661,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 24.0, 328.0, 355.0, 34.0 ],
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 												}
 
 											}
@@ -3708,7 +3678,7 @@
 													"outlettype" : [ "FullPacket", "FullPacket" ],
 													"patching_rect" : [ 24.0, 160.0, 384.0, 153.0 ],
 													"text" : "if(\n  length(/a) == length(/b), /test = eq(/a, /b), progn(\t\t\n    /max/indices = list(length(/a) - 1, length(/b) - 1),\t\t\n    /will/compare = aseq(0, min(/max/indices), 1),\n    /test = eq(/a[[/will/compare]], /b[[/will/compare]]),\n    /test = list(/test, nfill(max(/max/indices) - min(/max/indices), false)), \n    delete(/max/indices),\n    delete(/will/compare)\n  )\n)",
-													"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+													"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 												}
 
 											}
@@ -3791,7 +3761,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 97, 0, 0, 44, 115, 115, 115, 115, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 99, 0, 0, 0, 97, 0, 0, 0, 0, 0, 0, 28, 47, 98, 0, 0, 44, 115, 115, 115, 115, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 122, 0, 0, 0, 97, 0, 0, 0 ],
 									"saved_bundle_length" : 80,
 									"text" : "/a : [\"a\", \"b\", \"c\", \"a\"],\n/b : [\"a\", \"b\", \"z\", \"a\"]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3825,7 +3795,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 47, 97, 0, 0, 44, 115, 115, 0, 97, 0, 0, 0, 98, 0, 0, 0, 0, 0, 0, 24, 47, 98, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 97, 0, 0, 0, 122, 0, 0, 0, 121, 0, 0, 0 ],
 									"saved_bundle_length" : 64,
 									"text" : "/a : [\"a\", \"b\"],\n/b : [\"a\", \"z\", \"y\"]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3843,7 +3813,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 102, 111, 111, 0, 0, 0, 0, 44, 0, 0, 0 ],
 									"saved_bundle_length" : 32,
 									"text" : "/foo",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3860,7 +3830,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 104.0, 160.0, 79.0, 45.0 ],
 									"text" : "/a ??= list(),\n/b ??= list()",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3908,7 +3878,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 97, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 99, 0, 0, 0, 0, 0, 0, 24, 47, 98, 0, 0, 44, 115, 115, 115, 0, 0, 0, 0, 97, 0, 0, 0, 98, 0, 0, 0, 99, 0, 0, 0 ],
 									"saved_bundle_length" : 72,
 									"text" : "/a : [\"a\", \"b\", \"c\"],\n/b : [\"a\", \"b\", \"c\"]",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -3923,7 +3893,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 300.5, 166.0, 34.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -3940,7 +3910,7 @@
 									"outlettype" : [ "FullPacket", "FullPacket" ],
 									"patching_rect" : [ 104.0, 217.166656, 257.0, 45.0 ],
 									"text" : "/eqv = (length(/a) == length(/b)) && (/a == /b),\n/truth = lreduce(and, /eqv)",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -4033,8 +4003,8 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 3,
-							"architecture" : "x86",
+							"revision" : 4,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -4076,7 +4046,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 209.0, 206.666656, 55.0, 33.0 ],
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
 							}
@@ -4095,7 +4065,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 97, 0, 0, 44, 105, 0, 0, 0, 0, 1, 44, 0, 0, 0, 12, 47, 98, 0, 0, 44, 105, 0, 0, 0, 0, 0, -26 ],
 									"saved_bundle_length" : 48,
 									"text" : "/a : 300,\n/b : 230",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -4140,7 +4110,7 @@
 									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 47, 97, 0, 0, 44, 105, 0, 0, 0, 0, 1, 44, 0, 0, 0, 12, 47, 98, 0, 0, 44, 105, 0, 0, 0, 0, 1, 44 ],
 									"saved_bundle_length" : 48,
 									"text" : "/a : 300,\n/b : 300",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
 								}
 
 							}
@@ -4219,15 +4189,13 @@
 		"lines" : [  ],
 		"dependency_cache" : [ 			{
 				"name" : "o.gather.maxpat",
-				"bootpath" : "~/Documents/programming/max_files/enabled/3rd_party_ext/odot/patchers/namespace",
-				"patcherrelativepath" : "../../../../../programming/max_files/enabled/3rd_party_ext/odot/patchers/namespace",
+				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/namespace",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
-				"bootpath" : "~/Documents/programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
-				"patcherrelativepath" : "../../../../../programming/max_files/enabled/3rd_party_ext/odot/patchers/ordering",
+				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
