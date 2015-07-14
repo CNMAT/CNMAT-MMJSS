@@ -143,7 +143,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 200.0, 107.0, 154.0, 221.0 ],
+									"patching_rect" : [ 200.0, 107.0, 157.0, 221.0 ],
 									"style" : "default",
 									"text" : "these are named collections that can be referred to by any other collection via the refer message (see coll's help file).  their contents are stored in the patch that has been saved, and can be used as an embedded set of data structures.\n\nleave them here as is, and try to figure out a way to access their contents in the patch one level above this (the main/top-level patch)."
 								}
@@ -2877,7 +2877,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "FullPacket" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 450.0, 472.833313, 98.0, 22.0 ],
 					"style" : "default",
 					"text" : "esplora_basic02"
@@ -3090,6 +3090,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.maxplatform.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.io.serial.display.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
 				"type" : "JSON",
@@ -3125,10 +3131,6 @@
 			}
 , 			{
 				"name" : "o.validate.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.print.mxo",
 				"type" : "iLaX"
 			}
 , 			{
