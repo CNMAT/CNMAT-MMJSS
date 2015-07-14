@@ -38,11 +38,44 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.3,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 713.0, 484.0, 184.0, 37.0 ],
+					"style" : "",
+					"text" : "an adsr - read help in helpfile (option-click on object)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "", "" ],
+					"patching_rect" : [ 644.0, 484.0, 61.0, 22.0 ],
+					"style" : "",
+					"text" : "adsr~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 242.0, 634.0, 385.0, 20.0 ],
+					"patching_rect" : [ 215.0, 634.0, 385.0, 20.0 ],
 					"style" : "",
 					"text" : "< this output range from the slider is the same as a MIDI range (0-127)"
 				}
@@ -56,7 +89,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 180.0, 630.0, 50.0, 22.0 ],
+					"patching_rect" : [ 153.0, 630.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -70,7 +103,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 117.5, 460.0, 409.0, 24.0 ],
+					"patching_rect" : [ 90.5, 460.0, 409.0, 24.0 ],
 					"style" : "",
 					"text" : "use [*~] to multiply the output of an oscillator by some sort of adsr ramp."
 				}
@@ -102,7 +135,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 730.0, 460.0, 127.0, 24.0 ],
+					"patching_rect" : [ 694.0, 456.0, 127.0, 24.0 ],
 					"style" : "",
 					"text" : "a ramp generator"
 				}
@@ -118,7 +151,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 520.0, 521.5, 161.0, 91.0 ],
+					"patching_rect" : [ 493.0, 521.5, 161.0, 91.0 ],
 					"style" : "",
 					"text" : "spectroscope~ draws a representation of the frequency spectrum that is sent into it via MSP cords.  connect audio to this to see your sounds."
 				}
@@ -143,13 +176,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-28",
-					"linecount" : 7,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 10.0, 56.5, 724.0, 100.0 ],
+					"patching_rect" : [ 10.0, 56.5, 724.0, 127.0 ],
 					"style" : "",
-					"text" : "Objectives:\n1. use esplora buttons to continuously trigger a stored MIDI frequency for various instances of mmjss.osc~\n2. use the adsr~ object to scale the amplitude of your oscillators\n3. use the esplora joystick values (hint: use scale) to modify various parameters of the adsr~ object\n\nExtra credit:  Make an abstraction that has an oscillator, an adsr, and the controls necessary to be duplicated.  Add an argument to change the type of oscillator from the outside."
+					"text" : "Objectives:\n\n1. use esplora buttons to continuously trigger a stored MIDI frequency for various instances of mmjss.osc~\n2. use the adsr~ object to scale the amplitude of your oscillators\n3. use the esplora joystick values (hint: use scale) to modify various parameters of the adsr~ object\n\nExtra credit 1:  Make an abstraction that has an oscillator, an adsr, and the controls necessary to be duplicated.  Add an argument to change the type of oscillator from the outside.\nExtra credit 2: Use the [line~] object to generate a non-adsr-based ramp."
 				}
 
 			}
@@ -177,7 +210,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 758.5, 280.0, 186.0, 154.0 ],
+					"patching_rect" : [ 744.5, 280.0, 186.0, 154.0 ],
 					"style" : "",
 					"text" : "mmjss.osc~:\n\nTakes a frequency and outputs audio.\nThis abstraction allows for various types of oscillations in a single abstraction.  simply give the abstraction a type with the @type attribute.  available types are triangle, rectangle, sine, and sawtooth.  "
 				}
@@ -223,7 +256,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 578.0, 376.5, 164.0, 22.0 ],
+					"patching_rect" : [ 570.0, 386.5, 164.0, 22.0 ],
 					"style" : "",
 					"text" : "mmjss.osc~ @type sawtooth"
 				}
@@ -239,7 +272,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 578.0, 346.5, 138.0, 22.0 ],
+					"patching_rect" : [ 570.0, 356.5, 138.0, 22.0 ],
 					"style" : "",
 					"text" : "mmjss.osc~ @type sine"
 				}
@@ -255,7 +288,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 578.0, 316.5, 165.0, 22.0 ],
+					"patching_rect" : [ 570.0, 326.5, 165.0, 22.0 ],
 					"style" : "",
 					"text" : "mmjss.osc~ @type rectangle"
 				}
@@ -270,7 +303,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 144.0, 520.0, 40.0, 90.0 ],
+					"patching_rect" : [ 117.0, 520.0, 40.0, 90.0 ],
 					"setminmax" : [ 0.0, 127.0 ],
 					"style" : ""
 				}
@@ -315,7 +348,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 440.0, 346.0, 70.0, 22.0 ],
+					"patching_rect" : [ 419.0, 337.0, 70.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -357,7 +390,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 211.0, 520.0, 300.0, 90.0 ],
+					"patching_rect" : [ 184.0, 520.0, 300.0, 90.0 ],
 					"style" : ""
 				}
 
@@ -371,7 +404,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "FullPacket" ],
-					"patching_rect" : [ 440.0, 320.0, 107.0, 22.0 ],
+					"patching_rect" : [ 419.0, 311.0, 107.0, 22.0 ],
 					"style" : "",
 					"text" : "o.route /horizontal"
 				}
@@ -401,7 +434,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 131.0, 630.0, 32.0, 22.0 ],
+					"patching_rect" : [ 104.0, 630.0, 32.0, 22.0 ],
 					"style" : "",
 					"text" : "f"
 				}
@@ -416,7 +449,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
-					"patching_rect" : [ 680.0, 460.0, 36.0, 22.0 ],
+					"patching_rect" : [ 644.0, 456.0, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "line~"
 				}
@@ -431,7 +464,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 71.0, 460.0, 36.0, 22.0 ],
+					"patching_rect" : [ 44.0, 460.0, 36.0, 22.0 ],
 					"style" : "",
 					"text" : "*~ 0."
 				}
@@ -574,7 +607,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 71.0, 630.0, 39.0, 39.0 ],
+					"patching_rect" : [ 44.0, 630.0, 39.0, 39.0 ],
 					"style" : ""
 				}
 
@@ -619,7 +652,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 71.0, 520.0, 39.0, 90.0 ],
+					"patching_rect" : [ 44.0, 520.0, 39.0, 90.0 ],
 					"style" : ""
 				}
 
@@ -633,7 +666,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 578.0, 286.5, 158.0, 22.0 ],
+					"patching_rect" : [ 570.0, 296.5, 158.0, 22.0 ],
 					"style" : "",
 					"text" : "mmjss.osc~ @type triangle"
 				}
@@ -771,6 +804,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.maxplatform.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.io.serial.display.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
 				"type" : "JSON",
@@ -802,6 +841,10 @@
 			}
 , 			{
 				"name" : "o.if.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
 , 			{
