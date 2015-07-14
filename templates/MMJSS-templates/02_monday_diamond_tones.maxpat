@@ -138,19 +138,6 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
-									"id" : "obj-2",
-									"linecount" : 16,
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 200.0, 107.0, 157.0, 221.0 ],
-									"style" : "default",
-									"text" : "these are named collections that can be referred to by any other collection via the refer message (see coll's help file).  their contents are stored in the patch that has been saved, and can be used as an embedded set of data structures.\n\nleave them here as is, and try to figure out a way to access their contents in the patch one level above this (the main/top-level patch)."
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"coll_data" : 									{
 										"count" : 5,
 										"data" : [ 											{
@@ -861,6 +848,111 @@
 							}
 , 							{
 								"box" : 								{
+									"coll_data" : 									{
+										"count" : 25,
+										"data" : [ 											{
+												"key" : 0,
+												"value" : [ 0 ]
+											}
+, 											{
+												"key" : 1,
+												"value" : [ 3 ]
+											}
+, 											{
+												"key" : 2,
+												"value" : [ 6 ]
+											}
+, 											{
+												"key" : 3,
+												"value" : [ 9 ]
+											}
+, 											{
+												"key" : 4,
+												"value" : [ 12 ]
+											}
+, 											{
+												"key" : 5,
+												"value" : [ 15 ]
+											}
+, 											{
+												"key" : 6,
+												"value" : [ 18 ]
+											}
+, 											{
+												"key" : 7,
+												"value" : [ 21 ]
+											}
+, 											{
+												"key" : 8,
+												"value" : [ 24 ]
+											}
+, 											{
+												"key" : 9,
+												"value" : [ 27 ]
+											}
+, 											{
+												"key" : 10,
+												"value" : [ 30 ]
+											}
+, 											{
+												"key" : 11,
+												"value" : [ 33 ]
+											}
+, 											{
+												"key" : 12,
+												"value" : [ 36 ]
+											}
+, 											{
+												"key" : 13,
+												"value" : [ 39 ]
+											}
+, 											{
+												"key" : 14,
+												"value" : [ 42 ]
+											}
+, 											{
+												"key" : 15,
+												"value" : [ 45 ]
+											}
+, 											{
+												"key" : 16,
+												"value" : [ 48 ]
+											}
+, 											{
+												"key" : 17,
+												"value" : [ 51 ]
+											}
+, 											{
+												"key" : 18,
+												"value" : [ 54 ]
+											}
+, 											{
+												"key" : 19,
+												"value" : [ 57 ]
+											}
+, 											{
+												"key" : 20,
+												"value" : [ 60 ]
+											}
+, 											{
+												"key" : 21,
+												"value" : [ 63 ]
+											}
+, 											{
+												"key" : 22,
+												"value" : [ 66 ]
+											}
+, 											{
+												"key" : 23,
+												"value" : [ 69 ]
+											}
+, 											{
+												"key" : 24,
+												"value" : [ 72 ]
+											}
+ ]
+									}
+,
 									"id" : "obj-22",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -868,7 +960,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 50.0, 360.0, 58.0, 22.0 ],
 									"saved_object_attributes" : 									{
-										"embed" : 0
+										"embed" : 1
 									}
 ,
 									"style" : "default",
@@ -977,82 +1069,82 @@
 , 							{
 								"box" : 								{
 									"coll_data" : 									{
-										"count" : 38,
+										"count" : 50,
 										"data" : [ 											{
 												"key" : 0,
 												"value" : [ 0 ]
 											}
 , 											{
 												"key" : 1,
-												"value" : [ 3 ]
+												"value" : [ 2 ]
 											}
 , 											{
 												"key" : 2,
-												"value" : [ 7 ]
+												"value" : [ 4 ]
 											}
 , 											{
 												"key" : 3,
-												"value" : [ 10 ]
+												"value" : [ 6 ]
 											}
 , 											{
 												"key" : 4,
-												"value" : [ 14 ]
+												"value" : [ 8 ]
 											}
 , 											{
 												"key" : 5,
-												"value" : [ 17 ]
+												"value" : [ 10 ]
 											}
 , 											{
 												"key" : 6,
-												"value" : [ 21 ]
+												"value" : [ 12 ]
 											}
 , 											{
 												"key" : 7,
-												"value" : [ 24 ]
+												"value" : [ 14 ]
 											}
 , 											{
 												"key" : 8,
-												"value" : [ 27 ]
+												"value" : [ 16 ]
 											}
 , 											{
 												"key" : 9,
-												"value" : [ 31 ]
+												"value" : [ 18 ]
 											}
 , 											{
 												"key" : 10,
-												"value" : [ 34 ]
+												"value" : [ 20 ]
 											}
 , 											{
 												"key" : 11,
-												"value" : [ 38 ]
+												"value" : [ 22 ]
 											}
 , 											{
 												"key" : 12,
-												"value" : [ 41 ]
+												"value" : [ 24 ]
 											}
 , 											{
 												"key" : 13,
-												"value" : [ 45 ]
+												"value" : [ 26 ]
 											}
 , 											{
 												"key" : 14,
-												"value" : [ 48 ]
+												"value" : [ 28 ]
 											}
 , 											{
 												"key" : 15,
-												"value" : [ 51 ]
+												"value" : [ 30 ]
 											}
 , 											{
 												"key" : 16,
-												"value" : [ 55 ]
+												"value" : [ 32 ]
 											}
 , 											{
 												"key" : 17,
-												"value" : [ 58 ]
+												"value" : [ 34 ]
 											}
 , 											{
 												"key" : 18,
-												"value" : [ 62 ]
+												"value" : [ 36 ]
 											}
 , 											{
 												"key" : 19,
@@ -1129,6 +1221,54 @@
 , 											{
 												"key" : 37,
 												"value" : [ 74 ]
+											}
+, 											{
+												"key" : 38,
+												"value" : [ 76 ]
+											}
+, 											{
+												"key" : 39,
+												"value" : [ 78 ]
+											}
+, 											{
+												"key" : 40,
+												"value" : [ 80 ]
+											}
+, 											{
+												"key" : 41,
+												"value" : [ 82 ]
+											}
+, 											{
+												"key" : 42,
+												"value" : [ 84 ]
+											}
+, 											{
+												"key" : 43,
+												"value" : [ 86 ]
+											}
+, 											{
+												"key" : 44,
+												"value" : [ 88 ]
+											}
+, 											{
+												"key" : 45,
+												"value" : [ 90 ]
+											}
+, 											{
+												"key" : 46,
+												"value" : [ 92 ]
+											}
+, 											{
+												"key" : 47,
+												"value" : [ 94 ]
+											}
+, 											{
+												"key" : 48,
+												"value" : [ 96 ]
+											}
+, 											{
+												"key" : 49,
+												"value" : [ 98 ]
 											}
  ]
 									}
@@ -2577,6 +2717,19 @@
 ,
 									"style" : "default",
 									"text" : "coll chromatic"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 16,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 200.0, 107.0, 157.0, 221.0 ],
+									"style" : "default",
+									"text" : "these are named collections that can be referred to by any other collection via the refer message (see coll's help file).  their contents are stored in the patch that has been saved, and can be used as an embedded set of data structures.\n\nleave them here as is, and try to figure out a way to access their contents in the patch one level above this (the main/top-level patch)."
 								}
 
 							}
