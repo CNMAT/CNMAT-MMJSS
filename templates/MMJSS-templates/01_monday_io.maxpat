@@ -38,6 +38,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 586.955872, 272.0, 116.0, 20.0 ],
+					"style" : "",
+					"text" : "(double click below)"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-5",
@@ -320,7 +332,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 573.455872, 260.0, 143.0, 25.0 ],
+					"patching_rect" : [ 573.455872, 294.0, 143.0, 25.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -451,7 +463,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 430.0, 321.0, 159.0, 60.0 ],
+					"patching_rect" : [ 374.0, 325.0, 159.0, 60.0 ],
 					"style" : "",
 					"text" : "print prints anything to the max window, and the @popup attr allows you to see the result in your patch"
 				}
@@ -555,7 +567,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 210.911743, 427.0, 99.411743, 25.0 ],
+					"patching_rect" : [ 210.911743, 427.0, 100.0, 25.0 ],
 					"style" : ""
 				}
 
@@ -642,7 +654,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 430.0, 290.0, 112.0, 25.0 ],
+					"patching_rect" : [ 374.0, 294.0, 112.0, 25.0 ],
 					"style" : "",
 					"text" : "print @popup 1"
 				}
@@ -723,6 +735,12 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "o.maxplatform.maxpat",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "o.io.serial.display.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers/esplora",
 				"type" : "JSON",
@@ -757,15 +775,15 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "o.expr.codebox.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "o.downcast.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "o.compose.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "o.expr.codebox.mxo",
 				"type" : "iLaX"
 			}
 , 			{
