@@ -38,6 +38,19 @@
 		"subpatcher_template" : "gridded",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1185.0, 21.0, 213.0, 33.0 ],
+					"presentation_rect" : [ 1150.0, 33.0, 0.0, 0.0 ],
+					"style" : "",
+					"text" : "table-based lookup"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -72,7 +85,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 930.0, 360.0, 63.0, 35.0 ],
-					"presentation_rect" : [ 935.0, 360.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -90,7 +102,6 @@
 					"outlettype" : [ "float", "", "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 750.0, 435.0, 200.0, 100.0 ],
-					"presentation_rect" : [ 742.0, 400.0, 0.0, 0.0 ],
 					"prototypename" : "function_0-1_nolegend",
 					"style" : ""
 				}
@@ -254,9 +265,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 495.0, 30.0, 152.0, 33.0 ],
+					"patching_rect" : [ 480.0, 45.0, 213.0, 33.0 ],
 					"style" : "",
-					"text" : "lookup tables"
+					"text" : "interpolated lookup"
 				}
 
 			}
