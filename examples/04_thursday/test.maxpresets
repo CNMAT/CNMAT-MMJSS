@@ -1,0 +1,15 @@
+{
+	"preset_data" : [ 		{
+			"number" : 1,
+			"data" : [ 5, "obj-2", "dial", "float", 76.0 ]
+		}
+, 		{
+			"number" : 2,
+			"data" : [ 5, "obj-2", "dial", "float", 22.0 ]
+		}
+, 		{
+			"number" : 3,
+			"data" : [ 5, "obj-2", "dial", "float", 112.0 ]
+		}
+ ]
+}
