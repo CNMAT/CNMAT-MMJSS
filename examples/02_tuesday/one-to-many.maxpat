@@ -5,7 +5,7 @@
 			"major" : 7,
 			"minor" : 0,
 			"revision" : 4,
-			"architecture" : "x64",
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -43,7 +43,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 90.0, 15.0, 24.0, 24.0 ],
+					"patching_rect" : [ 75.0, 30.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 90.0, 171.0, 79.0, 79.0 ],
 					"style" : ""
@@ -147,7 +147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 795.0, 135.0, 63.0, 35.0 ],
+					"patching_rect" : [ 750.0, 165.0, 63.0, 35.0 ],
 					"style" : "",
 					"text" : "clear"
 				}
@@ -263,9 +263,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 645.0, 30.0, 152.0, 33.0 ],
+					"patching_rect" : [ 645.0, 30.0, 213.0, 33.0 ],
 					"style" : "",
-					"text" : "lookup tables"
+					"text" : "interpolated lookup"
 				}
 
 			}
