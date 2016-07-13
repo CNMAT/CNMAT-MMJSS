@@ -5,11 +5,11 @@
 			"major" : 7,
 			"minor" : 0,
 			"revision" : 4,
-			"architecture" : "x86",
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 48.0, 79.0, 784.0, 815.0 ],
+		"rect" : [ 48.0, 79.0, 784.0, 787.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -51,7 +51,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 7,
 					"presentation_rect" : [ 301.0, 515.0, 249.0, 99.0 ],
-					"text" : "/loc : 0.573684,\n/loc/deviation : 0.0157895,\n/loc/range/ms : 0.,\n/duration/range/ms : 0.,\n/duration : 0.0631579,\n/buffer/len : 10318.4,\n/buffer/name : \"miifrentz03.wav\"",
+					"text" : "/duration : 0.,\n/duration/range/ms : 0.,\n/loc : 0.121053,\n/loc/range/ms : 390.,\n/loc/deviation : 0.0631579,\n/buffer/len : 624.875,\n/buffer/name : \"dad12.wav\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -169,7 +169,7 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -325,11 +325,11 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 906.0, 226.0, 516.0, 526.0 ],
+						"rect" : [ 549.0, 403.0, 879.0, 730.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -359,6 +359,24 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-9",
+									"linecount" : 7,
+									"maxclass" : "o.compose",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 287.0, 70.0, 224.0, 106.0 ],
+									"saved_bundle_data" : [ 35, 98, 117, 110, 100, 108, 101, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 47, 100, 117, 114, 97, 116, 105, 111, 110, 0, 0, 0, 44, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 47, 100, 117, 114, 97, 116, 105, 111, 110, 47, 114, 97, 110, 103, 101, 47, 109, 115, 0, 0, 44, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 47, 108, 111, 99, 0, 0, 0, 0, 44, 100, 0, 0, 63, -66, -3, 78, 32, 0, 0, 0, 0, 0, 0, 28, 47, 108, 111, 99, 47, 114, 97, 110, 103, 101, 47, 109, 115, 0, 0, 0, 44, 100, 0, 0, 64, 120, 96, 0, 0, 0, 0, 0, 0, 0, 0, 28, 47, 108, 111, 99, 47, 100, 101, 118, 105, 97, 116, 105, 111, 110, 0, 0, 44, 100, 0, 0, 63, -80, 43, 29, -96, 0, 0, 0, 0, 0, 0, 24, 47, 98, 117, 102, 102, 101, 114, 47, 108, 101, 110, 0, 44, 100, 0, 0, 64, -125, -121, 0, -96, 0, 0, 0, 0, 0, 0, 32, 47, 98, 117, 102, 102, 101, 114, 47, 110, 97, 109, 101, 0, 0, 0, 0, 44, 115, 0, 0, 100, 97, 100, 49, 50, 46, 119, 97, 118, 0, 0, 0 ],
+									"saved_bundle_length" : 232,
+									"text" : "/duration : 0.,\n/duration/range/ms : 0.,\n/loc : 0.121053,\n/loc/range/ms : 390.,\n/loc/deviation : 0.0631579,\n/buffer/len : 624.875,\n/buffer/name : \"dad12.wav\"",
+									"textcolor" : [ 0.188, 0.188, 0.188, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-13",
@@ -381,7 +399,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 150.0, 406.0, 145.0, 22.0 ],
+									"patching_rect" : [ 165.0, 410.0, 145.0, 22.0 ],
 									"style" : ""
 								}
 
@@ -393,7 +411,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "FullPacket" ],
-									"patching_rect" : [ 78.5, 450.0, 37.0, 22.0 ],
+									"patching_rect" : [ 20.0, 410.0, 121.0, 22.0 ],
 									"style" : "",
 									"text" : "o.var"
 								}
@@ -406,7 +424,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "FullPacket" ],
-									"patching_rect" : [ 61.0, 344.5, 121.0, 22.0 ],
+									"patching_rect" : [ 20.0, 339.0, 121.0, 22.0 ],
 									"style" : "",
 									"text" : "o.route /loc/deviation"
 								}
@@ -419,7 +437,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 61.0, 376.0, 40.0, 22.0 ],
+									"patching_rect" : [ 20.0, 379.0, 40.0, 22.0 ],
 									"style" : "",
 									"text" : "del 0."
 								}
@@ -525,7 +543,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 28.0, 469.0, 25.0, 25.0 ],
+									"patching_rect" : [ 20.0, 472.0, 25.0, 25.0 ],
 									"style" : ""
 								}
 
@@ -662,7 +680,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 15,
 					"presentation_rect" : [ 11.0, 174.0, 249.0, 188.0 ],
-					"text" : "/timing/scale : 0.498129,\n/rand/scale : 0.904033,\n/rand/offset : 0.272534,\n/loc : 0.573684,\n/loc/range/ms : 0.,\n/duration/range/ms : 0.,\n/duration : 0.0631579,\n/buffer/len : 10318.4,\n/buffer/name : \"miifrentz03.wav\",\n/speedfactor : 1.,\n/reverse : 0,\n/overdrive : 0,\n/offset/ms : 5919.48,\n/duration/ms : 651.686,\n/sample : \"grainstuff\"",
+					"text" : "/timing/scale : 0.473516,\n/rand/scale : 0.353265,\n/rand/offset : 0.310558,\n/duration : 0.,\n/duration/range/ms : 0.,\n/loc : 0.121053,\n/loc/range/ms : 390.,\n/buffer/len : 624.875,\n/buffer/name : \"dad12.wav\",\n/speedfactor : 1.,\n/reverse : 0,\n/overdrive : 0,\n/offset/ms : -72.1217,\n/duration/ms : 0.,\n/sample : \"grainstuff\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -701,7 +719,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 360.0, 240.0, 128.0, 54.0 ],
-					"text" : "/buffer/len : 10318.4,\n/buffer/name : \"miifrentz03.wav\"",
+					"text" : "/buffer/len : 624.875,\n/buffer/name : \"dad12.wav\"",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -766,7 +784,7 @@
 							"major" : 7,
 							"minor" : 0,
 							"revision" : 4,
-							"architecture" : "x86",
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1186,7 +1204,7 @@
 				"box" : 				{
 					"decodemode" : 1,
 					"id" : "obj-7",
-					"legend" : "miifrentz03.wav",
+					"legend" : "dad12.wav",
 					"maxclass" : "live.drop",
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -1534,32 +1552,36 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7" : [ "yo", "live.drop", 0 ],
+			"obj-46" : [ "revert sample", "revert sample", 0 ],
 			"obj-22" : [ "grains", "grains", 0 ],
-			"obj-46" : [ "revert sample", "revert sample", 0 ]
+			"obj-7" : [ "yo", "live.drop", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "o.grainplayer.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJ-Depot/patchers/soundfiles_sampling/granular",
+				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "../../../../CNMAT-MMJSS/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mmjss.grain_note_ui.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/CNMAT-MMJSS/patchers",
+				"patcherrelativepath" : "../../../../CNMAT-MMJSS/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.uniform.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers",
+				"patcherrelativepath" : "../../../../odot/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "o.righttoleft.maxpat",
 				"bootpath" : "~/Documents/Max 7/Packages/odot/patchers/ordering",
+				"patcherrelativepath" : "../../../../odot/patchers/ordering",
 				"type" : "JSON",
 				"implicit" : 1
 			}
